@@ -1,3 +1,27 @@
+//RWD Break Points
+$very-small-breakpoint: 200px;
+$small-breakpoint: 400px;
+$medium-breakpoint: 600px;
+$large-breakpoint: 800px;
+$very-large-breakpoint: 1000px;
+@mixin breakpoint($point) {
+  @if $point == very-small {
+    @media (min-width: $very-small-breakpoint) { @content; }
+  }
+  @else if $point == small {
+    @media (min-width: $small-breakpoint)  { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: $medium-breakpoint)  { @content; }
+  }
+  @else if $point == large {
+    @media (min-width: $large-breakpoint)  { @content; }
+  }
+  @else if $point == very-large {
+    @media (min-width: $very-large-breakpoint)  { @content; }
+  }
+}
+
 //Font-Stacks
 @font-face {
   font-family: 'SortsMillGoudy';
@@ -35,14 +59,50 @@
 	letter-spacing: 0.5px;
 }
 
-.grid-1-3 {
-	width: 32.5%;
-	display: inline-block;
+//grid settings
+.grid-pad {
+  padding: 20px 0 20px 20px;
 }
 
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+
+//Clearfix
+.grid{
+}
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+//grid sizes
 .grid-1-2 {
-	width: 49.5%;
-	display: inline-block;
+	width: 50%;
+	float: left;
+
 }
 
+.grid-1-3 {
+	width: 33%;
+	float: left;
+
+}
+
+.grid-1-6{
+	width: 16.5%;
+	float: left;
+
+}
+
+
+
+//font colors
+$main-text: #554F4B;
+
+//object colors
+$border: #979797;
+$nav-button: #FBF0D2;
+$nav-button-border: #686868;
 
