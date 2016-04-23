@@ -1,8 +1,8 @@
 //RWD Break Points
-$very-small-breakpoint: 200px;
+$very-small-breakpoint: 265px;
 $small-breakpoint: 400px;
-$medium-breakpoint: 600px;
-$large-breakpoint: 800px;
+$medium-breakpoint: 640px;
+$large-breakpoint: 860px;
 $very-large-breakpoint: 1000px;
 @mixin breakpoint($point) {
   @if $point == very-small {
@@ -42,13 +42,6 @@ $very-large-breakpoint: 1000px;
   font-style: italic;
 }
 
-//Clearfix
-.clear:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 // current state of small caps (Fall, 2015):
 // -most browsers fail at font-variant:small-caps (Chrome 46, Safari 9), using fake small caps
 // -see this: http://www.chriskrycho.com/2015/css-fallback-for-opentype-small-caps.html
@@ -69,8 +62,6 @@ $very-large-breakpoint: 1000px;
 }
 
 //Clearfix
-.grid{
-}
 .grid:after {
   content: "";
   display: table;
@@ -105,4 +96,7 @@ $main-text: #554F4B;
 $border: #979797;
 $nav-button: #FBF0D2;
 $nav-button-border: #686868;
+$bg-grey: #FBFBFB;
+$image-inner-frame: #F4DC97;
+$image-outer-frame: #CBBFA5;
 

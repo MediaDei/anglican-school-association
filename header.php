@@ -32,23 +32,49 @@
 <body <?php body_class(); ?>>
 	<div class="page-wrap">
 		<header>
-			<h1 class="smallcaps">
-				<a href="/">anglican <span class="smallcaps">school association</span>
+			<a href="/">
+				<div class="top">
+					<h1>anglican</h1>
+					<h1>school association</h1>
+				</div>
+			</a>
+
+			<nav class="grid">
+				<a href="/about">
+					<span>About</span>
+					<span>ASA methods
+					& principles</span>
 				</a>
-			</h1>
 
-			<nav>
-				<a href="/about">About<span class="nav-sub-txt">ASA methods & principles</span></a>
+				<a href="/st-bede">
+					<span>St. Bede</span>
+					<span>Society for
+					teachers</span>
+				</a>
 
-				<a href="/st-bede">St. Bede<span class="nav-sub-txt">Society for teachers</span></a>
+				<a href="/accreditation">
+					<span>Accreditation</span>
+					<span>Standards for mission
+					and acceptance</span>
+				</a>
 
-				<a href="/accreditation">Accreditation<span class="nav-sub-txt">Standards for mission and acceptance</span></a>
+				<a href="/members">
+					<span>Members</span>
+					<span>Schools in
+					the ASA</span>
+				</a>
 
-				<a href="/members">Members<span class="nav-sub-txt">Schools in the ASA</span></a>
+				<a href="/notices">
+					<span>Notices</span>
+					<span>Postings
+					& news</span>
+				</a>
 
-				<a href="/notices">Notices<span class="nav-sub-txt">Postings & news</span></a>
-
-				<a href="/resources">Resources<span class="nav-sub-txt">Materials for schools</span></a>
+				<a href="/resources">
+					<span>Resources</span>
+					<span>Materials
+					for schools</span>
+				</a>
 			</nav>
 			<!--closing header in page to allow custom hero img class for each page--> 
 			

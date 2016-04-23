@@ -1,3 +1,9 @@
 section.members{
+	position: relative;//this and z-index -2 needed to apply bg-grey without overlapping h2 logo
+	z-index: -2; 
+	background-color: $bg-grey; 
+	h2{
+		background-color: $bg-grey;  
+	}
 	
 }

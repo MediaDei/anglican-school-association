@@ -1,8 +1,24 @@
 section.about{
+	div.img.about{
+		background: url("../images/about-about.jpg") no-repeat center center / 130% auto; 
+	}
 	p{
-		width: 80%;
+		width: 60%;
 		margin: 0 auto;
 		padding: 20px 0px;
 		line-height: 1.3; 
+		&:first-letter{
+			font-size: 2em;
+		}
+	}
+}
+section.members{
+	div.img.members{
+		background: url("../images/about-members.jpg") no-repeat center center / 130% auto; 
+	}
+}
+section.st-bede{
+	div.img.st-bede{
+		background: url("../images/about-st-bede.jpg") no-repeat center center / 130% auto; 
 	}
 }

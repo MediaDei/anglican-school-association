@@ -1,0 +1,218 @@
+header{
+	margin: 60px 0px;
+	
+	@include breakpoint(large){
+		position: relative;
+		
+	}
+	a{
+		div.top{
+			margin-bottom: 50px;//push nav down
+			h1{
+				text-align: center;
+				text-shadow: 0px 1px 2px rgba(white,0.5);
+				text-transform: uppercase;
+				&:first-of-type{
+					position: relative;
+					border-bottom: 1px solid $border;
+					letter-spacing: 6px;
+					font-size: 2em;
+					padding-top: 80px;
+					&:before{//logo
+						content:"";
+						background: url("../images/logo.png") no-repeat center center / 100% auto;
+						width: 100px;
+						height: 100px;
+						box-shadow: 0px 1px 3px rgba(black,0.5);
+						border-radius: 100%;
+						position: absolute;
+						//@include transform(translateY(-50%));
+						@include transform(translateX(-50%));
+						top: -35%;
+						left: 50%;
+					}
+					@include breakpoint(medium){
+						padding-top: 0px;
+						width: 80%;
+						margin: 0 auto;
+						&:before{//logo
+							top: -40%;
+							left: 14%;
+						}
+					}
+					@include breakpoint(large){
+						width: 70%;
+						&:before{//logo
+							width: 100px;
+							height: 100px;
+							top: -40%;
+							left: 14%;
+						}
+						&:after{//apply-banner
+							content:"";
+							background: url("../images/apply-banner.png") no-repeat center center / 100% auto;
+							width: 80px;
+							height: 80px;
+							position: absolute;
+							@include transform(translateY(-50%));
+							top: 50%;
+							right: -20%;
+						} 
+					}
+				}
+				&:nth-of-type(2){
+					font-size: 1.1em;
+					letter-spacing: 1px;
+					padding-top: 10px; 
+				}
+			}
+		}
+	}
+
+	nav{
+		margin: 0 auto;
+		position: relative;
+		z-index: 1; 
+		margin-bottom: 40px;
+		@include breakpoint(large){
+			width: 96%;
+			&:before{//glint overlay
+				content: "";
+        //display: block;
+        @include background-image(linear-gradient(rgba(white,0.4), rgba(white,0.4)));
+        height: 60%;
+        width: 100%;
+        position: absolute;
+        top: -5%; 
+        left: 50%;
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
+        @include transform(translate(-50%)); 
+        pointer-events: none;//makes it possible to click element under glint  
+        z-index: 2;
+			}
+		}
+		a{
+			position: relative;
+			&:before,&:after{
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0%;
+				left: 0%; 
+				
+				
+			}
+			&:before{
+				@include background-image(linear-gradient($nav-button, rgba(black,0), rgba(black,0.2))); 
+				z-index: -2;
+			}
+			&:after{
+				background-color: $nav-button;
+				z-index: -3;
+			}
+			
+			&:hover{
+				&:before{
+					@include background-image(linear-gradient(darken($nav-button,2%), rgba(black,0), rgba(black,0.2)));
+				}
+				&:after{
+					background-color: darken($nav-button,2%);
+				}
+
+			}
+			&:active{
+				&:before{
+					@include background-image(linear-gradient(darken($nav-button,5%), rgba(black,0), rgba(black,0.2)));
+				}
+				&:after{
+					background-color: darken($nav-button,5%);
+				}
+
+			}
+			@include breakpoint(very-small){
+				float: left;
+				width: 50%;
+				border-right: 1px solid $nav-button-border;
+	      box-shadow: inset 2px 0px 1px rgba(white,0.7);
+	      &:nth-of-type(5),&:last-of-type{
+	      	border-bottom: 1px solid $nav-button-border;
+	      }
+			}
+			@include breakpoint(small){ 
+	      width: 33.3%;
+	      
+	      &:nth-of-type(3),&:last-of-type{
+	      	border-right: none;
+	      }
+	      &:nth-of-type(4),&:nth-of-type(5){
+	      	border-bottom: 1px solid $nav-button-border;
+	      }
+	    }
+	    @include breakpoint(large){ 
+	      width: 16.5%;
+	      height: 70px;
+	      border-top: none;
+	      box-shadow: 0px 2px 3px rgba(black,0.5),
+	      						inset 2px 0px 1px rgba(white,0.7);
+	      &:first-of-type{
+	      	border-top-left-radius: 6px;
+	      	border-bottom-left-radius: 6px;
+	      	&:before{
+	      		border-top-left-radius: 6px;
+	      		border-bottom-left-radius: 6px;
+	      	}
+	      }
+	      &:nth-of-type(3){
+	      	border-right: 1px solid $nav-button-border;
+	      }
+	      &:nth-of-type(4),&:nth-of-type(5){
+	      	border-bottom: none;
+	      }
+	      &:last-of-type{
+	      	border-right: none; 
+	      	border-bottom: none;
+	      	border-top-right-radius: 6px;
+	      	border-bottom-right-radius: 6px;
+	      	&:before{
+	      		border-top-right-radius: 6px;
+	      		border-bottom-right-radius: 6px;
+	      	}
+	      }
+	    }
+			span{
+				&:first-of-type,&:last-of-type{
+					text-align: center;
+					display: block;
+					position: relative;
+					z-index: 3;//place text above nav glint
+				}
+				&:first-of-type{
+					font-size: 1.2em;
+					text-shadow: 0px 2px 0px rgba(white,1);
+					padding: 10px 0px 0px;
+					border-top: 1px solid $nav-button-border;
+					
+				
+					@include breakpoint(large){
+						border-top: none;
+					}
+				}
+				&:last-of-type{
+					font-size: 0.6em;
+					text-shadow: 0px 1px 0px rgba(white,1);
+					font-style: italic;
+					padding: 5px 0px;
+					white-space: pre-line; 
+				}
+			}
+		}
+	}
+	div.hero-img{
+		height: 500px;
+		&.about{
+			background: black url("../images/about-hero.jpg") no-repeat center center / 100% auto; 
+		}
+	}
+}
