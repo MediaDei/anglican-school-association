@@ -1,17 +1,16 @@
 		<footer>
-			<div class="left">
-				<div role="image" class="logo"></div>
-				<p>Anglican <span>School Association</span></p>
+			<div class="text-left">
+				<h1>anglican</h1>
+				<h1>school association</h1>
 			</div>
-			<div class="right">
-				<address>
-					Govenance:
-					<span>
-						ASA Board of Directors
-						Reformed Episcopal Church
-						Anglican Church in North America
-					</span>
-				</address>
+				
+			<div class="text-right">
+				<p>Governance:</p>
+				<ul>
+					<li>ASA Board of Directors</li>
+					<li>Reformed Episcopal Church</li>
+					<li>Anglican Church in North America</li>
+				</ul>
 				<div role="image" class="logo2"></div>
 			</div>
 		</footer>

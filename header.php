@@ -36,8 +36,11 @@
 				<div class="top">
 					<h1>anglican</h1>
 					<h1>school association</h1>
+
 				</div>
 			</a>
+
+			<a href="/apply" class="banner"><div class="banner"></div></a>
 
 			<nav class="grid">
 				<a href="/about">

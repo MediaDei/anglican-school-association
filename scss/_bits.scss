@@ -87,16 +87,34 @@ $very-large-breakpoint: 1000px;
 
 }
 
+//disable link-style for li in ul
+ul{
+  li{
+    list-style: none;
+  }
+}
+
+
+
 
 
 //font colors
 $main-text: #554F4B;
+$subtext: #827973;
+$link: #3C7BC4;
+
+//icon colors
+$fa-check: #6ED37F;
 
 //object colors
 $border: #979797;
+$lighter-border: #DFDFDF;
+$lightest-border: #CBCBCB;
 $nav-button: #FBF0D2;
 $nav-button-border: #686868;
 $bg-grey: #FBFBFB;
 $image-inner-frame: #F4DC97;
 $image-outer-frame: #CBBFA5;
+$button: #FBEFC6;
+
 

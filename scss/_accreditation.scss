@@ -1,3 +1,45 @@
 section.accreditation{
-	
+	div.list-wrapper{
+		background-color: #EAF3FB;
+		width: 80%;
+		margin: 0 auto 90px;
+		padding: 30px 70px;
+		border: 1px solid #C4CDD6;
+		border-radius: 6px;
+		box-shadow: 0px 2px 10px rgba(black,0.5);
+		line-height: 1.3;
+		ol{
+			li{
+				margin-left: 40px;
+				&:first-of-type{
+					margin-top: 10px;
+				}
+
+			}
+		} 
+	}
+	div.circle-h3{
+		h3{//heading with circle image
+			&:nth-of-type(1){
+				&:before{
+					background: url("../images/oval1.jpg") no-repeat center center / 100% auto;	
+				}
+			}
+			&:nth-of-type(2){
+				&:before{
+					background: url("../images/oval2.jpg") no-repeat center center / 100% auto;	
+				}
+			}
+			&:nth-of-type(3){
+				&:before{
+					background: url("../images/oval3.jpg") no-repeat center center / 100% auto;	
+				}
+			}
+			&:nth-of-type(4){
+				&:before{
+					background: url("../images/oval4.jpg") no-repeat center center / 100% auto;	
+				}
+			}
+		}
+	}
 }

@@ -25,15 +25,21 @@ body{
 		
 		div{
 			section{
-				h2{
-					letter-spacing: 9px; 
+				padding: 0px 0px 100px 0px;
+				border-bottom: 1px solid $border;
+				&:last-of-type{
+					padding-bottom: 150px;
+				}
+				h2{//heading with logo and line
+					//letter-spacing: 17px; 
 					font-size: 2em;
 					text-align: center;
+					//height: 200px; 
 					text-transform: uppercase;
 					border-bottom: 1px solid $border;
 					position: relative;
 					background-color: rgba(white,1);
-					padding: 50px 0px 5px;//hide top of logo and push border down
+					//padding: 50px 0px 5px;//hide top of logo and push border down
 					margin-bottom: 130px;//push content away from logo
 					box-shadow: 0px 11px 4px -5px rgba(black,0.1);
 					&:before{//logo
@@ -41,9 +47,9 @@ body{
 						width: 150px;
 						height: 150px;
 						position: absolute;
-						background: url("../images/logo.png") no-repeat center center / 100% auto;
+						background: url("../images/logo-half.png") no-repeat center center / 100% auto;
 						@include transform(translateX(-50%));
-						top: 17%;
+						bottom: -113px;
 						left: 50%;
 						opacity: 0.2;
 						z-index: -1;		
@@ -60,6 +66,9 @@ body{
 						@include background-image(radial-gradient(farthest-side at 50% 0px, rgba(black,0.10), rgba(black,0)));
 						z-index: -1;
 					}
+					@include breakpoint(small){
+						letter-spacing: 17px;
+					}
 					@include breakpoint(medium){
 						width: 70%;
 						margin: 0 auto 150px;
@@ -73,7 +82,7 @@ body{
 				}
 				div.img{
 					height: 150px;
-					margin: 0 auto 40px;
+					margin: 0 auto 50px;
 					border-top: 1px solid $border;
 					box-shadow: 0px 9px 7px -5px rgba(black,0.5);
 					
@@ -89,6 +98,101 @@ body{
 												-1px 0px 0px 1px $image-outer-frame,
 												0px 16px 7px -10px rgba(black,0.5);
 					}
+				}
+				div.circle-h3{
+					border-bottom: 1px solid $lightest-border;
+					padding-top: 70px;
+					h3{//heading with circle image
+						position: relative;
+						width: 90%;
+						margin: 0 auto 60px;
+						font-style: italic;
+						border-bottom: 1px solid $border;
+						padding-bottom: 5px;
+						box-shadow: 0px 5px 5px -5px rgba(black,0.3);
+						&:nth-of-type(1){
+							&:before{
+								background: url("../images/oval1.jpg") no-repeat center center / 100% auto;	
+							}
+						}
+						&:nth-of-type(2){
+							&:before{
+								background: url("../images/oval2.jpg") no-repeat center center / 100% auto;	
+							}
+						}
+						&:nth-of-type(3){
+							&:before{
+								background: url("../images/oval3.jpg") no-repeat center center / 100% auto;	
+							}
+						}
+						&:nth-of-type(4){
+							&:before{
+								background: url("../images/oval4.jpg") no-repeat center center / 100% auto;	
+							}
+						}
+						&:before{
+							content: "";
+							width: 90px;
+							height: 90px;
+							position: absolute;
+							top: -7px;
+							left: 25px;
+							border-radius: 100%;
+							border: 1px solid $border;
+							box-shadow: inset 0px 2px 4px rgba(black,0.5),
+													0px 1px 2px rgba(black,0.5);
+						}
+					}
+					div.grid{ 
+						width: 65%;
+						margin: 0 auto 40px;
+						h4{
+							float: left;
+							width: 25%;
+						}
+						p{
+							float: left;
+							width: 75%;
+							line-height: 1.3;
+							margin: 0px;
+							a{
+								color: $link !important;
+							}
+						}
+					}
+				}
+				div.centered-button{
+					display: table;
+					margin: 20px auto;
+					border-radius: 4px;
+					padding: 10px 30px;
+					text-shadow: 0px 2px 0px rgba(white,0.5);
+					border: 1px solid $border;
+					background-color: $button;
+					font-size: 1.1em;
+					cursor: pointer;
+					box-shadow: 0px 1px 3px rgba(black,0.5);
+					position: relative;
+					&:before{
+						content: "";
+						position: absolute;
+						top: 0;
+						left: 0; 
+						width: 100%;
+						height: 100%; 
+						border-radius: 4px; 
+						   
+						@include background-image(linear-gradient(rgba(white,0) 70%,rgba(123,123,123,0.15),rgba(black,0.2))); 
+					}
+					&:hover{
+						background-color: darken($button,2%);
+					}
+					&:active{
+						position: relative;
+						top: 1px;
+						box-shadow: 0px 1px 2px rgba(black,0.5);
+						background-color: darken($button,4%);
+					} 
 				}
 			}
 		}

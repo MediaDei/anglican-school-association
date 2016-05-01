@@ -1,4 +1,71 @@
 footer{
-	height: 200px;
-	background: url("../images/marble-texture.png") no-repeat center center / 100% auto;	
+	height: 140px;
+	background: url("../images/marble-texture.png") no-repeat center center / 150% auto;	
+	overflow: hidden;
+	margin-bottom: 10px;
+	text-shadow: 0px 1px 2px rgba(black,0.5); 
+	color: white;
+	div.text-left{
+		position: relative;
+		top: 50%;
+		@include transform(translateY(-50%));
+		float: left;
+		h1{
+			text-align: center;
+			text-transform: uppercase;
+			margin: 0px 0px 0px 150px; 
+			&:first-of-type{
+				position: relative;
+				border-bottom: 1px solid $border;
+				letter-spacing: 6px;
+				font-size: 1.3em;
+				&:before{//bw logo
+					content: "";
+					display: inline-block;
+					width: 100px;
+					height: 100px;
+					background: url("../images/logo-bw.png") no-repeat center center / 100% auto;
+					position: absolute;
+					left: -130px;
+					top: 90%;
+					@include transform(translateY(-50%));
+				}
+			}
+			&:nth-of-type(2){
+				font-size: 0.8em;
+				letter-spacing: 1px;
+				padding-top: 5px; 
+			}
+		}
+	}
+	div.text-right{
+		position: relative;
+		top: 50%;
+		@include transform(translateY(-50%));
+		text-align: right;
+		float: right;
+		padding-right: 200px;
+		
+		p{
+			font-style: italic;
+			font-size: 1.2em;
+			margin: 0px 0px 10px;
+			position: relative;
+			&:after{
+					content: "";
+					display: inline-block;
+					width: 100px;
+					height: 100px;
+					background: url("../images/logo2-bw.png") no-repeat center center / 100% auto;
+					position: absolute;
+					right: -130px;
+				}
+		}
+		ul{
+			font-style: none;
+			li{
+				font-size: 0.8em;
+			}
+		}
+	}
 }

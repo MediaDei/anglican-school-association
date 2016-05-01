@@ -1,3 +1,15 @@
 section.resources{
 	
 }
+section.links{
+	ul{
+		h3{
+			font-style: italic;
+		}
+		li{
+			a{
+				color: $link;
+			}
+		}
+	}
+}
