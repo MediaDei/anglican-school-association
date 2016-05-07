@@ -8,7 +8,7 @@
 			<section class="apply">
 				<h2>apply to join</h2>
 				<h3>Benefits</h3>
-				<ul>
+				<ul class="top-level">
 					<li>
 						<span class="fa fa-check"></span>accreditation by the ASA
 						<ul>
@@ -25,10 +25,14 @@
 					<li><span class="fa fa-check"></span>Decidedly Anglican ethos, discipleship, culture, and spiritual formation</li>
 					<li><span class="fa fa-check"></span>membership in a professional education association (Society of Saint Bede) for all faculty</li>
 				</ul>
+				<div class="wrapper grid">
+					<a class="smallcaps grid-1-2" href="#">our educational principles</a>
+					<a class="smallcaps grid-1-2" href="#">teachers socieity of st. bede</a>
+				</div>
 			</section>
-			<section class="why-parish-schools">
-				<h2>why<br><span>Parish Schools</span></h2>
-				<ul>
+			<section class="why-parish-schools bg-grey">
+				<h2>why<br><span>Parish Schools?</span></h2>
+				<ul class="top-level">
 					<li><span class="fa fa-check"></span>retain youth as faithful and adult members of the church</li>
 					<li><span class="fa fa-check"></span>train youth as musical, knowledgable, and wise future Church members</li>
 					<li><span class="fa fa-check"></span>students identify as Anglican Christians during formative years</li>

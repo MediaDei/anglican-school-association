@@ -40,7 +40,7 @@
 					</div>
 				</div>
 
-				<div class="circle-h3">
+				<div class="circle-h3 bg-grey">
 					<h3>Teachers Society of St. Bede</h3>
 					<div class="grid">
 						<h4 class="smallcaps">ecclesial oversight</h4>
@@ -55,7 +55,7 @@
 						</p>
 					</div>
 				</div>
-				<a href="#"><div role="button" class="centered-button">Apply to Join</div></a>
+				<a href="/apply"><div role="button" class="centered-button">Apply to Join</div></a>
 			</section>
 
 			

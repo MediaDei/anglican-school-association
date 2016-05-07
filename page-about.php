@@ -16,7 +16,7 @@
 				<p class="dropcaps a"><span class="smallcaps">Anglicans believe </span>that education is a fundamental way of fulfilling baptismal promises made by parents and godparents, participating directly in the foundational mission of the church.  As such, Anglican schools are ecclesial entities where faith, learning, culture, and life are brought into harmony, acting as  ministries of pastoral care. 
 				</p>
 			</section>
-			<section class="members">
+			<section class="members bg-grey">
 				<h2>members</h2>
 				<div role="image" class="img members"></div>
 
@@ -54,11 +54,10 @@
 					</div>
 				</div>
 			</section>
-			<section class="st-bede">
+			<section class="st-bede" id="st-bede">
 				<h2>Teachers Society<br><span>of St. Bede</span></h2>
 				<div role="image" class="img st-bede"></div>
 				<p class="dropcaps s"><span class="smallcaps">Society</span> of St. Bede functions as an association of all teachers of full Member Schools. While certification as a teacher is pursued separately, this association of all teachers provides..., and affords..., while allowing teachers to... .
-				
 
 				The Society is divided into two levels of teachers: Masters, and Apprentices.</p>
 

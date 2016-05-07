@@ -48,7 +48,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="circle-h3">
+				<div class="circle-h3 bg-grey">
 					<h3>Educational Program</h3>
 					<div class="grid">
 						<h4 class="smallcaps">curriculum & textbooks</h4>
@@ -84,7 +84,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="circle-h3">
+				<div class="circle-h3 bg-grey">
 					<h3>Governance</h3>
 					<div class="grid">
 						<h4 class="smallcaps">by laws</h4>

@@ -1,0 +1,29 @@
+section.apply{
+	h3{
+		width: 70%;
+		margin: 0 auto;
+		border-bottom: 1px solid $lightest-border;
+	}
+	ul.top-level{
+		width: 70%;
+		margin: 0 auto 40px;
+		li{
+			ul{
+				//width: 70%;
+			}
+		}
+	}
+	div.wrapper{
+		a.grid-1-2{
+			text-align: center;
+			color: $link;
+			font-size: 1.2em;
+		}
+	}
+}
+section.why-parish-schools{
+	padding-top: 70px;
+	h2{
+		background-color: $bg-grey; 
+	}
+}

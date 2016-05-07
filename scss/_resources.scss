@@ -1,14 +1,103 @@
 section.resources{
-	
+	div.wrapper{
+		label{
+			display: table;
+			margin: 0 auto;
+			font-style: italic;
+			font-size: 1.3em;  
+			padding-bottom: 10px;
+		}
+		div.button{
+			text-shadow: 0px 1px 0px rgba(white,0.5);
+			width: 280px;
+			height: 90px;
+			padding: 10px;
+			cursor: pointer;
+			margin: 0 auto;
+			border-radius: 4px;
+			div.icon{
+				width: 70px;
+				height: 70px;
+				float: left;
+				display: inline-block;
+				border-radius: 4px;
+				&.btn-1{
+					background-color: $dl-btn-1-icon-fill;
+				}
+				&.btn-2{
+					background-color: $dl-btn-2-icon-fill;
+				}
+			}
+			div.text{
+				display: inline-block;
+				float: left;
+				text-align: center;
+				padding-left: 20px;
+				@include transform(translateY(-50%));
+				top: 50%;
+				position: relative;
+				p{
+					margin: 0;
+					font-size: 1.4em;
+					letter-spacing: 1.5px;
+				}
+				span{
+					font-style: italic;
+				}
+			}
+			
+			&.btn-1{
+				background-color: $dl-btn-1-fill;
+				border: 1px solid $dl-btn-1-border; 
+			}
+			&.btn-2{
+				background-color: $dl-btn-2-fill;
+				border: 1px solid $dl-btn-2-border; 
+			}
+		}
+	}
+	div.btn-3,div.btn-4{
+		margin: 0 auto;
+		height: 100px;
+	}
+	div.btn-3{
+		width: 90%;
+		background-color: $dl-btn-3-fill;
+		border: 1px solid $dl-btn-3-border;
+		div.text{
+			display: inline-block;
+			float: left;
+			padding-left: 20px;
+			@include transform(translateY(-50%));
+			top: 50%;
+			position: relative;
+		}
+	}
+	div.btn-4{
+		width: 50%;
+		background-color: $dl-btn-4-fill;
+		border: 1px solid $dl-btn-4-border; 
+	}
 }
 section.links{
+	padding-top: 70px;
+	h2{
+		background-color: $bg-grey; 
+	}
 	ul{
-		h3{
+		width: 500px;
+		margin: 0 auto 40px;
+		h4{
 			font-style: italic;
+			font-size: 1.3em;
+			margin-bottom: 5px;
 		}
 		li{
 			a{
 				color: $link;
+				&:hover{
+					text-decoration: underline;
+				}
 			}
 		}
 	}

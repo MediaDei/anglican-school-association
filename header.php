@@ -49,7 +49,7 @@
 					& principles</span>
 				</a>
 
-				<a href="/st-bede">
+				<a href="/about#st-bede">
 					<span>St. Bede</span>
 					<span>Society for
 					teachers</span>
