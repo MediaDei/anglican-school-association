@@ -16,14 +16,14 @@
 				<p class="dropcaps a"><span class="smallcaps">Anglicans believe </span>that education is a fundamental way of fulfilling baptismal promises made by parents and godparents, participating directly in the foundational mission of the church.  As such, Anglican schools are ecclesial entities where faith, learning, culture, and life are brought into harmony, acting as  ministries of pastoral care. 
 				</p>
 			</section>
-			<section class="members bg-grey">
+			<section class="about-members bg-grey">
 				<h2>members</h2>
 				<div role="image" class="img members"></div>
 
 				<div class="wrapper">
 					<div class="member-info">
 						<h3>Full Member Schools</h3>
-						<ul>
+						<ul class="top-level">
 							<li><span class="fa fa-check"></span>are Anglican by jurisdiction and ethos,</li>
 							<li><span class="fa fa-check"></span>keep Prayer Book Daily Office in school life (at least one Office per day)</li>
 							<li><span class="fa fa-check"></span>have a vision for classical education (per Board's evalutation)
@@ -38,8 +38,9 @@
 						</ul>
 					</div>
 					<div class="member-info">
-						<h3>Affiliate Member Schools<br><span class="subtext">two of the three following apply:</span></h3>
-						<ul>
+						<h3>Affiliate Member Schools</h3>
+						<p class="subtext">two of the three following apply:</p>
+						<ul class="top-level">
 							<li><span class="fa fa-check"></span>are Anglican by jurisdiction and ethos,</li>
 							<li><span class="fa fa-check"></span>utilize a classical curriculum, and</li>
 							<li><span class="fa fa-check"></span>keep Prayer Book Daily Office in school life (at least one Office per day)</li>
@@ -47,7 +48,7 @@
 					</div>
 					<div class="member-info">
 						<h3>Home Member Schools</h3>
-						<ul>
+						<ul class="top-level">
 							<li><span class="fa fa-check"></span>utilize a classical curriculum, and</li>
 							<li><span class="fa fa-check"></span>keep Prayer Book Daily Office in school life (at least one Office per day)</li>
 						</ul>

@@ -1,29 +1,44 @@
-section.apply{
-	h3{
-		width: 70%;
-		margin: 0 auto;
-		border-bottom: 1px solid $lightest-border;
-	}
+section{
 	ul.top-level{
 		width: 70%;
-		margin: 0 auto 40px;
+		margin: 0px auto 40px;
+		border-top: 1px solid $lightest-border;
+		padding-top: 40px;
 		li{
 			ul{
 				//width: 70%;
 			}
 		}
 	}
+}
+
+section.apply{
+	h3{
+		width: 70%;
+		margin: 0 auto;
+		padding-bottom: 5px;
+	}
 	div.wrapper{
 		a.grid-1-2{
 			text-align: center;
 			color: $link;
 			font-size: 1.2em;
+			//border-top: 1px solid $lighter-border;
+			//border-bottom: 1px solid $lighter-border;
+			&:after{
+				content:"→";
+				padding-left: 10px;
+			}
 		}
 	}
 }
 section.why-parish-schools{
-	padding-top: 70px;
+	padding-top: 100px;
 	h2{
 		background-color: $bg-grey; 
+	}
+	ul{
+		border: none;
+		padding-top: 0px; 
 	}
 }

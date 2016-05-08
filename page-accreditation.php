@@ -22,7 +22,7 @@
 					</ol>
 				</div>
 				<div class="circle-h3">
-					<h3>Anglican Culture, Religion, and Worship</h3>
+					<h3 class="h3-1">Anglican Culture, Religion, and Worship</h3>
 					<div class="grid">
 						<h4 class="smallcaps">spiritual formation</h4>
 						<p>
@@ -49,7 +49,7 @@
 					</div>
 				</div>
 				<div class="circle-h3 bg-grey">
-					<h3>Educational Program</h3>
+					<h3 class="h3-2">Educational Program</h3>
 					<div class="grid">
 						<h4 class="smallcaps">curriculum & textbooks</h4>
 						<p>
@@ -70,7 +70,7 @@
 					</div>
 				</div>
 				<div class="circle-h3">
-					<h3>Professional Faculty & Staff</h3>
+					<h3 class="h3-3">Professional Faculty & Staff</h3>
 					<div class="grid">
 						<h4 class="smallcaps">faculty competence</h4>
 						<p>
@@ -85,7 +85,7 @@
 					</div>
 				</div>
 				<div class="circle-h3 bg-grey">
-					<h3>Governance</h3>
+					<h3 class="h3-4">Governance</h3>
 					<div class="grid">
 						<h4 class="smallcaps">by laws</h4>
 						<p>

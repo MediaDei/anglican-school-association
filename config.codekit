@@ -155,6 +155,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/gss.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 359483,
+		"inputAbbreviatedPath": "\/images\/gss.jpg",
+		"outputAbbreviatedPath": "\/images\/gss.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/logo-bw.png": {
 		"fileType": 32768,
 		"ignore": 0,

@@ -5,7 +5,7 @@
 		
 		<div class="apply">
 
-			<section class="apply">
+			<section class="apply" id="apply-to-join">
 				<h2>apply to join</h2>
 				<h3>Benefits</h3>
 				<ul class="top-level">
@@ -27,7 +27,7 @@
 				</ul>
 				<div class="wrapper grid">
 					<a class="smallcaps grid-1-2" href="#">our educational principles</a>
-					<a class="smallcaps grid-1-2" href="#">teachers socieity of st. bede</a>
+					<a class="smallcaps grid-1-2" href="#">teachers society of st. bede</a>
 				</div>
 			</section>
 			<section class="why-parish-schools bg-grey">

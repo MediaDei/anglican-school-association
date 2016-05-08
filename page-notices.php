@@ -19,7 +19,7 @@
 							<div class="date">
 								<time><?php the_time(get_option('M j')); ?></time>
 							</div>
-							<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+							<h1><?php the_title(); ?></h1>
 							<?php the_excerpt(); ?>
 							<a href="<?php the_permalink(); ?>" class="expand">Expand</a>
 						</div>

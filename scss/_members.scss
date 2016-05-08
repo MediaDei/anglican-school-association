@@ -1,5 +1,202 @@
 section.members{
 	h3{
 		font-style: italic;
+		margin-bottom: 30px; 
+	}
+	div.home-members{
+		h3{
+			border-bottom: 1px solid $lightest-border;
+			width: 40%;
+			margin: 0 auto; 
+		}
+		div.text{
+			margin: 10px auto;
+			display: inline-block;
+			p{
+				margin: 0px 0px 5px;				
+			}
+		}
+		div.icon{
+			width: 50px;
+			height: 50px;
+			background-color: black; 
+			display: inline-block;
+		}
+	}
+	div.centered-button{
+		margin: 80px auto;
+	}
+	
+	div.posts{
+		margin: 0 auto 40px;
+		column-count: 2;
+		div.post{
+			padding-bottom: 5px;
+			padding-left: 20px;
+			&.border{
+				border-right: 1px solid $lightest-border;
+				padding-left: 80px;
+			}
+			a{
+				div.post-content{
+					padding: 5px 10px;
+					border-radius: 4px;
+					display: table; 
+					h1{
+						float: left;
+					}
+					address{
+						float: left;
+						margin-left: 10px;
+						color: $member-location;
+						span{
+							
+						}
+					}
+					&:hover{
+						background-color: $member-post-hover;
+						//border: 1px solid $member-post-hover-border;
+						cursor: pointer;
+						box-shadow: 0px 2px 3px 0px rgba(black,0.3);
+					}
+				}
+			}
+		}
+	}
+	div.full-posts{
+		div.featured-member{
+			width: 98%;
+			margin: 0 auto;
+			background-color: $member-featured-school-bg;
+			margin-bottom: 100px; 
+			border: 1px solid $member-featured-school-border;
+			border-radius: 4px;
+			padding: 40px 30px 25px;
+			box-shadow: 0px 5px 20px -5px rgba(black,0.2);
+			h1{
+				text-align: center;
+				font-style: italic;
+				font-size: 2em;
+				padding-bottom: 8px;
+			}
+			address.top{
+				display: table;
+				margin: 0 auto;
+				padding-bottom: 40px;
+				position: relative;
+				span{
+					
+				}
+				a{
+					color: $link;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+				&:before{
+					content:"";
+					position: absolute;
+					top: 8px;
+					left: -60px;
+					width: 50px;
+					height: 3px;
+					border-top: 1px solid $border;
+				}
+				&:after{
+					content:"";
+					position: absolute;
+					top: 8px;
+					right: -60px;
+					width: 50px;
+					height: 3px;
+					border-top: 1px solid $border;
+				}
+			}
+			
+			div.member-img{
+				width: 90%;
+				height: 360px;
+				margin: 0 auto 30px;
+				border: 7px solid white;
+				box-shadow: 0px 4px 10px 0px rgba(black,0.4);
+				overflow: hidden;
+				img{
+					width: 100%;
+					height: auto;
+				}
+										
+			}
+			div.grid{
+				width: 90%;
+				margin: 0 auto; 
+				h4{
+					font-style: italic;
+					font-size: 1.3em;
+					border-bottom: 1px solid $lightest-border;
+					width: 95%;
+					padding: 0px 0px 3px 10px;
+					
+				}	
+				div.grid-2-3,div.grid-1-3{
+					p{
+						white-space: pre-line;
+					}
+				}
+				div.grid-2-3{
+					border-right: 1px solid $border;
+					font-size: 0.9em;
+					p{
+						padding: 0px 10px;
+						color: $member-featured-school-text;
+						line-height: 1.1; 
+					}
+				}
+				div.grid-1-3{
+					font-size: 0.9em;
+					padding-left: 10px; 
+					p{
+						padding-left: 10px;
+						line-height: 0.7;//used for padding between entries
+					}
+					address{
+						padding-bottom: 0px; 
+						span{
+							margin: 10px 0px;
+							padding-left: 10px;
+							display: block;
+							&.email-address,&.phone-number{
+								a{
+									&:hover{
+										text-decoration: underline;
+									}
+								}
+							}
+							&.email-address{
+								a{
+									color: $link;
+								}
+								&:before{
+									content:"Email: ";
+								}
+							}
+							&.phone-number{
+								&:before{
+									content:"Phone: ";
+								}
+							}
+							a{
+								color: $member-featured-school-text; 
+								text-decoration: none;
+							}
+						}
+					}
+				}
+			}
+			a{
+				div.centered-button{
+					margin-top: 50px;
+				}
+			}
+		}
 	}
 }
