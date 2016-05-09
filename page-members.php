@@ -37,13 +37,16 @@
 				</div>
 
 				
-				<div class="home-members">
-					<h3>Home Members</h3>
+				
+				<h3 class="home-members">Home Members</h3>
+				<div class="wrapper">
 					<div class="text">
 						<p>Contact our Office to locate</p>
 						<p>other families in your area:</p>
 					</div>
-					<div class="icon"></div>
+					<a href="#">
+						<div class="icon"><span>Email: </span><span class="fa fa-envelope-o"></span></div>
+					</a>
 				</div>
 				<a href="/apply#apply-to-join"><div class="centered-button">Apply to Join</div></a>
 

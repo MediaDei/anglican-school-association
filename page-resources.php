@@ -10,42 +10,48 @@
 				<div class="wrapper grid">
 					<div class="grid-1-2">
 						<label>Model By-Laws</label>
-						<div class="button btn-1" role="button">
-							<div class="icon btn-1">
+						<a href="#">
+							<div class="button btn-1" role="button">
+								<div class="icon btn-1"></div>
+								<div class="text">
+									<p>Download</p>
+									<span class="last-revised">Revision: 03/12/2016</span>
+								</div>
 							</div>
-							<div class="text">
-								<p>Download</p>
-								<span class="last-revised">Revision: 00/00/0000</span>
-							</div>
-						</div>
+						</a>
 					</div>
 					<div class="grid-1-2">
 						<label>Model Scope and Sequence</label>
-						<div class="button btn-2" role="button">
-							<div class="icon btn-2">
+						<a href="#">
+							<div class="button btn-2" role="button">
+								<div class="icon btn-2"></div>
+								<div class="text">
+									<p>Download</p>
+									<span class="last-revised">Revision: 03/12/2016</span>
+								</div>
 							</div>
-							<div class="text">
-								<p>Download</p>
-								<span class="last-revised">Revision: 00/00/0000</span>
-							</div>
+						</a>
+					</div>
+				</div>
+				<a href="#">
+					<div class="button btn-3" role="button">
+						<div class="icon btn-3"></div>
+						<div class="text">
+							<p>Book of Common Prayer (1928)</p>
+							<p href="#">Click to Read</p>
 						</div>
 					</div>
-				</div>
-				<div class="btn-3">
-					<div class="icon btn-3"></div>
-					<div class="text">
-						<p>Book of Common Prayer (1928)</p>
-						<a href="#">Click to Read</a>
-					</div>
-				</div>
+				</a>
 
-				<div class="btn-4">
-					<div class="icon btn-4"></div>
-					<div class="text">
-						<p>Start a Parish</p>
-						<p class="smallcaps">school</p>
+				<a href="#">
+					<div class="button btn-4" role="button">
+						<div class="icon btn-4"></div>
+						<div class="text">
+							<p>Start a Parish</p>
+							<p class="smallcaps">school</p>
+						</div>
 					</div>
-				</div>
+				</a>
 			</section>
 
 			<section class="links bg-grey">

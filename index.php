@@ -41,7 +41,7 @@
 				</div>
 
 				<div class="circle-h3 bg-grey">
-					<h3>Teachers Society of St. Bede</h3>
+					<h3 class="img2">Teachers Society of St. Bede</h3>
 					<div class="grid">
 						<h4 class="smallcaps">ecclesial oversight</h4>
 						<p>

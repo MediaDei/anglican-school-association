@@ -17,7 +17,7 @@
 
 						<div class="post" id="post-<?php the_ID(); ?>">
 							<div class="date">
-								<time><?php the_time(get_option('M j')); ?></time>
+								<time><?php echo get_the_date("M j"); ?></time>
 							</div>
 							<h1><?php the_title(); ?></h1>
 							<?php the_excerpt(); ?>

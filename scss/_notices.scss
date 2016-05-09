@@ -10,9 +10,19 @@ section.notices{
 									inset 0px 0px 25px 0px rgba(white,8);
 			padding: 30px 20px;
 			margin-bottom: 40px;
-			border-radius: 4px;  
+			border-radius: 4px; 
+			&:before{//date shadow
+				content: "";
+				position: absolute;
+				top: 24px;
+				left: 2px;
+				height: 75px;
+				width: 2px;
+				box-shadow: 0px 0px 3px 3px rgba(black,0.5); 
+				z-index: -1;
+			} 
 			div.date{
-				width: 70px;
+				width: 75px;
 				height: 70px;
 				padding: 10px;
 				text-align: center;
@@ -20,9 +30,20 @@ section.notices{
 				position: absolute;
 				top: 10%;
 				left: -70px;  
-				border: $post-date-border;
-				border-radius: 4px;
-				color: $post-date-text;
+				border-top: 1px solid $post-date-border;
+				border-bottom: 1px solid $post-date-border;
+				border-left: 1px solid $post-date-border;
+				border-top-left-radius: 4px;
+				border-bottom-left-radius: 4px;
+				box-shadow: inset 0px 0px 8px 4px rgba(white,1),
+													0px 0px 1px 1px rgba(black,0.2);
+				z-index: -2;
+				time{
+					white-space: pre-line;
+					font-size: 1.2em;
+					line-height: 1.2;
+					color: $post-date-text; 
+				}
 			}
 			h1{
 				font-style: italic;
