@@ -9,6 +9,7 @@ html {
   line-height: 1;
   text-rendering: optimizeLegibility; // Chrome & Safari have bad kerning otherwise (fall '15)
   
+  
   a{
   	color: $main-text;
   }
@@ -16,7 +17,7 @@ html {
 
 body{
 	div.page-wrap{
-		min-width: 250px;
+		min-width: $small-breakpoint;
 		max-width: 960px;
 		margin: 0 auto;
 		
@@ -38,6 +39,10 @@ body{
 					background-color: rgba(white,1);
 					margin-bottom: 130px;//push content away from logo
 					box-shadow: 0px 11px 4px -5px rgba(black,0.1);
+					letter-spacing: 12px;
+					@include breakpoint(medium){
+						letter-spacing: 17px;
+					}
 					&:before{//logo
 						content: "";
 						width: 150px;
@@ -48,7 +53,6 @@ body{
 						bottom: -113px;
 						left: 50%;
 						opacity: 0.2;
-						//z-index: -1;		
 					}
 					&:after{//shadow
 						content: "";
@@ -61,9 +65,6 @@ body{
 						@include background-image(radial-gradient(farthest-side at 50% 0px, rgba(black,0.10), rgba(black,0)));
 						z-index: -1;
 					}
-					@include breakpoint(small){
-						letter-spacing: 17px;
-					}
 					@include breakpoint(medium){
 						width: 70%;
 						margin: 0 auto 150px;
@@ -73,6 +74,23 @@ body{
 						text-transform: none;
 						letter-spacing: 1px;
 						font-size:0.8em; 
+					}
+				}
+				p.dropcaps{
+					width: 70%;
+					margin: 0 auto;
+					padding: 20px 0px;
+					line-height: 1.3; 
+					&:first-letter{
+						font-size: 3em;
+						float: left;
+						margin-left: -1em;
+					}
+					@include breakpoint(medium){
+						width: 70%;
+					}
+					@include breakpoint(large){
+						width: 50%;
 					}
 				}
 				div.img{
@@ -93,15 +111,20 @@ body{
 				}
 				div.circle-h3{
 					border-bottom: 1px solid $lightest-border;
-					padding: 100px 0px 50px;
+					padding: 120px 0px 50px;
 					h3{//heading with circle image
 						position: relative;
+						font-size: 1.7em;
+						text-align: center; 
 						width: 98%;
-						margin: 0 auto 60px;
+						margin: 60px auto;
 						font-style: italic;
 						border-bottom: 1px solid $border;
 						padding-bottom: 10px;
 						box-shadow: 0px 5px 5px -5px rgba(black,0.3);
+						@include breakpoint(large){
+							margin-top: 0px;
+						}
 						&:nth-of-type(1){
 							&:before{
 								background: url("../images/oval1.jpg") no-repeat center center / 100% auto;	
@@ -122,24 +145,42 @@ body{
 								background: url("../images/oval4.jpg") no-repeat center center / 100% auto;	
 							}
 						}
-						&:before{
+						&:before{//cirle-image
 							content: "";
 							width: 130px;
 							height: 130px;
 							position: absolute;
-							top: -24px;
-							left: 25px;
+							top: -370%;
+							left: 50%;
+							@include transform(translateX(-50%));
 							border-radius: 100%;
 							border: 1px solid $border;
 							box-shadow: inset 0px 1px 2px 1px rgba(black,0.3);
+							@include breakpoint(large){
+								top: -24px;
+								left: 85px;
+							}
 						}
 					}
 					div.grid{ 
-						width: 65%;
+						width: 90%;
 						margin: 0 auto 40px;
+						@include breakpoint(large){
+							width: 60%;
+						}
 						h4{
 							float: left;
 							width: 25%;
+							white-space: pre-wrap; 
+							line-height: 0.6;
+							padding-right: 10px;
+							@include hyphens(auto);
+							@include breakpoint(medium){
+								line-height: 1;
+								white-space: normal;
+								
+							 
+							} 
 						}
 						p{
 							float: left;
@@ -152,38 +193,72 @@ body{
 						}
 					}
 				}
-				div.centered-button{
-					display: table;
-					margin: 20px auto;
-					border-radius: 4px;
-					padding: 10px 30px;
-					text-shadow: 0px 2px 0px rgba(white,0.5);
-					border: 1px solid $border;
-					background-color: $button;
-					font-size: 1.1em;
-					cursor: pointer;
-					box-shadow: 0px 1px 3px rgba(black,0.5);
-					position: relative;
-					&:before{
-						content: "";
-						position: absolute;
-						top: 0;
-						left: 0; 
-						width: 100%;
-						height: 100%; 
-						border-radius: 4px; 
-						   
-						@include background-image(linear-gradient(rgba(white,0) 70%,rgba(123,123,123,0.15),rgba(black,0.2))); 
+				ul{
+					padding: 0px 40px;
+					line-height: 1.3;
+					&.top-level{
+						padding-top: 20px;
+						border-top: 2px solid lighten($lightest-border,8%);
+						@include breakpoint(medium){
+							padding: 20px 0px 0px;
+						}
 					}
-					&:hover{
-						background-color: darken($button,2%);
+					li{
+						margin-bottom: 5px; 
+						span{
+							padding-right: 0.5em;
+							&.fa-check{
+								color: $fa-check;
+							}
+						}
+						ul{
+							margin-top: 5px;
+							li{
+								span.fa-minus{
+									color: inherit;
+									font-size: 0.6em;
+								}
+							}
+						}		
 					}
-					&:active{
+				}
+				div.line-wrapper{
+					//height: 5px;
+					//border-top: 1px solid $lightest-border;
+					//border-bottom: 1px solid $lightest-border;
+					div.centered-button{
+						display: table;
+						margin: 20px auto;
+						border-radius: 4px;
+						padding: 10px 30px;
+						text-shadow: 0px 2px 0px rgba(white,0.5);
+						border: 1px solid $border;
+						background-color: $button;
+						font-size: 1.1em;
+						cursor: pointer;
+						box-shadow: 0px 1px 3px rgba(black,0.5);
 						position: relative;
-						top: 1px;
-						box-shadow: 0px 1px 2px rgba(black,0.5);
-						background-color: darken($button,4%);
-					} 
+						&:before{
+							content: "";
+							position: absolute;
+							top: 0;
+							left: 0; 
+							width: 100%;
+							height: 100%; 
+							border-radius: 4px; 
+							   
+							@include background-image(linear-gradient(rgba(white,0) 70%,rgba(123,123,123,0.15),rgba(black,0.2))); 
+						}
+						&:hover{
+							background-color: darken($button,2%);
+						}
+						&:active{
+							position: relative;
+							top: 1px;
+							box-shadow: 0px 1px 2px rgba(black,0.5);
+							background-color: darken($button,4%);
+						} 
+					}
 				}
 			}
 		}

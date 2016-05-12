@@ -27,7 +27,6 @@ header{
 						box-shadow: 0px 1px 3px rgba(black,0.5);
 						border-radius: 100%;
 						position: absolute;
-						//@include transform(translateY(-50%));
 						@include transform(translateX(-50%));
 						top: -35%;
 						left: 50%;
@@ -38,7 +37,7 @@ header{
 						margin: 0 auto;
 						&:before{//logo
 							top: -40%;
-							left: 14%;
+							left: 12%;
 						}
 					}
 					@include breakpoint(large){
@@ -60,19 +59,12 @@ header{
 		}
 		&.banner{
 			div.banner{
-				@include breakpoint(very-small){
-					background: url("../images/apply-banner.png") no-repeat center center / 100% auto;
-					position: absolute;
-					top: 0%;
-					right: 0%;
-					width: 82px;
-					height: 110px;
-				}
-				@include breakpoint(small){
-					width: 110px;
-					height: 150px;
-					
-				}
+				background: url("../images/apply-banner.png") no-repeat center center / 100% auto;
+				position: absolute;
+				top: 0%;
+				right: 0%;
+				width: 110px;
+				height: 150px;
 				@include breakpoint(large){
 					@include transform(translateY(-50%));
 					top: 2%;
@@ -107,6 +99,16 @@ header{
 		}
 		a{
 			position: relative;
+			width: 33.3%;
+      float: left;
+      border-right: 1px solid $nav-button-border;
+      box-shadow: inset 2px 0px 1px rgba(white,0.7);
+      &:nth-of-type(3),&:last-of-type{
+      	border-right: none;
+      }
+      &:nth-of-type(4),&:nth-of-type(5),&:last-of-type{
+      	border-bottom: 1px solid $nav-button-border;
+      }
 			&:before,&:after{
 				content: "";
 				position: absolute;
@@ -144,25 +146,6 @@ header{
 				}
 
 			}
-			@include breakpoint(very-small){
-				float: left;
-				width: 50%;
-				border-right: 1px solid $nav-button-border;
-	      box-shadow: inset 2px 0px 1px rgba(white,0.7);
-	      &:nth-of-type(5),&:last-of-type{
-	      	border-bottom: 1px solid $nav-button-border;
-	      }
-			}
-			@include breakpoint(small){ 
-	      width: 33.3%;
-	      
-	      &:nth-of-type(3),&:last-of-type{
-	      	border-right: none;
-	      }
-	      &:nth-of-type(4),&:nth-of-type(5){
-	      	border-bottom: 1px solid $nav-button-border;
-	      }
-	    }
 	    @include breakpoint(large){ 
 	      width: 16.5%;
 	      height: 70px;
@@ -228,13 +211,31 @@ header{
 		border-bottom: 1px solid $border; 
 		box-shadow: 0px 19px 8px -15px rgba(black, 0.5);
 		&.about{
-			background: black url("../images/about-hero.jpg") no-repeat center center / 120% auto; 
+			background: black url("../images/about-hero.jpg") no-repeat center center / 220% auto; 
+			@include breakpoint(medium){
+				background-size: 170% auto;
+			}
+			@include breakpoint(large){
+				background-size: 127% auto;
+			}
 		}
 		&.resources{
-			background: black url("../images/resources-hero.jpg") no-repeat center center / 120% auto;
+			background: black url("../images/resources-hero.jpg") no-repeat center center / 213% auto;
+			@include breakpoint(medium){
+				background-size: 166% auto;
+			}
+			@include breakpoint(large){
+				background-size: 124% auto;
+			}
 		}
 		&.apply{
-			background: black url("../images/apply-hero.jpg") no-repeat center center / 120% auto;
+			background: black url("../images/apply-hero.jpg") no-repeat center center / 213% auto;
+			@include breakpoint(medium){
+				background-size: 166% auto;
+			}
+			@include breakpoint(large){
+				background-size: 124% auto;
+			}
 		}
 	}
 }

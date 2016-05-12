@@ -2,6 +2,8 @@ section.members{
 	h3{
 		font-style: italic;
 		margin-bottom: 30px;
+		font-size: 1.7em;
+		text-align: center;
 		&.home-members{
 			border-bottom: 1px solid $lightest-border;
 			width: 280px;
@@ -60,6 +62,10 @@ section.members{
 		div.post{
 			padding-bottom: 5px;
 			padding-left: 20px;
+			min-height: 70px;
+			@include breakpoint(large){
+				min-height: auto; 
+			} 
 			&.border{
 				border-right: 1px solid $lightest-border;
 				padding-left: 80px;

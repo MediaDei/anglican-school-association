@@ -1,9 +1,14 @@
 section.welcome{
 	div.img.welcome{
-		background: url("../images/about-members.jpg") no-repeat center center / 130% auto;
+		background: url("../images/about-members.jpg") no-repeat center center / 100% auto;
+		@include breakpoint(medium){
+			width: 138%;
+		}
+		@include breakpoint(large){
+			width: 102%;
+		}
 	}
 	p.dropcaps{
-		width: 50%;
 		margin-bottom: 80px;
 	}
 	div.centered-button{

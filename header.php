@@ -61,7 +61,7 @@
 					and acceptance</span>
 				</a>
 
-				<a href="/members/#anchor-1">
+				<a href="/members#anchor-1">
 					<span>Members</span>
 					<span>Schools in
 					the ASA</span>

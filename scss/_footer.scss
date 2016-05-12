@@ -1,10 +1,16 @@
 footer{
 	height: 140px;
-	background: url("../images/marble-texture.png") no-repeat center center / 100% auto;	
+	background: url("../images/marble-texture.png") black no-repeat left center / 192% auto;	
 	overflow: hidden;
 	margin-bottom: 10px;
 	text-shadow: 0px 1px 2px rgba(black,0.5); 
 	color: white;
+	@include breakpoint(medium){
+		background-size: 152% auto;  
+	}
+	@include breakpoint(large){
+		background-size: 112% auto;  
+	}
 	div.text-left{
 		position: relative;
 		top: 50%;
@@ -14,7 +20,7 @@ footer{
 		h1{
 			text-align: center;
 			text-transform: uppercase;
-			margin: 0px 0px 0px 150px; 
+			margin: 0px 0px 0px 110px; 
 			&:first-of-type{
 				position: relative;
 				border-bottom: 1px solid $border;
@@ -25,7 +31,7 @@ footer{
 					display: inline-block;
 					width: 80px;
 					height: 80px;
-					//background: url("../images/logo-bw.png") no-repeat center center / 100% auto;
+					background: url("../images/logo-bw.png") no-repeat center center / 100% auto;
 					position: absolute;
 					left: -90px;
 					top: 90%;
@@ -45,8 +51,14 @@ footer{
 		@include transform(translateY(-50%));
 		text-align: right;
 		float: right;
-		padding-right: 300px;
+		padding-right: 10px; 
 		text-shadow: 0px 3px 4px rgba(black,0.8);
+		@include breakpoint(medium){
+			padding-right: 110px;
+		}
+		@include breakpoint(large){
+			padding-right: 300px;
+		}
 		
 		p{
 			font-style: italic;
@@ -57,7 +69,7 @@ footer{
 					display: inline-block;
 					width: 70px;
 					height: 70px;
-					//background: url("../images/logo2-bw.png") no-repeat center center / 100% auto;
+					background: url("../images/logo2-bw.png") no-repeat center center / 100% auto;
 					position: absolute;
 					right: -100px;
 				}
