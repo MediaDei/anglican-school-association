@@ -30,7 +30,7 @@
 						</p>
 					</div>
 					<div class="grid">
-						<h4 class="smallcaps">parish Life</h4>
+						<h4 class="smallcaps">parish life</h4>
 						<p>
 							Education is most effective when it is closely engaged with the life of the local parish, and an integral component and extension of a wholesome and devout family life, that is actively engaged in the community of an Anglican parish.
 						</p>
@@ -59,7 +59,7 @@
 					<div class="grid">
 						<h4 class="smallcaps">scope & sequence</h4>
 						<p>
-							<a href="#">Click here to read the Scope & Sequence</a>
+							<a href="/resources">Click here to read the Scope & Sequence</a>
 						</p>
 					</div>
 					<div class="grid">
@@ -74,13 +74,13 @@
 					<div class="grid">
 						<h4 class="smallcaps">faculty competence</h4>
 						<p>
-							The school’s administration, faculty, and staff should be baptized and demonstrate the practice of the Christian faith. The faculty ought to be capable and qualified for the mission of the institution, as measured by earned degrees, competence, effectiveness, capacity, work experience, licensure or certifications, and any relevant honors or awards. 
+							The school’s administration, faculty, and staff should be baptized and demonstrate the practice of the Christian faith. The faculty ought to be capable and qualified for the mission of the institution, as measured by earned degrees, competence, effectiveness, capacity, work experience, licenser or certifications, and any relevant honors or awards. 
 						</p>
 					</div>
 					<div class="grid">
 						<h4 class="smallcaps">professional development</h4>
 						<p>
-							The faculty of the school are to be involved in various levels of professional development, including in-service training, conferences, and education workships to continually remain sharp and attuned to the needs of their students.
+							The faculty of the school are to be involved in various levels of professional development, including in-service training, conferences, and education workshops to continually remain sharp and attuned to the needs of their students.
 						</p>
 					</div>
 				</div>
@@ -89,7 +89,7 @@
 					<div class="grid">
 						<h4 class="smallcaps">by laws</h4>
 						<p>
-							<a href="#">Click here to read the By-laws</a>
+							<a href="/resources">Click here to read the By-laws</a>
 						</p>
 					</div>
 					<div class="grid">

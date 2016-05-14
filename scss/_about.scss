@@ -1,117 +1,84 @@
-section.about{
-	p.dropcaps{
-		&.o{
-			&:first-letter{
-				padding-top: 4px; 
-				padding-right: 0px; 
-				padding-left: 11px;
-			}
-		}
-		&.c{
-			&:first-letter{
-				padding-top: 5px; 
-				padding-right: 0px; 
-				padding-left: 13px;
-			}
-		}
-		&.a{
-			&:first-letter{
-				padding-top: 6px; 
-				padding-right: 0px; 
-				padding-left: 11px;
-			}
-		}
-		&.s{
-			&:first-letter{
-				padding-top: 7px; 
-				padding-right: 0px; 
-				padding-left: 23px;
-			}
-		}
-	}
-	h3{
-		text-align: center;
-		font-size: 1.8em;  
-		span{
-			font-style: italic;
-		}
-	}
-}
-
-
-section.about{
-	div.img.about{
-		background: url("../images/about-about.jpg") no-repeat center center / 100% auto;
-		@include breakpoint(medium){  
-			background-size: 172% auto;
-		} 
-		@include breakpoint(large){  
-			background-size: 127% auto;
-		}
-	}
-}
-section.about-members{
-	padding-top: 75px;
-	h2{
-		background-color: $bg-grey; 
-	}
-	div.img.members{
-		background: url("../images/about-members.jpg") no-repeat center center / 100% auto;
-		@include breakpoint(medium){
-			background-size: 172%;
-		}
-		@include breakpoint(large){
-			background-size: 127%;
-		}  
-	}
-	div.wrapper{
-		border-right: 1px solid $lighter-border;
-		border-left: 1px solid $lighter-border;
-		margin: 0 auto;
-		div.member-info{
-			padding: 25px 0px 70px;
-			@include background-image(linear-gradient(rgba(240,240,240,0.5),rgba(white,0)));
-			@include breakpoint(medium){
-				padding: 25px 70px;
-			} 
-			h3{
-				padding-bottom: 5px;
-				margin: 0px auto;
-			}
-			p.subtext{
-				font-size: 1em;
-				color: $subtext;
+div.about{//page specific
+	section{
+		h3{
+			text-align: center;
+			font-size: 1.8em;  
+			span{
 				font-style: italic;
-				margin: 0px 0px 5px 45px;
-			}	
-		}
-		@include breakpoint(medium){
-			width: 80%;
+			}
 		}
 	}
-}
-section.st-bede{
-	padding-top: 130px;
-	div.img.st-bede{
-		background: url("../images/about-st-bede.jpg") black no-repeat center center / 100% auto; 
-		@include breakpoint(medium){
-			background-size: 172% auto;
+
+
+	section.about{
+		div.img.about{
+			background: url("../images/about-about.jpg") no-repeat center center / 100% auto;
+			@include breakpoint(medium){  
+				background-size: 172% auto;
+			} 
+			@include breakpoint(large){  
+				background-size: 127% auto;
+			}
 		}
-		@include breakpoint(large){
-			background-size: 127% auto;
+	}
+	section.about-members{
+		div.img.members{
+			background: url("../images/about-members.jpg") no-repeat center center / 100% auto;
+			@include breakpoint(medium){
+				background-size: 172%;
+			}
+			@include breakpoint(large){
+				background-size: 127%;
+			}  
+		}
+		div.wrapper{
+			border-right: 1px solid $lighter-border;
+			border-left: 1px solid $lighter-border;
+			margin: 0 auto;
+			div.member-info{
+				padding: 25px 0px 70px;
+				@include background-image(linear-gradient(rgba(240,240,240,0.5),rgba(white,0)));
+				@include breakpoint(medium){
+					padding: 25px 70px;
+				} 
+				h3{
+					padding-bottom: 5px;
+					margin: 0px auto; 
+				}
+				p.subtext{
+					font-size: 1em;
+					color: $subtext;
+					font-style: italic;
+					margin: 0px 0px 5px 45px;
+				}	
+			}
+			@include breakpoint(medium){
+				width: 80%;
+			}
 		}
 	}
-	p.dropcaps{
-		white-space: pre-line;
-		padding-bottom: 50px;
-	}
-	h3{
-		margin: 20px 0px;
-	}
-	ul.top-level{
-		margin: 0px auto 40px;
-		@include breakpoint(medium){
-			width: 75%;
+	section.st-bede{
+		div.img.st-bede{
+			background: url("../images/about-st-bede.jpg") black no-repeat center center / 100% auto; 
+			@include breakpoint(medium){
+				background-size: 172% auto;
+			}
+			@include breakpoint(large){
+				background-size: 127% auto;
+			}
+		}
+		p.dropcaps{
+			white-space: pre-line;
+			padding-bottom: 50px;
+		}
+		h3{
+			margin: 20px 0px;
+		}
+		ul.top-level{
+			margin: 0px auto 40px;
+			@include breakpoint(medium){
+				width: 75%;
+			}
 		}
 	}
 }

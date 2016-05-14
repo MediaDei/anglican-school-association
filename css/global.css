@@ -424,15 +424,12 @@ th {
   width: 20%;
   float: left; }
 
-ul li {
-  list-style: none; }
-
 .bg-grey {
   background-color: #FBFBFB; }
 
 html {
   font-family: "SortsMillGoudy", serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #554F4B;
   line-height: 1;
   text-rendering: optimizeLegibility; }
@@ -444,10 +441,8 @@ body div.page-wrap {
   max-width: 960px;
   margin: 0 auto; }
   body div.page-wrap header {
-    margin: 60px 0px; }
-    @media (min-width: 860px) {
-      body div.page-wrap header {
-        position: relative; } }
+    margin: 60px 0px;
+    position: relative; }
     body div.page-wrap header a div.top {
       margin-bottom: 50px;
       position: relative; }
@@ -498,17 +493,14 @@ body div.page-wrap {
     body div.page-wrap header a.banner div.banner {
       background: url("../images/apply-banner.png") no-repeat center center/100% auto;
       position: absolute;
-      top: 0%;
       right: 0%;
       width: 110px;
-      height: 150px; }
-      @media (min-width: 860px) {
-        body div.page-wrap header a.banner div.banner {
-          -moz-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-          top: 2%; } }
+      height: 150px;
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      top: 0%; }
     body div.page-wrap header nav {
       margin: 0 auto;
       position: relative;
@@ -622,7 +614,7 @@ body div.page-wrap {
             body div.page-wrap header nav a span:first-of-type {
               border-top: none; } }
         body div.page-wrap header nav a span:last-of-type {
-          font-size: 0.6em;
+          font-size: 0.8em;
           text-shadow: 0px 1px 0px white;
           font-style: italic;
           padding: 5px 0px;
@@ -657,17 +649,16 @@ body div.page-wrap {
           body div.page-wrap header div.hero-img.apply {
             background-size: 124% auto; } }
   body div.page-wrap div section {
-    padding: 0px 0px 50px 0px;
+    padding: 100px 0px 50px 0px;
     border-bottom: 1px solid #979797; }
     body div.page-wrap div section:last-of-type {
-      margin-bottom: 150px; }
+      padding-bottom: 0px; }
     body div.page-wrap div section h2 {
       font-size: 2em;
       text-align: center;
       text-transform: uppercase;
       border-bottom: 1px solid #979797;
       position: relative;
-      background-color: white;
       margin-bottom: 130px;
       box-shadow: 0px 11px 4px -5px rgba(0, 0, 0, 0.1);
       letter-spacing: 12px; }
@@ -704,24 +695,40 @@ body div.page-wrap {
         background-image: -webkit-radial-gradient(50% 0px, farthest-side, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
         background-image: radial-gradient(farthest-side at 50% 0px, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
         z-index: -1; }
+      body div.page-wrap div section h2.narrow {
+        letter-spacing: 7px; }
+      body div.page-wrap div section h2.bg-grey {
+        background-color: #FBFBFB; }
       @media (min-width: 640px) {
         body div.page-wrap div section h2 {
           width: 70%;
-          margin: 0 auto 150px; } }
+          margin: 0 auto 130px; } }
       body div.page-wrap div section h2 span {
         font-style: italic;
         text-transform: none;
         letter-spacing: 1px;
         font-size: 0.8em; }
     body div.page-wrap div section p.dropcaps {
-      width: 70%;
+      width: 80%;
       margin: 0 auto;
       padding: 20px 0px;
       line-height: 1.3; }
-      body div.page-wrap div section p.dropcaps:first-letter {
+      @media (min-width: 640px) {
+        body div.page-wrap div section p.dropcaps {
+          width: 70%; } }
+      body div.page-wrap div section p.dropcaps span:first-of-type {
         font-size: 3em;
         float: left;
-        margin-left: -1em; }
+        margin-left: -1em;
+        line-height: 1; }
+        body div.page-wrap div section p.dropcaps span:first-of-type.o {
+          padding-left: 11px; }
+        body div.page-wrap div section p.dropcaps span:first-of-type.c {
+          padding-left: 13px; }
+        body div.page-wrap div section p.dropcaps span:first-of-type.a {
+          padding-left: 11px; }
+        body div.page-wrap div section p.dropcaps span:first-of-type.s {
+          padding-left: 23px; }
       @media (min-width: 640px) {
         body div.page-wrap div section p.dropcaps {
           width: 70%; } }
@@ -741,10 +748,12 @@ body div.page-wrap {
           box-shadow: inset 0px -1px 0px 0px white, inset 0px 1px 0px 0px rgba(0, 0, 0, 0.3), 0px 0px 0px 1px #CBBFA5, 0px 21px 10px -15px rgba(0, 0, 0, 0.5); } }
     body div.page-wrap div section div.circle-h3 {
       border-bottom: 1px solid #CBCBCB;
-      padding: 120px 0px 50px; }
+      padding: 150px 0px 50px; }
+      body div.page-wrap div section div.circle-h3:last-of-type {
+        border-bottom: none; }
       body div.page-wrap div section div.circle-h3 h3 {
         position: relative;
-        font-size: 1.7em;
+        font-size: 1.6em;
         text-align: center;
         width: 98%;
         margin: 60px auto;
@@ -768,7 +777,7 @@ body div.page-wrap {
           width: 130px;
           height: 130px;
           position: absolute;
-          top: -370%;
+          top: -420%;
           left: 50%;
           -moz-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
@@ -786,26 +795,21 @@ body div.page-wrap {
         margin: 0 auto 40px; }
         @media (min-width: 860px) {
           body div.page-wrap div section div.circle-h3 div.grid {
-            width: 60%; } }
+            width: 67%; } }
         body div.page-wrap div section div.circle-h3 div.grid h4 {
           float: left;
           width: 25%;
-          white-space: pre-wrap;
-          line-height: 0.6;
-          padding-right: 10px;
-          -moz-hyphens: auto;
-          -ms-hyphens: auto;
-          -webkit-hyphens: auto;
-          hyphens: auto; }
+          letter-spacing: 0px;
+          white-space: pre-line; }
           @media (min-width: 640px) {
             body div.page-wrap div section div.circle-h3 div.grid h4 {
-              line-height: 1;
-              white-space: normal; } }
+              letter-spacing: 2px; } }
         body div.page-wrap div section div.circle-h3 div.grid p {
           float: left;
           width: 75%;
           line-height: 1.3;
-          margin: 0px; }
+          margin: 0px;
+          padding-left: 5px; }
           body div.page-wrap div section div.circle-h3 div.grid p a {
             color: #3C7BC4 !important; }
     body div.page-wrap div section ul {
@@ -818,19 +822,28 @@ body div.page-wrap {
           body div.page-wrap div section ul.top-level {
             padding: 20px 0px 0px; } }
       body div.page-wrap div section ul li {
+        list-style-image: url("../images/fa-check-bullet.png");
         margin-bottom: 5px; }
-        body div.page-wrap div section ul li span {
-          padding-right: 0.5em; }
-          body div.page-wrap div section ul li span.fa-check {
-            color: #6ED37F; }
         body div.page-wrap div section ul li ul {
-          margin-top: 5px; }
-          body div.page-wrap div section ul li ul li span.fa-minus {
-            color: inherit;
-            font-size: 0.6em; }
-    body div.page-wrap div section div.line-wrapper div.centered-button {
+          margin: 5px 0px 0px 0px;
+          padding: 0px; }
+          body div.page-wrap div section ul li ul li {
+            list-style-type: none;
+            list-style-image: none;
+            list-style-position: outside;
+            padding-left: 1.7em;
+            text-indent: -1.7em; }
+            body div.page-wrap div section ul li ul li:before {
+              content: "\2014\a0";
+              margin-right: 0.5em; }
+  body div.page-wrap div div.line-wrapper {
+    height: 4px;
+    border-top: 1px solid #CBCBCB;
+    border-bottom: 1px solid #CBCBCB;
+    margin: 100px 0px; }
+    body div.page-wrap div div.line-wrapper div.centered-button {
       display: table;
-      margin: 20px auto;
+      margin: 0px auto;
       border-radius: 4px;
       padding: 10px 30px;
       text-shadow: 0px 2px 0px rgba(255, 255, 255, 0.5);
@@ -838,9 +851,13 @@ body div.page-wrap {
       background-color: #FBEFC6;
       font-size: 1.1em;
       cursor: pointer;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
-      position: relative; }
-      body div.page-wrap div section div.line-wrapper div.centered-button:before {
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), 30px 0px 0px 0px white, -30px 0px 0px 0px white;
+      position: relative;
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      body div.page-wrap div div.line-wrapper div.centered-button:before {
         content: "";
         position: absolute;
         top: 0;
@@ -854,411 +871,479 @@ body div.page-wrap {
         background-image: -moz-linear-gradient(rgba(255, 255, 255, 0) 70%, rgba(123, 123, 123, 0.15), rgba(0, 0, 0, 0.2));
         background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0) 70%, rgba(123, 123, 123, 0.15), rgba(0, 0, 0, 0.2));
         background-image: linear-gradient(rgba(255, 255, 255, 0) 70%, rgba(123, 123, 123, 0.15), rgba(0, 0, 0, 0.2)); }
-      body div.page-wrap div section div.line-wrapper div.centered-button:hover {
+      body div.page-wrap div div.line-wrapper div.centered-button:hover {
         background-color: #faecbc; }
-      body div.page-wrap div section div.line-wrapper div.centered-button:active {
+      body div.page-wrap div div.line-wrapper div.centered-button:active {
         position: relative;
         top: 1px;
-        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5), 30px 0px 0px 0px white, -30px 0px 0px 0px white;
         background-color: #faeab3; }
-  body div.page-wrap section.welcome div.img.welcome {
+  body div.page-wrap div.home section.welcome div.img.welcome {
     background: url("../images/about-members.jpg") no-repeat center center/100% auto; }
     @media (min-width: 640px) {
-      body div.page-wrap section.welcome div.img.welcome {
-        width: 138%; } }
+      body div.page-wrap div.home section.welcome div.img.welcome {
+        background-size: 165% auto; } }
     @media (min-width: 860px) {
-      body div.page-wrap section.welcome div.img.welcome {
-        width: 102%; } }
-  body div.page-wrap section.welcome p.dropcaps {
+      body div.page-wrap div.home section.welcome div.img.welcome {
+        background-size: 130% auto; } }
+  body div.page-wrap div.home section.welcome p.dropcaps {
     margin-bottom: 80px; }
-  body div.page-wrap section.welcome div.centered-button {
-    margin-top: 100px; }
-  body div.page-wrap section.welcome h3.img2:before {
+  body div.page-wrap div.home section.welcome h3.img2:before {
     background: url("../images/oval2.jpg") no-repeat center center/100% auto !important; }
-  body div.page-wrap section.about p.dropcaps.o:first-letter {
-    padding-top: 4px;
-    padding-right: 0px;
-    padding-left: 11px; }
-  body div.page-wrap section.about p.dropcaps.c:first-letter {
-    padding-top: 5px;
-    padding-right: 0px;
-    padding-left: 13px; }
-  body div.page-wrap section.about p.dropcaps.a:first-letter {
-    padding-top: 6px;
-    padding-right: 0px;
-    padding-left: 11px; }
-  body div.page-wrap section.about p.dropcaps.s:first-letter {
-    padding-top: 7px;
-    padding-right: 0px;
-    padding-left: 23px; }
-  body div.page-wrap section.about h3 {
+  body div.page-wrap div.about section h3 {
     text-align: center;
     font-size: 1.8em; }
-    body div.page-wrap section.about h3 span {
+    body div.page-wrap div.about section h3 span {
       font-style: italic; }
-  body div.page-wrap section.about div.img.about {
+  body div.page-wrap div.about section.about div.img.about {
     background: url("../images/about-about.jpg") no-repeat center center/100% auto; }
     @media (min-width: 640px) {
-      body div.page-wrap section.about div.img.about {
+      body div.page-wrap div.about section.about div.img.about {
         background-size: 172% auto; } }
     @media (min-width: 860px) {
-      body div.page-wrap section.about div.img.about {
+      body div.page-wrap div.about section.about div.img.about {
         background-size: 127% auto; } }
-  body div.page-wrap section.about-members {
-    padding-top: 75px; }
-    body div.page-wrap section.about-members h2 {
-      background-color: #FBFBFB; }
-    body div.page-wrap section.about-members div.img.members {
-      background: url("../images/about-members.jpg") no-repeat center center/100% auto; }
+  body div.page-wrap div.about section.about-members div.img.members {
+    background: url("../images/about-members.jpg") no-repeat center center/100% auto; }
+    @media (min-width: 640px) {
+      body div.page-wrap div.about section.about-members div.img.members {
+        background-size: 172%; } }
+    @media (min-width: 860px) {
+      body div.page-wrap div.about section.about-members div.img.members {
+        background-size: 127%; } }
+  body div.page-wrap div.about section.about-members div.wrapper {
+    border-right: 1px solid #DFDFDF;
+    border-left: 1px solid #DFDFDF;
+    margin: 0 auto; }
+    body div.page-wrap div.about section.about-members div.wrapper div.member-info {
+      padding: 25px 0px 70px;
+      background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YwZjBmMCIgc3RvcC1vcGFjaXR5PSIwLjUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+      background-size: 100%;
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(240, 240, 240, 0.5)), color-stop(100%, rgba(255, 255, 255, 0)));
+      background-image: -moz-linear-gradient(rgba(240, 240, 240, 0.5), rgba(255, 255, 255, 0));
+      background-image: -webkit-linear-gradient(rgba(240, 240, 240, 0.5), rgba(255, 255, 255, 0));
+      background-image: linear-gradient(rgba(240, 240, 240, 0.5), rgba(255, 255, 255, 0)); }
       @media (min-width: 640px) {
-        body div.page-wrap section.about-members div.img.members {
-          background-size: 172%; } }
-      @media (min-width: 860px) {
-        body div.page-wrap section.about-members div.img.members {
-          background-size: 127%; } }
-    body div.page-wrap section.about-members div.wrapper {
-      border-right: 1px solid #DFDFDF;
-      border-left: 1px solid #DFDFDF;
-      margin: 0 auto; }
-      body div.page-wrap section.about-members div.wrapper div.member-info {
-        padding: 25px 0px 70px;
-        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YwZjBmMCIgc3RvcC1vcGFjaXR5PSIwLjUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
-        background-size: 100%;
-        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(240, 240, 240, 0.5)), color-stop(100%, rgba(255, 255, 255, 0)));
-        background-image: -moz-linear-gradient(rgba(240, 240, 240, 0.5), rgba(255, 255, 255, 0));
-        background-image: -webkit-linear-gradient(rgba(240, 240, 240, 0.5), rgba(255, 255, 255, 0));
-        background-image: linear-gradient(rgba(240, 240, 240, 0.5), rgba(255, 255, 255, 0)); }
-        @media (min-width: 640px) {
-          body div.page-wrap section.about-members div.wrapper div.member-info {
-            padding: 25px 70px; } }
-        body div.page-wrap section.about-members div.wrapper div.member-info h3 {
-          padding-bottom: 5px;
-          margin: 0px auto; }
-        body div.page-wrap section.about-members div.wrapper div.member-info p.subtext {
-          font-size: 1em;
-          color: #827973;
-          font-style: italic;
-          margin: 0px 0px 5px 45px; }
-      @media (min-width: 640px) {
-        body div.page-wrap section.about-members div.wrapper {
-          width: 80%; } }
-  body div.page-wrap section.st-bede {
-    padding-top: 130px; }
-    body div.page-wrap section.st-bede div.img.st-bede {
-      background: url("../images/about-st-bede.jpg") black no-repeat center center/100% auto; }
-      @media (min-width: 640px) {
-        body div.page-wrap section.st-bede div.img.st-bede {
-          background-size: 172% auto; } }
-      @media (min-width: 860px) {
-        body div.page-wrap section.st-bede div.img.st-bede {
-          background-size: 127% auto; } }
-    body div.page-wrap section.st-bede p.dropcaps {
-      white-space: pre-line;
-      padding-bottom: 50px; }
-    body div.page-wrap section.st-bede h3 {
-      margin: 20px 0px; }
-    body div.page-wrap section.st-bede ul.top-level {
-      margin: 0px auto 40px; }
-      @media (min-width: 640px) {
-        body div.page-wrap section.st-bede ul.top-level {
-          width: 75%; } }
-  body div.page-wrap section.accreditation div.list-wrapper {
+        body div.page-wrap div.about section.about-members div.wrapper div.member-info {
+          padding: 25px 70px; } }
+      body div.page-wrap div.about section.about-members div.wrapper div.member-info h3 {
+        padding-bottom: 5px;
+        margin: 0px auto; }
+      body div.page-wrap div.about section.about-members div.wrapper div.member-info p.subtext {
+        font-size: 1em;
+        color: #827973;
+        font-style: italic;
+        margin: 0px 0px 5px 45px; }
+    @media (min-width: 640px) {
+      body div.page-wrap div.about section.about-members div.wrapper {
+        width: 80%; } }
+  body div.page-wrap div.about section.st-bede div.img.st-bede {
+    background: url("../images/about-st-bede.jpg") black no-repeat center center/100% auto; }
+    @media (min-width: 640px) {
+      body div.page-wrap div.about section.st-bede div.img.st-bede {
+        background-size: 172% auto; } }
+    @media (min-width: 860px) {
+      body div.page-wrap div.about section.st-bede div.img.st-bede {
+        background-size: 127% auto; } }
+  body div.page-wrap div.about section.st-bede p.dropcaps {
+    white-space: pre-line;
+    padding-bottom: 50px; }
+  body div.page-wrap div.about section.st-bede h3 {
+    margin: 20px 0px; }
+  body div.page-wrap div.about section.st-bede ul.top-level {
+    margin: 0px auto 40px; }
+    @media (min-width: 640px) {
+      body div.page-wrap div.about section.st-bede ul.top-level {
+        width: 75%; } }
+  body div.page-wrap div.accreditation section.accreditation div.list-wrapper {
+    width: 90%;
     background-color: #EAF3FB;
     margin: 0 auto 20px;
-    padding: 30px 30px;
-    border-top: 1px solid #C4CDD6;
-    border-bottom: 1px solid #C4CDD6;
+    padding: 30px 10px;
+    border: 1px solid #C4CDD6;
     box-shadow: 0px 6px 10px -2px rgba(0, 0, 0, 0.2);
-    line-height: 1.3; }
+    line-height: 1.3;
+    border-radius: 6px; }
     @media (min-width: 640px) {
-      body div.page-wrap section.accreditation div.list-wrapper {
+      body div.page-wrap div.accreditation section.accreditation div.list-wrapper {
         width: 80%;
-        border-radius: 6px;
-        border-left: 1px solid #C4CDD6;
-        border-right: 1px solid #C4CDD6;
-        padding: 30px 70px; } }
-    body div.page-wrap section.accreditation div.list-wrapper ol li {
+        padding: 30px; } }
+    body div.page-wrap div.accreditation section.accreditation div.list-wrapper ol li {
       margin-left: 40px;
       padding-left: 10px; }
-      body div.page-wrap section.accreditation div.list-wrapper ol li:first-of-type {
+      body div.page-wrap div.accreditation section.accreditation div.list-wrapper ol li:first-of-type {
         margin-top: 10px; }
-  body div.page-wrap section.accreditation div.circle-h3 h3.h3-1:before {
+  body div.page-wrap div.accreditation section.accreditation div.circle-h3 h3.h3-1:before {
     background: url("../images/oval1.jpg") no-repeat center center/100% auto; }
-  body div.page-wrap section.accreditation div.circle-h3 h3.h3-2:before {
+  body div.page-wrap div.accreditation section.accreditation div.circle-h3 h3.h3-2:before {
     background: url("../images/oval2.jpg") no-repeat center center/100% auto; }
-  body div.page-wrap section.accreditation div.circle-h3 h3.h3-3:before {
+  body div.page-wrap div.accreditation section.accreditation div.circle-h3 h3.h3-3:before {
     background: url("../images/oval3.jpg") no-repeat center center/100% auto; }
-  body div.page-wrap section.accreditation div.circle-h3 h3.h3-4:before {
+  body div.page-wrap div.accreditation section.accreditation div.circle-h3 h3.h3-4:before {
     background: url("../images/oval4.jpg") no-repeat center center/100% auto; }
-  body div.page-wrap section.members h3 {
-    font-style: italic;
-    margin-bottom: 30px;
-    font-size: 1.7em;
-    text-align: center; }
-    body div.page-wrap section.members h3.home-members {
-      border-bottom: 1px solid #CBCBCB;
-      width: 280px;
-      margin: 0 auto; }
-  body div.page-wrap section.members div.wrapper {
-    width: 280px;
-    margin: 0 auto;
-    padding-top: 10px; }
-    body div.page-wrap section.members div.wrapper div.text {
-      margin: 0px auto 10px;
-      float: left; }
-      body div.page-wrap section.members div.wrapper div.text p {
-        margin: 0px 0px 5px; }
-    body div.page-wrap section.members div.wrapper a div.icon {
-      width: 50px;
-      height: 43px;
-      float: left;
-      margin-left: 10px;
-      background-color: #EBF1FA;
-      border: 1px solid #CCD8E3;
-      text-align: center;
-      border-radius: 5px;
-      box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
-      padding-top: 3px;
-      background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VjZWNlYyIgc3RvcC1vcGFjaXR5PSIwLjUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0YjRiNGIiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-      background-size: 100%;
-      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(236, 236, 236, 0.5)), color-stop(100%, rgba(75, 75, 75, 0.25)));
-      background-image: -moz-linear-gradient(rgba(236, 236, 236, 0.5), rgba(75, 75, 75, 0.25));
-      background-image: -webkit-linear-gradient(rgba(236, 236, 236, 0.5), rgba(75, 75, 75, 0.25));
-      background-image: linear-gradient(rgba(236, 236, 236, 0.5), rgba(75, 75, 75, 0.25));
-      cursor: pointer; }
-      body div.page-wrap section.members div.wrapper a div.icon:active {
-        position: relative;
-        top: 1px;
-        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2); }
-      body div.page-wrap section.members div.wrapper a div.icon span {
-        font-size: 0.5em;
-        display: block; }
-        body div.page-wrap section.members div.wrapper a div.icon span.fa {
-          color: #A1A7B1;
-          font-size: 1.3em;
-          text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); }
-  body div.page-wrap section.members div.centered-button {
-    margin: 80px auto; }
-  body div.page-wrap section.members div.posts {
-    margin: 0 auto 40px;
-    column-count: 2; }
-    body div.page-wrap section.members div.posts div.post {
-      padding-bottom: 5px;
-      padding-left: 20px;
-      min-height: 70px; }
-      @media (min-width: 860px) {
-        body div.page-wrap section.members div.posts div.post {
-          min-height: auto; } }
-      body div.page-wrap section.members div.posts div.post.border {
-        border-right: 1px solid #CBCBCB;
-        padding-left: 80px; }
-      body div.page-wrap section.members div.posts div.post a div.post-content {
-        padding: 5px 10px;
-        border-radius: 4px;
-        display: table; }
-        body div.page-wrap section.members div.posts div.post a div.post-content h1 {
-          float: left; }
-        body div.page-wrap section.members div.posts div.post a div.post-content address {
-          float: left;
-          margin-left: 10px;
-          color: #9C9794; }
-        body div.page-wrap section.members div.posts div.post a div.post-content:hover {
-          background-color: #FAFDFF;
-          cursor: pointer;
-          box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3); }
-  body div.page-wrap section.members div.full-posts div.featured-member {
-    width: 98%;
-    margin: 0 auto;
-    background-color: #FAFDFF;
-    margin-bottom: 100px;
-    border: 1px solid #C9D2DA;
-    border-radius: 4px;
-    padding: 40px 30px 25px;
-    box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.2); }
-    body div.page-wrap section.members div.full-posts div.featured-member h1 {
-      text-align: center;
+  body div.page-wrap div.members section.members {
+    border-bottom: none; }
+    body div.page-wrap div.members section.members h3 {
       font-style: italic;
-      font-size: 2em;
-      padding-bottom: 8px; }
-    body div.page-wrap section.members div.full-posts div.featured-member address.top {
-      display: table;
-      margin: 0 auto;
-      padding-bottom: 40px;
-      position: relative; }
-      body div.page-wrap section.members div.full-posts div.featured-member address.top a {
-        color: #3C7BC4; }
-        body div.page-wrap section.members div.full-posts div.featured-member address.top a:hover {
-          text-decoration: underline; }
-      body div.page-wrap section.members div.full-posts div.featured-member address.top:before {
-        content: "";
-        position: absolute;
-        top: 8px;
-        left: -60px;
-        width: 50px;
-        height: 3px;
-        border-top: 1px solid #979797; }
-      body div.page-wrap section.members div.full-posts div.featured-member address.top:after {
-        content: "";
-        position: absolute;
-        top: 8px;
-        right: -60px;
-        width: 50px;
-        height: 3px;
-        border-top: 1px solid #979797; }
-    body div.page-wrap section.members div.full-posts div.featured-member div.member-img {
-      width: 90%;
-      height: 360px;
-      margin: 0 auto 30px;
-      border: 7px solid white;
-      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4);
-      overflow: hidden; }
-      body div.page-wrap section.members div.full-posts div.featured-member div.member-img img {
-        width: 100%;
-        height: auto; }
-    body div.page-wrap section.members div.full-posts div.featured-member div.grid {
-      width: 90%;
-      margin: 0 auto; }
-      body div.page-wrap section.members div.full-posts div.featured-member div.grid h4 {
-        font-style: italic;
-        font-size: 1.3em;
+      margin-bottom: 30px;
+      font-size: 1.7em;
+      text-align: center; }
+      body div.page-wrap div.members section.members h3.home-members {
         border-bottom: 1px solid #CBCBCB;
-        width: 95%;
-        padding: 0px 0px 3px 10px; }
-      body div.page-wrap section.members div.full-posts div.featured-member div.grid div.grid-2-3 p, body div.page-wrap section.members div.full-posts div.featured-member div.grid div.grid-1-3 p {
-        white-space: pre-line; }
-      body div.page-wrap section.members div.full-posts div.featured-member div.grid div.grid-2-3 {
-        border-right: 1px solid #979797;
-        font-size: 0.9em; }
-        body div.page-wrap section.members div.full-posts div.featured-member div.grid div.grid-2-3 p {
-          padding: 0px 10px;
-          color: #777370;
-          line-height: 1.1; }
-      body div.page-wrap section.members div.full-posts div.featured-member div.grid div.grid-1-3 {
-        font-size: 0.9em;
-        padding-left: 10px; }
-        body div.page-wrap section.members div.full-posts div.featured-member div.grid div.grid-1-3 p {
-          padding-left: 10px;
-          line-height: 0.7; }
-        body div.page-wrap section.members div.full-posts div.featured-member div.grid div.grid-1-3 address {
-          padding-bottom: 0px; }
-          body div.page-wrap section.members div.full-posts div.featured-member div.grid div.grid-1-3 address span {
-            margin: 10px 0px;
-            padding-left: 10px;
-            display: block; }
-            body div.page-wrap section.members div.full-posts div.featured-member div.grid div.grid-1-3 address span.email-address a:hover, body div.page-wrap section.members div.full-posts div.featured-member div.grid div.grid-1-3 address span.phone-number a:hover {
-              text-decoration: underline; }
-            body div.page-wrap section.members div.full-posts div.featured-member div.grid div.grid-1-3 address span.email-address a {
-              color: #3C7BC4; }
-            body div.page-wrap section.members div.full-posts div.featured-member div.grid div.grid-1-3 address span.email-address:before {
-              content: "Email: "; }
-            body div.page-wrap section.members div.full-posts div.featured-member div.grid div.grid-1-3 address span.phone-number:before {
-              content: "Phone: "; }
-            body div.page-wrap section.members div.full-posts div.featured-member div.grid div.grid-1-3 address span a {
-              color: #777370;
-              text-decoration: none; }
-    body div.page-wrap section.members div.full-posts div.featured-member a div.centered-button {
-      margin-top: 50px; }
-  body div.page-wrap section.notices div.posts {
-    border-right: 1px solid #979797;
-    box-shadow: 8px 0px 6px -6px rgba(0, 0, 0, 0.2); }
-    body div.page-wrap section.notices div.posts div.post {
-      position: relative;
-      width: 96%;
-      background-color: #F9F6F2;
-      box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.3), inset 0px 0px 25px 0px white;
-      padding: 30px 20px;
-      margin-bottom: 40px;
-      border-radius: 4px; }
-      body div.page-wrap section.notices div.posts div.post:before {
-        content: "";
-        position: absolute;
-        top: 24px;
-        left: 2px;
-        height: 75px;
-        width: 2px;
-        box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
-        z-index: -1; }
-      body div.page-wrap section.notices div.posts div.post div.date {
-        width: 75px;
-        height: 70px;
-        padding: 10px;
+        width: 280px;
+        margin: 0 auto; }
+    body div.page-wrap div.members section.members div.wrapper {
+      width: 280px;
+      height: 70px;
+      margin: 0 auto;
+      padding-top: 10px; }
+      body div.page-wrap div.members section.members div.wrapper div.text {
+        margin: 0px auto;
+        float: left; }
+        body div.page-wrap div.members section.members div.wrapper div.text p {
+          margin: 0px 0px 5px; }
+      body div.page-wrap div.members section.members div.wrapper a div.icon {
+        width: 50px;
+        height: 43px;
+        float: left;
+        margin-left: 10px;
+        background-color: #EBF1FA;
+        border: 1px solid #CCD8E3;
         text-align: center;
-        background-color: #D3E5EF;
-        position: absolute;
-        top: 10%;
-        left: -70px;
-        border-top: 1px solid #C4CBCE;
-        border-bottom: 1px solid #C4CBCE;
-        border-left: 1px solid #C4CBCE;
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px;
-        box-shadow: inset 0px 0px 8px 4px white, 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
-        z-index: -2; }
-        body div.page-wrap section.notices div.posts div.post div.date time {
-          white-space: pre-line;
-          font-size: 1.2em;
-          line-height: 1.2;
-          color: #736963; }
-      body div.page-wrap section.notices div.posts div.post h1 {
+        border-radius: 5px;
+        box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+        padding-top: 3px;
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VjZWNlYyIgc3RvcC1vcGFjaXR5PSIwLjUiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0YjRiNGIiIHN0b3Atb3BhY2l0eT0iMC4yNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+        background-size: 100%;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(236, 236, 236, 0.5)), color-stop(100%, rgba(75, 75, 75, 0.25)));
+        background-image: -moz-linear-gradient(rgba(236, 236, 236, 0.5), rgba(75, 75, 75, 0.25));
+        background-image: -webkit-linear-gradient(rgba(236, 236, 236, 0.5), rgba(75, 75, 75, 0.25));
+        background-image: linear-gradient(rgba(236, 236, 236, 0.5), rgba(75, 75, 75, 0.25));
+        cursor: pointer; }
+        body div.page-wrap div.members section.members div.wrapper a div.icon:active {
+          position: relative;
+          top: 1px;
+          box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2); }
+        body div.page-wrap div.members section.members div.wrapper a div.icon span {
+          font-size: 0.5em;
+          display: block; }
+          body div.page-wrap div.members section.members div.wrapper a div.icon span.fa {
+            color: #A1A7B1;
+            font-size: 1.3em;
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25); }
+    body div.page-wrap div.members section.members div.posts {
+      margin: 0 auto 40px; }
+      body div.page-wrap div.members section.members div.posts div.post {
+        padding-bottom: 5px;
+        padding-left: 20px;
+        min-height: 70px; }
+        @media (min-width: 860px) {
+          body div.page-wrap div.members section.members div.posts div.post {
+            min-height: auto; } }
+        body div.page-wrap div.members section.members div.posts div.post.border {
+          border-right: 1px solid #CBCBCB; }
+        body div.page-wrap div.members section.members div.posts div.post a div.post-content {
+          padding: 5px 10px;
+          border-radius: 4px;
+          display: table; }
+          @media (min-width: 1000px) {
+            body div.page-wrap div.members section.members div.posts div.post a div.post-content h1 {
+              float: left; } }
+          body div.page-wrap div.members section.members div.posts div.post a div.post-content address {
+            color: #9C9794; }
+            @media (min-width: 1000px) {
+              body div.page-wrap div.members section.members div.posts div.post a div.post-content address {
+                margin-left: 10px;
+                float: left; } }
+          body div.page-wrap div.members section.members div.posts div.post a div.post-content:hover {
+            background-color: #FAFDFF;
+            cursor: pointer;
+            box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3); }
+    body div.page-wrap div.members section.members div.full-posts div.featured-member {
+      background-color: #FAFDFF;
+      margin-bottom: 100px;
+      border-top: 1px solid #C9D2DA;
+      border-bottom: 1px solid #C9D2DA;
+      box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.2);
+      padding: 40px 0px 25px; }
+      @media (min-width: 640px) {
+        body div.page-wrap div.members section.members div.full-posts div.featured-member {
+          width: 98%;
+          margin: 0 auto;
+          border-left: 1px solid #C9D2DA;
+          border-right: 1px solid #C9D2DA;
+          border-radius: 4px;
+          padding: 40px 30px 25px; } }
+      body div.page-wrap div.members section.members div.full-posts div.featured-member h1 {
+        text-align: center;
         font-style: italic;
-        font-size: 1.5em;
-        color: #554F4B;
-        margin-bottom: 10px; }
-      body div.page-wrap section.notices div.posts div.post p {
-        line-height: 1.3;
-        color: #665F5A;
-        padding-left: 10px; }
-      body div.page-wrap section.notices div.posts div.post a.expand {
-        float: right;
-        color: #006FCD; }
-  body div.page-wrap section.notices aside.filter {
-    padding-left: 20px; }
-    body div.page-wrap section.notices aside.filter p.smallcaps {
-      letter-spacing: 3px;
-      font-size: 1.2em; }
-    body div.page-wrap section.notices aside.filter ul {
-      margin-left: 0px; }
-      body div.page-wrap section.notices aside.filter ul li {
-        font-size: 18px; }
-        body div.page-wrap section.notices aside.filter ul li input {
-          margin-right: 10px; }
-  body div.page-wrap section.resources a {
-    margin-bottom: 60px;
-    display: block; }
-    body div.page-wrap section.resources a div.button {
+        font-size: 2em;
+        padding-bottom: 8px; }
+      body div.page-wrap div.members section.members div.full-posts div.featured-member address.top {
+        display: table;
+        margin: 0 auto;
+        padding-bottom: 40px;
+        position: relative; }
+        body div.page-wrap div.members section.members div.full-posts div.featured-member address.top a {
+          color: #3C7BC4; }
+          body div.page-wrap div.members section.members div.full-posts div.featured-member address.top a:hover {
+            text-decoration: underline; }
+        body div.page-wrap div.members section.members div.full-posts div.featured-member address.top:before {
+          content: "";
+          position: absolute;
+          top: 8px;
+          left: -60px;
+          width: 50px;
+          height: 3px;
+          border-top: 1px solid #979797; }
+        body div.page-wrap div.members section.members div.full-posts div.featured-member address.top:after {
+          content: "";
+          position: absolute;
+          top: 8px;
+          right: -60px;
+          width: 50px;
+          height: 3px;
+          border-top: 1px solid #979797; }
+      body div.page-wrap div.members section.members div.full-posts div.featured-member div.member-img {
+        height: 360px;
+        margin: 0 auto 30px;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4); }
+        @media (min-width: 640px) {
+          body div.page-wrap div.members section.members div.full-posts div.featured-member div.member-img {
+            width: 90%;
+            border: 7px solid white; } }
+        body div.page-wrap div.members section.members div.full-posts div.featured-member div.member-img img {
+          width: 122%;
+          height: auto; }
+      body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid {
+        width: 90%;
+        margin: 0 auto; }
+        body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid h4 {
+          font-style: italic;
+          font-size: 1.3em;
+          border-bottom: 1px solid #CBCBCB;
+          width: 95%;
+          padding: 0px 0px 3px 10px; }
+        body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-2-3 p, body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 p {
+          white-space: pre-line; }
+        body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-2-3 {
+          width: 100%; }
+          @media (min-width: 640px) {
+            body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-2-3 {
+              width: 66%;
+              border-right: 1px solid #979797; } }
+          body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-2-3 p {
+            padding: 0px 10px;
+            color: #777370;
+            line-height: 1.1; }
+        body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 {
+          width: 100%; }
+          @media (min-width: 640px) {
+            body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 {
+              width: 33%;
+              padding-left: 10px; } }
+          body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 div.grades, body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 div.contact {
+            float: left;
+            width: 50%; }
+            @media (min-width: 640px) {
+              body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 div.grades, body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 div.contact {
+                float: none;
+                width: 100%; } }
+          body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 div.grades {
+            border-right: 1px solid #979797; }
+            @media (min-width: 640px) {
+              body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 div.grades {
+                border-right: none; } }
+            body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 div.grades p {
+              padding-left: 10px;
+              line-height: 0.7; }
+          body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 div.contact {
+            padding-left: 5px; }
+            @media (min-width: 640px) {
+              body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 div.contact {
+                padding-left: 0px; } }
+            body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 div.contact address {
+              padding-bottom: 0px;
+              word-wrap: break-word; }
+              body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 div.contact address span {
+                margin: 10px 0px;
+                padding-left: 10px;
+                display: block; }
+                body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 div.contact address span.email-address a:hover, body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 div.contact address span.phone-number a:hover {
+                  text-decoration: underline; }
+                body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 div.contact address span.email-address a {
+                  color: #3C7BC4; }
+                body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 div.contact address span.email-address:before {
+                  content: "Email: "; }
+                body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 div.contact address span.phone-number:before {
+                  content: "Phone: "; }
+                body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid div.grid-1-3 div.contact address span a {
+                  color: #777370;
+                  text-decoration: none; }
+      body div.page-wrap div.members section.members div.full-posts div.featured-member div.line-wrapper {
+        border: none;
+        margin: 50px 0px; }
+  body div.page-wrap div.notices section.notices {
+    border-bottom: none; }
+    body div.page-wrap div.notices section.notices aside.filter.grid-1-3 {
+      width: 100%;
+      padding-bottom: 60px; }
+      @media (min-width: 640px) {
+        body div.page-wrap div.notices section.notices aside.filter.grid-1-3 {
+          padding-left: 20px;
+          width: 33%;
+          float: right; } }
+      body div.page-wrap div.notices section.notices aside.filter.grid-1-3 p.smallcaps {
+        text-align: center;
+        letter-spacing: 3px;
+        font-size: 1.2em; }
+        @media (min-width: 640px) {
+          body div.page-wrap div.notices section.notices aside.filter.grid-1-3 p.smallcaps {
+            text-align: left; } }
+      body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul {
+        display: table;
+        margin: 0 auto;
+        padding: 0px 0px 0px 20px; }
+        @media (min-width: 640px) {
+          body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul {
+            padding: 0px 20px;
+            display: block;
+            margin: 0px; } }
+        body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul li {
+          list-style-image: none;
+          list-style-type: none;
+          float: left;
+          width: 50%; }
+          @media (min-width: 640px) {
+            body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul li {
+              float: none;
+              width: 100%; } }
+          body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul li input {
+            margin-right: 10px; }
+    body div.page-wrap div.notices section.notices div.posts.grid-2-3 {
+      width: 100%;
+      box-shadow: 8px 0px 6px -6px rgba(0, 0, 0, 0.2); }
+      @media (min-width: 640px) {
+        body div.page-wrap div.notices section.notices div.posts.grid-2-3 {
+          width: 66%;
+          border-right: 1px solid #979797; } }
+      body div.page-wrap div.notices section.notices div.posts.grid-2-3 div.post {
+        position: relative;
+        width: 96%;
+        background-color: #F9F6F2;
+        box-shadow: 0px 2px 5px -1px rgba(0, 0, 0, 0.3), inset 0px 0px 25px 0px white;
+        padding: 30px 20px;
+        margin-bottom: 80px;
+        border-radius: 4px; }
+        body div.page-wrap div.notices section.notices div.posts.grid-2-3 div.post:before {
+          content: "";
+          position: absolute;
+          top: 2px;
+          left: 20px;
+          height: 2px;
+          width: 75px;
+          box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
+          z-index: -1; }
+          @media (min-width: 1110px) {
+            body div.page-wrap div.notices section.notices div.posts.grid-2-3 div.post:before {
+              top: 19px;
+              left: 2px;
+              height: 75px;
+              width: 2px; } }
+        body div.page-wrap div.notices section.notices div.posts.grid-2-3 div.post div.date {
+          width: 75px;
+          height: 70px;
+          padding: 10px;
+          text-align: center;
+          background-color: #D3E5EF;
+          position: absolute;
+          top: -63px;
+          left: 20px;
+          border: 1px solid #C4CBCE;
+          border-radius: 4px;
+          box-shadow: inset 0px 0px 8px 4px white, 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+          z-index: -2; }
+          @media (min-width: 1110px) {
+            body div.page-wrap div.notices section.notices div.posts.grid-2-3 div.post div.date {
+              top: 22px;
+              left: -70px; } }
+          body div.page-wrap div.notices section.notices div.posts.grid-2-3 div.post div.date time {
+            white-space: pre-line;
+            font-size: 1.3em;
+            line-height: 1.2;
+            color: #736963; }
+        body div.page-wrap div.notices section.notices div.posts.grid-2-3 div.post h1 {
+          font-style: italic;
+          font-size: 1.5em;
+          color: #554F4B;
+          margin-bottom: 10px; }
+        body div.page-wrap div.notices section.notices div.posts.grid-2-3 div.post div.post-content {
+          height: 96px;
+          margin-bottom: 20px;
+          overflow: hidden; }
+          body div.page-wrap div.notices section.notices div.posts.grid-2-3 div.post div.post-content p {
+            line-height: 1.3;
+            color: #665F5A;
+            padding-left: 10px; }
+        body div.page-wrap div.notices section.notices div.posts.grid-2-3 div.post a.expand {
+          float: right;
+          color: #006FCD; }
+  body div.page-wrap div.resources section.resources a {
+    display: table;
+    margin: 0px auto 20px; }
+    @media (min-width: 860px) {
+      body div.page-wrap div.resources section.resources a {
+        margin-bottom: 60px; } }
+    body div.page-wrap div.resources section.resources a div.button {
       cursor: pointer;
       margin: 0 auto;
       border-radius: 4px;
       position: relative;
-      box-shadow: 0px 2px 12px -3px rgba(0, 0, 0, 0.5); }
-      body div.page-wrap section.resources a div.button:before, body div.page-wrap section.resources a div.button:after {
+      box-shadow: 0px 2px 7px -3px rgba(0, 0, 0, 0.5); }
+      body div.page-wrap div.resources section.resources a div.button:before, body div.page-wrap div.resources section.resources a div.button:after {
         content: "";
         width: 100%;
         height: 100%;
         position: absolute;
         top: 0%;
         left: 0%; }
-      body div.page-wrap section.resources a div.button:active {
+      body div.page-wrap div.resources section.resources a div.button:before {
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VhZWFlYSIgc3RvcC1vcGFjaXR5PSIwLjQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1ZjVmNWYiIHN0b3Atb3BhY2l0eT0iMC4zIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+        background-size: 100%;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(234, 234, 234, 0.4)), color-stop(100%, rgba(95, 95, 95, 0.3)));
+        background-image: -moz-linear-gradient(rgba(234, 234, 234, 0.4), rgba(95, 95, 95, 0.3));
+        background-image: -webkit-linear-gradient(rgba(234, 234, 234, 0.4), rgba(95, 95, 95, 0.3));
+        background-image: linear-gradient(rgba(234, 234, 234, 0.4), rgba(95, 95, 95, 0.3));
+        border-radius: 4px; }
+      body div.page-wrap div.resources section.resources a div.button:active {
         top: 1px;
-        box-shadow: 0px 2px 7px -3px rgba(0, 0, 0, 0.5); }
-      body div.page-wrap section.resources a div.button div.icon {
+        box-shadow: 0px 2px 5px -3px rgba(0, 0, 0, 0.5); }
+      body div.page-wrap div.resources section.resources a div.button div.icon {
         -moz-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         top: 50%;
         position: relative;
-        box-shadow: 0px 2px 10px -3px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.5);
         float: left;
         padding: 0px; }
-        body div.page-wrap section.resources a div.button div.icon:before, body div.page-wrap section.resources a div.button div.icon:after {
+        body div.page-wrap div.resources section.resources a div.button div.icon:before, body div.page-wrap div.resources section.resources a div.button div.icon:after {
           content: "";
           width: 100%;
           height: 100%;
           position: absolute;
           top: 0%;
           left: 0%; }
-      body div.page-wrap section.resources a div.button div.text {
+        body div.page-wrap div.resources section.resources a div.button div.icon:before {
+          background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjEiLz48c3RvcCBvZmZzZXQ9IjQ1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjQiLz48c3RvcCBvZmZzZXQ9IjQ2JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9Ijk3JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+          background-size: 100%;
+          background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.1)), color-stop(45%, rgba(255, 255, 255, 0.4)), color-stop(46%, rgba(0, 0, 0, 0)), color-stop(97%, rgba(0, 0, 0, 0.1)));
+          background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4) 45%, rgba(0, 0, 0, 0) 46%, rgba(0, 0, 0, 0.1) 97%);
+          background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4) 45%, rgba(0, 0, 0, 0) 46%, rgba(0, 0, 0, 0.1) 97%);
+          background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4) 45%, rgba(0, 0, 0, 0) 46%, rgba(0, 0, 0, 0.1) 97%); }
+      body div.page-wrap div.resources section.resources a div.button div.text {
         float: left;
         padding-left: 20px;
         -moz-transform: translateY(-50%);
@@ -1267,164 +1352,229 @@ body div.page-wrap {
         transform: translateY(-50%);
         top: 50%;
         position: relative; }
-        body div.page-wrap section.resources a div.button div.text p {
+        body div.page-wrap div.resources section.resources a div.button div.text p {
           margin: 0px; }
-  body div.page-wrap section.resources div.wrapper {
+  body div.page-wrap div.resources section.resources div.wrapper {
     width: 80%;
     margin: 0 auto; }
-    body div.page-wrap section.resources div.wrapper label {
-      display: table;
-      margin: 0 auto;
-      font-style: italic;
-      font-size: 1.3em;
-      padding-bottom: 10px; }
-    body div.page-wrap section.resources div.wrapper div.button {
-      text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
-      width: 300px;
-      height: 92px;
-      padding: 0px 20px; }
-      body div.page-wrap section.resources div.wrapper div.button:before {
-        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VhZWFlYSIgc3RvcC1vcGFjaXR5PSIwLjQiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1ZjVmNWYiIHN0b3Atb3BhY2l0eT0iMC40Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
-        background-size: 100%;
-        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(234, 234, 234, 0.4)), color-stop(100%, rgba(95, 95, 95, 0.4)));
-        background-image: -moz-linear-gradient(rgba(234, 234, 234, 0.4), rgba(95, 95, 95, 0.4));
-        background-image: -webkit-linear-gradient(rgba(234, 234, 234, 0.4), rgba(95, 95, 95, 0.4));
-        background-image: linear-gradient(rgba(234, 234, 234, 0.4), rgba(95, 95, 95, 0.4));
-        border-radius: 4px; }
-      body div.page-wrap section.resources div.wrapper div.button.btn-1 {
-        background-color: #DFE8ED;
-        border: 1px solid #AEB7BA; }
-      body div.page-wrap section.resources div.wrapper div.button.btn-2 {
-        background-color: #EBEDDF;
-        border: 1px solid #A0A391; }
-      body div.page-wrap section.resources div.wrapper div.button div.icon {
-        width: 70px;
-        height: 70px;
-        border-radius: 4px; }
-        body div.page-wrap section.resources div.wrapper div.button div.icon:before {
-          background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjQiLz48c3RvcCBvZmZzZXQ9IjUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjxzdG9wIG9mZnNldD0iNTIuNSUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
-          background-size: 100%;
-          background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.4)), color-stop(5%, rgba(255, 255, 255, 0)), color-stop(52.5%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.4)));
-          background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 5%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
-          background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 5%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
-          background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 5%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
-          border-radius: 4px; }
-        body div.page-wrap section.resources div.wrapper div.button div.icon.btn-1 {
-          background-color: #76ABC4; }
-          body div.page-wrap section.resources div.wrapper div.button div.icon.btn-1:after {
-            background: url("../images/download-icon.png") no-repeat center center/70% auto; }
-        body div.page-wrap section.resources div.wrapper div.button div.icon.btn-2 {
-          background-color: #C4B976; }
-          body div.page-wrap section.resources div.wrapper div.button div.icon.btn-2:after {
-            background: url("../images/download-icon2.png") no-repeat center center/70% auto; }
-      body div.page-wrap section.resources div.wrapper div.button div.text p {
-        font-size: 1.4em;
-        letter-spacing: 1.5px; }
-      body div.page-wrap section.resources div.wrapper div.button div.text span {
-        font-style: italic; }
-  body div.page-wrap section.resources div.btn-3 {
-    width: 90%;
+    body div.page-wrap div.resources section.resources div.wrapper div.grid-1-2 {
+      width: 100%;
+      float: none;
+      margin: 0 auto; }
+      @media (min-width: 860px) {
+        body div.page-wrap div.resources section.resources div.wrapper div.grid-1-2 {
+          width: 50%;
+          float: left; } }
+      body div.page-wrap div.resources section.resources div.wrapper div.grid-1-2 label {
+        display: table;
+        margin: 0 auto;
+        font-style: italic;
+        font-size: 1.6em;
+        padding-bottom: 10px; }
+      body div.page-wrap div.resources section.resources div.wrapper div.grid-1-2 div.button {
+        text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
+        width: 300px;
+        height: 92px;
+        padding: 0px 20px; }
+        body div.page-wrap div.resources section.resources div.wrapper div.grid-1-2 div.button.btn-1 {
+          background-color: #DFE8ED;
+          border: 1px solid #AEB7BA; }
+        body div.page-wrap div.resources section.resources div.wrapper div.grid-1-2 div.button.btn-2 {
+          background-color: #EBEDDF;
+          border: 1px solid #A0A391; }
+        body div.page-wrap div.resources section.resources div.wrapper div.grid-1-2 div.button div.icon {
+          width: 70px;
+          height: 70px;
+          border-radius: 4px;
+          margin-right: 10px; }
+          body div.page-wrap div.resources section.resources div.wrapper div.grid-1-2 div.button div.icon:before {
+            border-radius: 4px; }
+          body div.page-wrap div.resources section.resources div.wrapper div.grid-1-2 div.button div.icon.btn-1 {
+            background-color: #76ABC4;
+            border: 1px solid #8498A0; }
+            body div.page-wrap div.resources section.resources div.wrapper div.grid-1-2 div.button div.icon.btn-1:after {
+              background: url("../images/download-icon.png") no-repeat center center/70% auto; }
+          body div.page-wrap div.resources section.resources div.wrapper div.grid-1-2 div.button div.icon.btn-2 {
+            background-color: #C4B976;
+            border: 1px solid #8498A0; }
+            body div.page-wrap div.resources section.resources div.wrapper div.grid-1-2 div.button div.icon.btn-2:after {
+              background: url("../images/download-icon2.png") no-repeat center center/70% auto; }
+        body div.page-wrap div.resources section.resources div.wrapper div.grid-1-2 div.button div.text {
+          text-align: center; }
+          body div.page-wrap div.resources section.resources div.wrapper div.grid-1-2 div.button div.text p {
+            font-size: 1.6em;
+            letter-spacing: 1.7px;
+            padding-bottom: 5px; }
+          body div.page-wrap div.resources section.resources div.wrapper div.grid-1-2 div.button div.text span {
+            font-style: italic;
+            font-size: 1.1em; }
+  body div.page-wrap div.resources section.resources div.bcp {
+    width: 95%;
+    margin: 20px auto 40px;
     background-color: #FCF9FA;
     border: 1px solid #C5B9BF;
-    height: 140px;
-    padding: 0px 180px; }
-    body div.page-wrap section.resources div.btn-3 div.icon {
-      width: 90px;
-      height: 90px;
-      border-radius: 100%;
-      background-color: #CDBFC9;
-      float: left;
-      border: 1px solid #B4A0A1;
-      box-shadow: inset 0px 0px 0px 1px white, 0px 2px 10px -3px rgba(0, 0, 0, 0.5); }
-      body div.page-wrap section.resources div.btn-3 div.icon:after {
-        background: url("../images/bcp-icon.png") no-repeat center center/68% auto; }
-    body div.page-wrap section.resources div.btn-3 div.text p:first-of-type {
-      font-size: 1.6em;
-      padding-bottom: 8px; }
-    body div.page-wrap section.resources div.btn-3 div.text p:nth-of-type(2) {
-      color: #3C7BC4;
-      text-decoration: underline;
-      font-style: italic;
-      font-size: 1.3em; }
-  body div.page-wrap section.resources div.btn-4 {
-    width: 50%;
+    border-radius: 4px;
+    height: 140px; }
+    @media (min-width: 860px) {
+      body div.page-wrap div.resources section.resources div.bcp {
+        width: 90%;
+        margin-bottom: 80px; } }
+    body div.page-wrap div.resources section.resources div.bcp div.content-wrap {
+      display: table;
+      margin: 0 auto;
+      padding: 25px 0px; }
+      body div.page-wrap div.resources section.resources div.bcp div.content-wrap div.icon {
+        position: relative;
+        margin-right: 10px;
+        float: left;
+        padding: 0px;
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+        background-color: #CDBFC9;
+        float: left;
+        border: 1px solid #B4A0A1;
+        box-shadow: inset 0px 0px 0px 1px white, 0px 6px 6px -3px rgba(0, 0, 0, 0.5); }
+        body div.page-wrap div.resources section.resources div.bcp div.content-wrap div.icon:before, body div.page-wrap div.resources section.resources div.bcp div.content-wrap div.icon:after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0%;
+          left: 0%; }
+        body div.page-wrap div.resources section.resources div.bcp div.content-wrap div.icon:before {
+          background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjEiLz48c3RvcCBvZmZzZXQ9IjMyLjMzMzMzJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjUiLz48c3RvcCBvZmZzZXQ9IjY0LjY2NjY3JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9Ijk3JSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjEiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+          background-size: 100%;
+          background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0.1)), color-stop(32.33333%, rgba(255, 255, 255, 0.5)), color-stop(64.66667%, rgba(0, 0, 0, 0)), color-stop(97%, rgba(0, 0, 0, 0.1)));
+          background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 97%);
+          background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 97%);
+          background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 97%);
+          border-radius: 100%; }
+        body div.page-wrap div.resources section.resources div.bcp div.content-wrap div.icon:after {
+          background: url("../images/bcp-icon.png") no-repeat center center/68% auto; }
+      body div.page-wrap div.resources section.resources div.bcp div.content-wrap div.text {
+        display: table;
+        float: left;
+        padding-top: 20px; }
+        body div.page-wrap div.resources section.resources div.bcp div.content-wrap div.text p {
+          margin: 0px;
+          font-size: 1.6em;
+          padding: 0px 0px 8px; }
+        body div.page-wrap div.resources section.resources div.bcp div.content-wrap div.text a {
+          display: table;
+          color: #3C7BC4;
+          text-decoration: underline;
+          font-style: italic;
+          font-size: 1.2em;
+          letter-spacing: 1px;
+          margin: 0px; }
+          @media (min-width: 640px) {
+            body div.page-wrap div.resources section.resources div.bcp div.content-wrap div.text a {
+              font-size: 1.3em; } }
+  body div.page-wrap div.resources section.resources div.btn-3 {
+    width: 400px;
     background-color: #E8F5EC;
     border: 1px solid #90A58E;
     height: 115px;
-    padding: 0px 110px; }
-    body div.page-wrap section.resources div.btn-4 div.icon {
+    padding: 0px 78px; }
+    body div.page-wrap div.resources section.resources div.btn-3 div.icon {
       width: 65px;
       height: 65px;
       border-radius: 4px;
       background-color: #B95756;
       border: 1px solid #924645; }
-      body div.page-wrap section.resources div.btn-4 div.icon:after {
+      body div.page-wrap div.resources section.resources div.btn-3 div.icon:after {
         background: url("../images/trophy-icon.png") no-repeat center center/70% auto; }
-    body div.page-wrap section.resources div.btn-4 div.text {
+    body div.page-wrap div.resources section.resources div.btn-3 div.text {
       padding-bottom: 5px; }
-      body div.page-wrap section.resources div.btn-4 div.text p {
+      body div.page-wrap div.resources section.resources div.btn-3 div.text p {
         text-shadow: 0px 2px 0px white; }
-        body div.page-wrap section.resources div.btn-4 div.text p:first-of-type {
+        body div.page-wrap div.resources section.resources div.btn-3 div.text p:first-of-type {
           margin: 0px 0px 8px;
           border-bottom: 1px solid #CBCBCB;
+          box-shadow: 0px 1px 0px white;
           font-style: italic;
           font-size: 1.6em;
-          padding-bottom: 3px; }
-        body div.page-wrap section.resources div.btn-4 div.text p:nth-of-type(2) {
+          padding: 0px 0px 3px 7px; }
+        body div.page-wrap div.resources section.resources div.btn-3 div.text p:nth-of-type(2) {
           margin: 0px;
           font-size: 2.3em;
           letter-spacing: 6.5px;
-          line-height: 0.4; }
-  body div.page-wrap section.links {
-    padding-top: 70px; }
-    body div.page-wrap section.links h2 {
-      background-color: #FBFBFB; }
-    body div.page-wrap section.links ul {
-      width: 500px;
-      margin: 0 auto 40px; }
-      body div.page-wrap section.links ul h4 {
-        font-style: italic;
-        font-size: 1.3em;
-        margin-bottom: 5px; }
-      body div.page-wrap section.links ul li a {
-        color: #3C7BC4; }
-        body div.page-wrap section.links ul li a:hover {
-          text-decoration: underline; }
-  body div.page-wrap section.apply ul.top-level {
-    width: 70%;
-    margin: 0px auto 40px;
-    padding-top: 40px; }
-  body div.page-wrap section.apply h3 {
+          line-height: 0.4;
+          padding-left: 3px; }
+  body div.page-wrap div.resources section.links ul {
+    width: 500px;
+    margin: 0 auto 40px; }
+    body div.page-wrap div.resources section.links ul li {
+      list-style-image: none;
+      list-style-type: none; }
+    body div.page-wrap div.resources section.links ul h4 {
+      font-style: italic;
+      font-size: 1.3em;
+      margin-bottom: 5px; }
+    body div.page-wrap div.resources section.links ul li a {
+      color: #3C7BC4; }
+      body div.page-wrap div.resources section.links ul li a:hover {
+        text-decoration: underline; }
+  body div.page-wrap div.apply section.apply ul.top-level, body div.page-wrap div.apply section.why-parish-schools ul.top-level {
+    padding-bottom: 30px; }
+    @media (min-width: 640px) {
+      body div.page-wrap div.apply section.apply ul.top-level, body div.page-wrap div.apply section.why-parish-schools ul.top-level {
+        width: 70%;
+        margin: 0 auto;
+        padding-left: 23px; } }
+  body div.page-wrap div.apply section.apply h3 {
     width: 70%;
     margin: 0 auto;
+    text-align: center;
+    font-size: 1.8em;
     padding-bottom: 5px; }
-  body div.page-wrap section.apply div.wrapper a.grid-1-2 {
+  body div.page-wrap div.apply section.apply div.wrapper a.grid-1-2 {
+    display: block;
+    width: 100%;
     text-align: center;
     color: #3C7BC4;
-    font-size: 1.2em; }
-    body div.page-wrap section.apply div.wrapper a.grid-1-2:after {
+    font-size: 1.2em;
+    border-top: 1px solid #CBCBCB;
+    border-bottom: 1px solid #CBCBCB;
+    letter-spacing: 2px;
+    padding: 8px 0px; }
+    @media (min-width: 860px) {
+      body div.page-wrap div.apply section.apply div.wrapper a.grid-1-2:first-of-type {
+        box-shadow: 20px 0px 0px 10px white; } }
+    body div.page-wrap div.apply section.apply div.wrapper a.grid-1-2:last-of-type {
+      border-top: none; }
+      @media (min-width: 860px) {
+        body div.page-wrap div.apply section.apply div.wrapper a.grid-1-2:last-of-type {
+          border-top: 1px solid #CBCBCB;
+          box-shadow: -20px 0px 0px 10px white; } }
+    @media (min-width: 860px) {
+      body div.page-wrap div.apply section.apply div.wrapper a.grid-1-2 {
+        width: 50%;
+        border-top: 1px solid #CBCBCB;
+        border-bottom: 1px solid #CBCBCB; } }
+    body div.page-wrap div.apply section.apply div.wrapper a.grid-1-2:after {
       content: "→";
       padding-left: 10px; }
-  body div.page-wrap section.why-parish-schools {
-    padding-top: 100px; }
-    body div.page-wrap section.why-parish-schools h2 {
-      background-color: #FBFBFB; }
-    body div.page-wrap section.why-parish-schools ul {
-      border: none;
-      padding-top: 0px; }
+  body div.page-wrap div.apply section.why-parish-schools ul.top-level {
+    border: none;
+    padding-top: 0px;
+    padding-bottom: 100px; }
 body footer {
-  height: 140px;
-  background: url("../images/marble-texture.png") black no-repeat left center/192% auto;
+  margin-top: 100px;
+  height: 90px;
+  background: url("../images/marble-texture.png") black no-repeat left center/196% auto;
   overflow: hidden;
-  margin-bottom: 10px;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   color: white; }
   @media (min-width: 640px) {
     body footer {
-      background-size: 152% auto; } }
+      background-size: 130% auto;
+      height: 120px; } }
   @media (min-width: 860px) {
     body footer {
-      background-size: 112% auto; } }
+      background-size: 112% auto;
+      height: 140px; } }
   body footer div.text-left {
     position: relative;
     top: 50%;
@@ -1437,29 +1587,51 @@ body footer {
     body footer div.text-left h1 {
       text-align: center;
       text-transform: uppercase;
-      margin: 0px 0px 0px 110px; }
+      margin: 0px 0px 0px 80px; }
+      @media (min-width: 640px) {
+        body footer div.text-left h1 {
+          margin: 0px 0px 0px 110px; } }
+      @media (min-width: 640px) {
+        body footer div.text-left h1 {
+          margin: 0px 0px 0px 140px; } }
       body footer div.text-left h1:first-of-type {
         position: relative;
         border-bottom: 1px solid #979797;
         letter-spacing: 6px;
         font-size: 1.3em; }
+        @media (min-width: 860px) {
+          body footer div.text-left h1:first-of-type {
+            font-size: 2em; } }
         body footer div.text-left h1:first-of-type:before {
           content: "";
           display: inline-block;
-          width: 80px;
-          height: 80px;
+          width: 60px;
+          height: 60px;
           background: url("../images/logo-bw.png") no-repeat center center/100% auto;
           position: absolute;
-          left: -90px;
+          left: -70px;
           top: 90%;
           -moz-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
           -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
+          @media (min-width: 640px) {
+            body footer div.text-left h1:first-of-type:before {
+              width: 80px;
+              height: 80px;
+              left: -90px; } }
+          @media (min-width: 860px) {
+            body footer div.text-left h1:first-of-type:before {
+              width: 100px;
+              height: 100px;
+              left: -115px; } }
       body footer div.text-left h1:nth-of-type(2) {
         font-size: 0.8em;
         letter-spacing: 1px;
         padding-top: 5px; }
+        @media (min-width: 860px) {
+          body footer div.text-left h1:nth-of-type(2) {
+            font-size: 1.2em; } }
   body footer div.text-right {
     position: relative;
     top: 50%;
@@ -1469,28 +1641,46 @@ body footer {
     transform: translateY(-50%);
     text-align: right;
     float: right;
-    padding-right: 10px;
+    padding-right: 80px;
     text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.8); }
     @media (min-width: 640px) {
       body footer div.text-right {
         padding-right: 110px; } }
     @media (min-width: 860px) {
       body footer div.text-right {
-        padding-right: 300px; } }
+        padding-right: 120px; } }
     body footer div.text-right p {
       font-style: italic;
       margin: 0px 0px 5px;
-      position: relative; }
+      position: relative;
+      font-size: 1em; }
+      @media (min-width: 860px) {
+        body footer div.text-right p {
+          font-size: 1.5em; } }
       body footer div.text-right p:after {
         content: "";
         display: inline-block;
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
         background: url("../images/logo2-bw.png") no-repeat center center/100% auto;
         position: absolute;
-        right: -100px; }
+        right: -70px; }
+        @media (min-width: 640px) {
+          body footer div.text-right p:after {
+            right: -100px;
+            width: 70px;
+            height: 70px; } }
+        @media (min-width: 860px) {
+          body footer div.text-right p:after {
+            width: 90px;
+            height: 90px; } }
     body footer div.text-right ul {
       font-style: none; }
       body footer div.text-right ul li {
         font-size: 0.6em;
-        margin-bottom: 5px; }
+        margin-bottom: 5px;
+        list-style-image: none;
+        list-style-type: none; }
+        @media (min-width: 860px) {
+          body footer div.text-right ul li {
+            font-size: 0.8em; } }

@@ -7,7 +7,7 @@
 
 			<section class="welcome">
 				<h2>welcome</h2>
-				<p class="dropcaps a"><span class="smallcaps">Anglican schools association</span> supports member schools in fulfilling the spiritual, intellectual, and moral objectives of an Anglican educational program by certifying that established standards to that end have been met and will be sustained by a continuous process of self-evaluation and self-improvement.  
+				<p class="dropcaps"><span class="smallcaps a">A</span><span class="smallcaps">nglican schools association</span> supports member schools in fulfilling the spiritual, intellectual, and moral objectives of an Anglican educational program by certifying that established standards to that end have been met and will be sustained by a continuous process of self-evaluation and self-improvement.  
 				</p>
 
 				<div role="image" class="img welcome"></div>
@@ -60,12 +60,9 @@
 						</p>
 					</div>
 				</div>
-				<div class="line-wrapper">
-					<a href="/apply"><div role="button" class="centered-button">Apply to Join</div></a>
-				</div>
-				
 			</section>
-
-			
+			<div class="line-wrapper">
+				<a href="/apply"><div role="button" class="centered-button">Apply to Join</div></a>
+			</div>
 		</div>
 		<?php get_footer(); ?>

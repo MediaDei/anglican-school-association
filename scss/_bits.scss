@@ -28,10 +28,10 @@ $dl-btn-2-icon-fill: #C4B976;
 $dl-btn-2-border: #A0A391;
 $dl-btn-2-icon-border: #8498A0;
 
-$dl-btn-3-fill: #FCF9FA;
-$dl-btn-3-icon-fill: #CDBFC9;
-$dl-btn-3-border: #C5B9BF;
-$dl-btn-3-icon-border: #B4A0A1;
+$bcp-fill: #FCF9FA;
+$bcp-icon-fill: #CDBFC9;
+$bcp-border: #C5B9BF;
+$bcp-icon-border: #B4A0A1;
 
 $dl-btn-4-fill: #E8F5EC;
 $dl-btn-4-icon-fill: #B95756;
@@ -71,15 +71,13 @@ $member-featured-school-text: #777370;
 
 
 //RWD Break Points
-$very-small-breakpoint: 265px;
 $small-breakpoint: 500px;
 $medium-breakpoint: 640px;
 $large-breakpoint: 860px;
+$very-large-breakpoint: 1000px;
+$largest-breakpoint: 1110px;
 @mixin breakpoint($point) {
-  @if $point == very-small {
-    @media (min-width: $very-small-breakpoint) { @content; }
-  }
-  @else if $point == small {
+  @if $point == small {
     @media (min-width: $small-breakpoint)  { @content; }
   }
   @else if $point == medium {
@@ -90,6 +88,9 @@ $large-breakpoint: 860px;
   }
   @else if $point == very-large {
     @media (min-width: $very-large-breakpoint)  { @content; }
+  }
+  @else if $point == largest {
+    @media (min-width: $largest-breakpoint)  { @content; }
   }
 }
 
@@ -170,13 +171,6 @@ $large-breakpoint: 860px;
 .grid-1-5{
   width: 20%;
   float: left; 
-}
-
-//disable link-style for li in ul
-ul{
-  li{
-    list-style: none;
-  }
 }
 
 

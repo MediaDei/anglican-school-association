@@ -1,43 +1,62 @@
-section.apply{
-	ul.top-level{
-		width: 70%;
-		margin: 0px auto 40px;
-		padding-top: 40px;
-		li{
-			ul{
-				//width: 70%;
+div.apply{//page specific
+	section.apply,section.why-parish-schools{
+		ul.top-level{
+			padding-bottom: 30px; 
+			@include breakpoint(medium){
+				width: 70%;
+				margin: 0 auto;
+				padding-left: 23px;
 			}
 		}
 	}
-}
-
-section.apply{
-	h3{
-		width: 70%;
-		margin: 0 auto;
-		padding-bottom: 5px;
-	}
-	div.wrapper{
-		a.grid-1-2{
+	section.apply{
+		h3{
+			width: 70%;
+			margin: 0 auto;
 			text-align: center;
-			color: $link;
-			font-size: 1.2em;
-			//border-top: 1px solid $lighter-border;
-			//border-bottom: 1px solid $lighter-border;
-			&:after{
-				content:"→";
-				padding-left: 10px;
+			font-size: 1.8em; 
+			padding-bottom: 5px;
+		}
+		div.wrapper{
+			a.grid-1-2{
+				display: block;
+				width: 100%;
+				text-align: center;
+				color: $link;
+				font-size: 1.2em;
+				border-top: 1px solid $lightest-border;
+				border-bottom: 1px solid $lightest-border; 
+				letter-spacing: 2px;
+				padding: 8px 0px; 
+				&:first-of-type{
+					@include breakpoint(large){
+						box-shadow: 20px 0px 0px 10px rgba(white,1);
+					}
+				} 
+				&:last-of-type{
+					border-top: none;
+					@include breakpoint(large){
+						border-top: 1px solid $lightest-border;
+						box-shadow: -20px 0px 0px 10px rgba(white,1);
+					} 
+				}
+				@include breakpoint(large){
+					width: 50%;
+					border-top: 1px solid $lightest-border;
+					border-bottom: 1px solid $lightest-border; 
+				}
+				&:after{
+					content:"→";
+					padding-left: 10px;
+				}
 			}
 		}
 	}
-}
-section.why-parish-schools{
-	padding-top: 100px;
-	h2{
-		background-color: $bg-grey; 
-	}
-	ul{
-		border: none;
-		padding-top: 0px; 
+	section.why-parish-schools{
+		ul.top-level{
+			border: none;
+			padding-top: 0px;
+			padding-bottom: 100px;
+		}
 	}
 }

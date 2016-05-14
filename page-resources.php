@@ -33,19 +33,20 @@
 						</a>
 					</div>
 				</div>
+
+				<div class="bcp">
+					<div class="content-wrap">
+						<div class="icon"></div>
+						<div class="text">
+							<p>Book of Common Prayer (1928)</p>
+							<a href="#">Click to Read</a>
+						</div>
+					</div>
+				</div>
+
 				<a href="#">
 					<div class="button btn-3" role="button">
 						<div class="icon btn-3"></div>
-						<div class="text">
-							<p>Book of Common Prayer (1928)</p>
-							<p href="#">Click to Read</p>
-						</div>
-					</div>
-				</a>
-
-				<a href="#">
-					<div class="button btn-4" role="button">
-						<div class="icon btn-4"></div>
 						<div class="text">
 							<p>Start a Parish</p>
 							<p class="smallcaps">school</p>
@@ -55,7 +56,7 @@
 			</section>
 
 			<section class="links bg-grey">
-				<h2>links</h2>
+				<h2 class="bg-grey">links</h2>
 
 				<ul><h4>Classical Education</h4>
 					<li><a href="#">The What and Why of a Classical Education</a></li>

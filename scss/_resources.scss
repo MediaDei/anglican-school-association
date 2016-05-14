@@ -1,32 +1,17 @@
-section.resources{
-	a{
-		margin-bottom: 60px;
-		display: block;
-		div.button{
-			cursor: pointer;
-			margin: 0 auto;
-			border-radius: 4px;
-			position: relative;
-			box-shadow: 0px 2px 12px -3px rgba(black,0.5);
-			&:before,&:after{
-				content:"";
-				width: 100%;
-				height: 100%;
-				position: absolute;
-				top: 0%;
-				left: 0%;
+div.resources{//page specific
+	section.resources{
+		a{
+			display: table;
+			margin: 0px auto 20px; 
+			@include breakpoint(large){
+				margin-bottom: 60px; 
 			}
-			&:active{
-				top: 1px;
-				box-shadow: 0px 2px 7px -3px rgba(black,0.5);
-			}
-			div.icon{
-				@include transform(translateY(-50%));
-				top: 50%;
+			div.button{
+				cursor: pointer;
+				margin: 0 auto;
+				border-radius: 4px;
 				position: relative;
-				box-shadow: 0px 2px 10px -3px rgba(black,0.5);
-				float: left;
-				padding: 0px;
+				box-shadow: 0px 2px 7px -3px rgba(black,0.5);
 				&:before,&:after{
 					content:"";
 					width: 100%;
@@ -35,179 +20,248 @@ section.resources{
 					top: 0%;
 					left: 0%;
 				}
-			}
-			div.text{
-				float: left;
-				padding-left: 20px;
-				@include transform(translateY(-50%));
-				top: 50%;
-				position: relative;
-				p{
-					margin: 0px;
-				}
-			}
-		}
-	}
-
-
-
-	div.wrapper{
-		width: 80%;
-		margin: 0 auto;
-		label{
-			display: table;
-			margin: 0 auto;
-			font-style: italic;
-			font-size: 1.3em;  
-			padding-bottom: 10px;
-		}
-		div.button{
-			text-shadow: 0px 1px 0px rgba(white,0.5);
-			width: 300px;
-			height: 92px;
-			padding: 0px 20px;
-			&:before{
-				@include background-image(linear-gradient(rgba(234,234,234,0.4),rgba(95,95,95,0.4)));
-				border-radius: 4px; 
-			}
-			&.btn-1{
-				background-color: $dl-btn-1-fill;
-				border: 1px solid $dl-btn-1-border;
-				 
-			}
-			&.btn-2{
-				background-color: $dl-btn-2-fill;
-				border: 1px solid $dl-btn-2-border;
-				 
-			}
-			div.icon{
-				width: 70px;
-				height: 70px;
-				border-radius: 4px;
 				&:before{
-					@include background-image(linear-gradient(rgba(white,0.4),rgba(white,0) 5%,rgba(black,0),rgba(black,0.4))); 
-					border-radius: 4px;
-					
+					@include background-image(linear-gradient(rgba(234,234,234,0.4),rgba(95,95,95,0.3)));
+					border-radius: 4px; 
 				}
-				&.btn-1{
-					background-color: $dl-btn-1-icon-fill;
-					&:after{
-						background: url("../images/download-icon.png") no-repeat center center / 70% auto;
-					}	
+				&:active{
+					top: 1px;
+					box-shadow: 0px 2px 5px -3px rgba(black,0.5);
 				}
-				&.btn-2{
-					background-color: $dl-btn-2-icon-fill;
-					&:after{
-						background: url("../images/download-icon2.png") no-repeat center center / 70% auto;
+				div.icon{
+					@include transform(translateY(-50%));
+					top: 50%;
+					position: relative;
+					box-shadow: 0px 3px 6px 0px rgba(black,0.5);
+					float: left;
+					padding: 0px;
+					&:before,&:after{
+						content:"";
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						top: 0%;
+						left: 0%;
+					}
+					&:before{
+						@include background-image(linear-gradient(rgba(white,0.1),rgba(white,0.4)45%,rgba(black,0)46%,rgba(black,0.1)97%));
+					}
+				}
+				div.text{
+					float: left;
+					padding-left: 20px;
+					@include transform(translateY(-50%));
+					top: 50%;
+					position: relative;
+					p{
+						margin: 0px;
 					}
 				}
 			}
-			div.text{
-				p{
-					font-size: 1.4em;
-					letter-spacing: 1.5px;
+		}
+		div.wrapper{
+			width: 80%;
+			margin: 0 auto;
+			div.grid-1-2{
+				width: 100%;
+				float: none;
+				margin: 0 auto;
+				@include breakpoint(large){
+					width: 50%; 
+					float: left;
 				}
-				span{
+				label{
+					display: table;
+					margin: 0 auto;
 					font-style: italic;
+					font-size: 1.6em;  
+					padding-bottom: 10px;
+				}
+				div.button{
+					text-shadow: 0px 1px 0px rgba(white,0.5);
+					width: 300px;
+					height: 92px;
+					padding: 0px 20px;
+					&.btn-1{
+						background-color: $dl-btn-1-fill;
+						border: 1px solid $dl-btn-1-border;
+						 
+					}
+					&.btn-2{
+						background-color: $dl-btn-2-fill;
+						border: 1px solid $dl-btn-2-border;
+						 
+					}
+					div.icon{
+						width: 70px;
+						height: 70px;
+						border-radius: 4px;
+						margin-right: 10px; 
+						&:before{ 
+							border-radius: 4px;
+							
+						}
+						&.btn-1{
+							background-color: $dl-btn-1-icon-fill;
+							border: 1px solid $dl-btn-1-icon-border;
+							&:after{
+								background: url("../images/download-icon.png") no-repeat center center / 70% auto;
+							}	
+						}
+						&.btn-2{
+							background-color: $dl-btn-2-icon-fill;
+							border: 1px solid $dl-btn-2-icon-border;
+							&:after{
+								background: url("../images/download-icon2.png") no-repeat center center / 70% auto;
+							}
+						}
+					}
+					div.text{
+						text-align: center;
+						p{
+							font-size: 1.6em;
+							letter-spacing: 1.7px;
+							padding-bottom: 5px;
+						}
+						span{
+							font-style: italic;
+							font-size: 1.1em;
+						}
+					}
 				}
 			}
 		}
-	}
-	div.btn-3{
-		width: 90%;
-		background-color: $dl-btn-3-fill;
-		border: 1px solid $dl-btn-3-border;
-		height: 140px;
-		padding: 0px 180px;
-		div.icon{
-			width: 90px;
-			height: 90px;
-			border-radius: 100%;
-			background-color: $dl-btn-3-icon-fill;
-			float: left;
-			border: 1px solid $dl-btn-3-icon-border;  
-			box-shadow: inset 0px 0px 0px 1px rgba(white,1),
-									0px 2px 10px -3px rgba(black,0.5);
-			&:after{
-				background: url("../images/bcp-icon.png") no-repeat center center / 68% auto;
-			}
-		}
-		div.text{
-			p{
-				&:first-of-type{	
-					font-size: 1.6em; 
-					padding-bottom: 8px;
-					
-				}
-				&:nth-of-type(2){
-					color: $link;
-					text-decoration: underline;
-					font-style: italic; 
-					font-size: 1.3em;
-				}
-			}		
-		}	
-	}
-	div.btn-4{
-		width: 50%;
-		background-color: $dl-btn-4-fill;
-		border: 1px solid $dl-btn-4-border; 
-		height: 115px;
-		padding: 0px 110px;
-		div.icon{
-			width: 65px;
-			height: 65px;
+		div.bcp{
+			width: 95%;
+			margin: 20px auto 40px;
+			background-color: $bcp-fill;
+			border: 1px solid $bcp-border;
 			border-radius: 4px;
-			background-color: $dl-btn-4-icon-fill; 
-			border: 1px solid $dl-btn-4-icon-border;
-			&:after{
-				background: url("../images/trophy-icon.png") no-repeat center center / 70% auto;
+			height: 140px;
+			@include breakpoint(large){
+				width: 90%;
+				margin-bottom: 80px; 
+			}
+			div.content-wrap{
+				display: table;
+				margin: 0 auto;
+				padding: 25px 0px;
+				div.icon{
+					position: relative;
+					margin-right: 10px;
+					float: left;
+					padding: 0px;
+					width: 90px;
+					height: 90px;
+					border-radius: 100%;
+					background-color: $bcp-icon-fill;
+					float: left;
+					border: 1px solid $bcp-icon-border;  
+					box-shadow: inset 0px 0px 0px 1px rgba(white,1),
+											0px 6px 6px -3px rgba(black,0.5);
+					&:before,&:after{
+						content:"";
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						top: 0%;
+						left: 0%;
+					}
+					&:before{
+						@include background-image(linear-gradient(rgba(white,0.1),rgba(white,0.5),rgba(black,0),rgba(black,0.1)97%));
+						border-radius: 100%; 
+					}
+					&:after{
+						background: url("../images/bcp-icon.png") no-repeat center center / 68% auto;
+					}
+				}
+				div.text{
+					display: table;
+					float: left;
+					padding-top: 20px;
+					p{
+						margin: 0px;
+						font-size: 1.6em;
+						padding: 0px 0px 8px;
+					}
+					a{
+						display: table;
+						color: $link;
+						text-decoration: underline;
+						font-style: italic; 
+						font-size: 1.2em;
+						letter-spacing: 1px;
+						margin: 0px;
+						@include breakpoint(medium){
+							font-size: 1.3em; 
+						}
+					}		
+				}	
 			}
 		}
-		div.text{
-			padding-bottom: 5px;
-			p{
-				text-shadow: 0px 2px 0px rgba(white,1);
-				&:first-of-type{
-					margin: 0px 0px 8px;
-					border-bottom: 1px solid $lightest-border;
-					font-style: italic;
-					font-size: 1.6em;
-					padding-bottom: 3px;
+		div.btn-3{
+			width: 400px;
+			background-color: $dl-btn-4-fill;
+			border: 1px solid $dl-btn-4-border; 
+			height: 115px;
+			padding: 0px 78px;
+			div.icon{
+				width: 65px;
+				height: 65px;
+				border-radius: 4px;
+				background-color: $dl-btn-4-icon-fill; 
+				border: 1px solid $dl-btn-4-icon-border;
+				&:after{
+					background: url("../images/trophy-icon.png") no-repeat center center / 70% auto;
 				}
-				&:nth-of-type(2){
-					margin: 0px;
-					font-size: 2.3em;
-					letter-spacing: 6.5px;
-					line-height: 0.4;
+			}
+			div.text{
+				padding-bottom: 5px;
+				p{
+					text-shadow: 0px 2px 0px rgba(white,1);
+					&:first-of-type{
+						margin: 0px 0px 8px;
+						border-bottom: 1px solid $lightest-border;
+						box-shadow: 0px 1px 0px rgba(white,1);
+						font-style: italic;
+						font-size: 1.6em;
+						padding: 0px 0px 3px 7px;
+					}
+					&:nth-of-type(2){
+						margin: 0px;
+						font-size: 2.3em;
+						letter-spacing: 6.5px;
+						line-height: 0.4;
+						padding-left: 3px; 
+					}
 				}
 			}
 		}
 	}
-}
 
 
 
 
 
-section.links{
-	padding-top: 70px;
-	h2{
-		background-color: $bg-grey; 
-	}
-	ul{
-		width: 500px;
-		margin: 0 auto 40px;
-		h4{
-			font-style: italic;
-			font-size: 1.3em;
-			margin-bottom: 5px;
-		}
-		li{
-			a{
-				color: $link;
-				&:hover{
-					text-decoration: underline;
+	section.links{
+		ul{
+			width: 500px;
+			margin: 0 auto 40px;
+			li{
+				list-style-image: none;
+				list-style-type: none;
+			}
+			h4{
+				font-style: italic;
+				font-size: 1.3em;
+				margin-bottom: 5px;
+			}
+			li{
+				a{
+					color: $link;
+					&:hover{
+						text-decoration: underline;
+					}
 				}
 			}
 		}

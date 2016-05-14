@@ -1,26 +1,23 @@
-section.welcome{
-	div.img.welcome{
-		background: url("../images/about-members.jpg") no-repeat center center / 100% auto;
-		@include breakpoint(medium){
-			width: 138%;
+div.home{//page specific
+	section.welcome{
+		div.img.welcome{
+			background: url("../images/about-members.jpg") no-repeat center center / 100% auto;
+			@include breakpoint(medium){
+				background-size: 165% auto;
+			}
+			@include breakpoint(large){
+				background-size: 130% auto;
+			}
 		}
-		@include breakpoint(large){
-			width: 102%;
+		p.dropcaps{
+			margin-bottom: 80px;
 		}
-	}
-	p.dropcaps{
-		margin-bottom: 80px;
-	}
-	div.centered-button{
-		margin-top: 100px;
-	}
-	h3{
-		&.img2{
-			&:before{
-				background: url("../images/oval2.jpg") no-repeat center center / 100% auto !important;	
+		h3{
+			&.img2{
+				&:before{
+					background: url("../images/oval2.jpg") no-repeat center center / 100% auto !important;	
+				}
 			}
 		}
 	}
-
-	
 }
