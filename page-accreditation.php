@@ -17,7 +17,11 @@
 						</li>
 
 						<li>
-							maintains clearly specified objectives that are consistent with its mission, and that indicate whether it is successful in achieving its stated objectives
+							maintains clearly specified objectives that are consistent with its mission, and that indicate whether it is successful in achieving its stated objectives.
+						</li>
+
+						<li>
+							Accreditation by The Anglican School Association is solely for its own objectives, and by its own internal academic, religious, and organizational standards. In no way does it state or imply conformity to any national, state, or local government standard or accrediting agency.
 						</li>
 					</ol>
 				</div>
@@ -59,13 +63,13 @@
 					<div class="grid">
 						<h4 class="smallcaps">scope & sequence</h4>
 						<p>
-							<a href="/resources">Click here to read the Scope & Sequence</a>
+							<a href="/resources/">(See Model Scope and Sequence)</a>
 						</p>
 					</div>
 					<div class="grid">
 						<h4 class="smallcaps">student records</h4>
 						<p>
-							The school should document and assess educational achievement in verifiable and consistent ways, while having a defined policy and procedure for maintenance and storage of student flies. Records should contain medical history, emergency information, school transcripts, test scores, college acceptances, and scholarship awards.
+							The school should document and assess educational achievement in verifiable and consistent ways, while having a defined policy and procedure for maintenance and storage of student files. Records should contain medical history, emergency information, school transcripts, test scores, college acceptances, and scholarship awards.
 						</p>
 					</div>
 				</div>
@@ -89,13 +93,13 @@
 					<div class="grid">
 						<h4 class="smallcaps">by laws</h4>
 						<p>
-							<a href="/resources">Click here to read the By-laws</a>
+							<a href="/resources/">(See Model By-Laws here.)</a>
 						</p>
 					</div>
 					<div class="grid">
 						<h4 class="smallcaps">ecclesial oversight</h4>
 						<p>
-							The school’s board of trustees should be accountable to the parish vestry, or the diocesan trustees, chiefly in matters of financial stability and enforcement of bylaws. 
+							The school’s board of trustees should be accountable to the parish vestry, or the diocesan trustees, chiefly in matters of financial stability, fidelity to mission, and enforcement of bylaws. 
 						</p>
 					</div>
 					<div class="grid">

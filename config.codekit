@@ -241,6 +241,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/notice.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 111642,
+		"inputAbbreviatedPath": "\/images\/notice.jpg",
+		"outputAbbreviatedPath": "\/images\/notice.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/oval1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -635,7 +646,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Tyler Phass",
+"lastSavedByUser": "User",
 "manualImportLinks": {
 	},
 "projectAttributes": {
