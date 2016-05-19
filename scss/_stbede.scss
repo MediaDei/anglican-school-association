@@ -1,0 +1,36 @@
+div.st-bede{//page specific
+	section{
+		h3{
+			text-align: center;
+			font-size: 1.8em;  
+			span{
+				font-style: italic;
+			}
+		}
+	}
+
+	section.st-bede{
+		div.img.st-bede{
+			background: url("../images/st-bede-st-bede.jpg") black no-repeat right center / 100% auto; 
+			@include breakpoint(medium){
+				background-size: 115% auto;
+			}
+			@include breakpoint(large){
+				background-size: 127% auto;
+			}
+		}
+		p.dropcaps{
+			white-space: pre-line;
+			padding-bottom: 50px;
+		}
+		h3{
+			margin: 20px 0px;
+		}
+		ul.top-level{
+			margin: 0px auto 40px;
+			@include breakpoint(medium){
+				width: 75%;
+			}
+		}
+	}
+}

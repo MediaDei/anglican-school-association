@@ -1,5 +1,5 @@
 header{
-	margin: 60px 0px;
+	margin: 60px 0px 0;
 	position: relative;
 	a{
 		div.top{
@@ -202,13 +202,58 @@ header{
 		border-top: 1px solid $border;
 		border-bottom: 1px solid $border; 
 		box-shadow: 0px 19px 8px -15px rgba(black, 0.5);
+		&.home{
+			background: black url("../images/home-hero.jpg") no-repeat center center / 220% auto; 
+			@include breakpoint(medium){
+				background-size: 160% auto;
+			}
+			@include breakpoint(large){
+				background-size: 120% auto;
+			}
+		}
 		&.about{
-			background: black url("../images/about-hero.jpg") no-repeat center center / 220% auto; 
+			background: black url("../images/about-hero.jpg") no-repeat center center / 270% auto; 
+			@include breakpoint(medium){
+				background-size: 210% auto;
+			}
+			@include breakpoint(large){
+				background-size: 150% auto;
+			}
+		}
+		&.st-bede{
+			background: black url("../images/st-bede-hero.jpg") no-repeat center center / 292% auto; 
+			@include breakpoint(medium){
+				background-size: 210% auto;
+			}
+			@include breakpoint(large){
+				background-size: 160% auto;
+			}
+		}
+		&.accreditation{
+			background: black url("../images/accreditation-hero.jpg") no-repeat center center / 220% auto; 
 			@include breakpoint(medium){
 				background-size: 170% auto;
 			}
 			@include breakpoint(large){
-				background-size: 127% auto;
+				background-size: 108% auto;
+			}
+		}
+		&.members{
+			background: black url("../images/members-hero.jpg") no-repeat center top / 190% auto; 
+			@include breakpoint(medium){
+				background-size: 150% auto;
+			}
+			@include breakpoint(large){
+				background-size: 110% auto;
+			}
+		}
+		&.notices{
+			background: black url("../images/notices-hero.jpg") no-repeat center top / 130% auto; 
+			@include breakpoint(medium){
+				background-size: 100% auto;
+			}
+			@include breakpoint(large){
+				background-size: 100% auto;
 			}
 		}
 		&.resources{

@@ -432,6 +432,7 @@ html {
   font-size: 16px;
   color: #554F4B;
   line-height: 1;
+  margin: 0;
   text-rendering: optimizeLegibility; }
   html a {
     color: #554F4B; }
@@ -441,7 +442,7 @@ body div.page-wrap {
   max-width: 960px;
   margin: 0 auto; }
   body div.page-wrap header {
-    margin: 60px 0px;
+    margin: 60px 0px 0;
     position: relative; }
     body div.page-wrap header a div.top {
       margin-bottom: 50px;
@@ -624,14 +625,54 @@ body div.page-wrap {
       border-top: 1px solid #979797;
       border-bottom: 1px solid #979797;
       box-shadow: 0px 19px 8px -15px rgba(0, 0, 0, 0.5); }
+      body div.page-wrap header div.hero-img.home {
+        background: black url("../images/home-hero.jpg") no-repeat center center/220% auto; }
+        @media (min-width: 640px) {
+          body div.page-wrap header div.hero-img.home {
+            background-size: 160% auto; } }
+        @media (min-width: 860px) {
+          body div.page-wrap header div.hero-img.home {
+            background-size: 120% auto; } }
       body div.page-wrap header div.hero-img.about {
-        background: black url("../images/about-hero.jpg") no-repeat center center/220% auto; }
+        background: black url("../images/about-hero.jpg") no-repeat center center/270% auto; }
         @media (min-width: 640px) {
           body div.page-wrap header div.hero-img.about {
-            background-size: 170% auto; } }
+            background-size: 210% auto; } }
         @media (min-width: 860px) {
           body div.page-wrap header div.hero-img.about {
-            background-size: 127% auto; } }
+            background-size: 150% auto; } }
+      body div.page-wrap header div.hero-img.st-bede {
+        background: black url("../images/st-bede-hero.jpg") no-repeat center center/292% auto; }
+        @media (min-width: 640px) {
+          body div.page-wrap header div.hero-img.st-bede {
+            background-size: 210% auto; } }
+        @media (min-width: 860px) {
+          body div.page-wrap header div.hero-img.st-bede {
+            background-size: 160% auto; } }
+      body div.page-wrap header div.hero-img.accreditation {
+        background: black url("../images/accreditation-hero.jpg") no-repeat center center/220% auto; }
+        @media (min-width: 640px) {
+          body div.page-wrap header div.hero-img.accreditation {
+            background-size: 170% auto; } }
+        @media (min-width: 860px) {
+          body div.page-wrap header div.hero-img.accreditation {
+            background-size: 108% auto; } }
+      body div.page-wrap header div.hero-img.members {
+        background: black url("../images/members-hero.jpg") no-repeat center top/190% auto; }
+        @media (min-width: 640px) {
+          body div.page-wrap header div.hero-img.members {
+            background-size: 150% auto; } }
+        @media (min-width: 860px) {
+          body div.page-wrap header div.hero-img.members {
+            background-size: 110% auto; } }
+      body div.page-wrap header div.hero-img.notices {
+        background: black url("../images/notices-hero.jpg") no-repeat center top/130% auto; }
+        @media (min-width: 640px) {
+          body div.page-wrap header div.hero-img.notices {
+            background-size: 100% auto; } }
+        @media (min-width: 860px) {
+          body div.page-wrap header div.hero-img.notices {
+            background-size: 100% auto; } }
       body div.page-wrap header div.hero-img.resources {
         background: black url("../images/resources-hero.jpg") no-repeat center center/213% auto; }
         @media (min-width: 640px) {
@@ -748,7 +789,7 @@ body div.page-wrap {
           box-shadow: inset 0px -1px 0px 0px white, inset 0px 1px 0px 0px rgba(0, 0, 0, 0.3), 0px 0px 0px 1px #CBBFA5, 0px 21px 10px -15px rgba(0, 0, 0, 0.5); } }
     body div.page-wrap div section div.circle-h3 {
       border-bottom: 1px solid #CBCBCB;
-      padding: 150px 0px 50px; }
+      padding: 110px 0px 50px; }
       body div.page-wrap div section div.circle-h3:last-of-type {
         border-bottom: none; }
       body div.page-wrap div section div.circle-h3 h3 {
@@ -878,6 +919,16 @@ body div.page-wrap {
         top: 1px;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5), 30px 0px 0px 0px white, -30px 0px 0px 0px white;
         background-color: #faeab3; }
+  body div.page-wrap div.home .notice {
+    max-width: 500px;
+    margin: 60px auto 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); }
+    body div.page-wrap div.home .notice figure {
+      margin: 0; }
+      body div.page-wrap div.home .notice figure img {
+        display: block;
+        width: 100%; }
   body div.page-wrap div.home section.welcome div.img.welcome {
     background: url("../images/about-members.jpg") no-repeat center center/100% auto; }
     @media (min-width: 640px) {
@@ -887,7 +938,7 @@ body div.page-wrap {
       body div.page-wrap div.home section.welcome div.img.welcome {
         background-size: 130% auto; } }
   body div.page-wrap div.home section.welcome p.dropcaps {
-    margin-bottom: 80px; }
+    margin-bottom: 60px; }
   body div.page-wrap div.home section.welcome h3.img2:before {
     background: url("../images/oval2.jpg") no-repeat center center/100% auto !important; }
   body div.page-wrap div.about section h3 {
@@ -926,6 +977,8 @@ body div.page-wrap {
       @media (min-width: 640px) {
         body div.page-wrap div.about section.about-members div.wrapper div.member-info {
           padding: 25px 70px; } }
+      body div.page-wrap div.about section.about-members div.wrapper div.member-info:last-of-type {
+        margin-bottom: 100px; }
       body div.page-wrap div.about section.about-members div.wrapper div.member-info h3 {
         padding-bottom: 5px;
         margin: 0px auto; }
@@ -937,23 +990,28 @@ body div.page-wrap {
     @media (min-width: 640px) {
       body div.page-wrap div.about section.about-members div.wrapper {
         width: 80%; } }
-  body div.page-wrap div.about section.st-bede div.img.st-bede {
-    background: url("../images/about-st-bede.jpg") black no-repeat center center/100% auto; }
+  body div.page-wrap div.st-bede section h3 {
+    text-align: center;
+    font-size: 1.8em; }
+    body div.page-wrap div.st-bede section h3 span {
+      font-style: italic; }
+  body div.page-wrap div.st-bede section.st-bede div.img.st-bede {
+    background: url("../images/st-bede-st-bede.jpg") black no-repeat right center/100% auto; }
     @media (min-width: 640px) {
-      body div.page-wrap div.about section.st-bede div.img.st-bede {
-        background-size: 172% auto; } }
+      body div.page-wrap div.st-bede section.st-bede div.img.st-bede {
+        background-size: 115% auto; } }
     @media (min-width: 860px) {
-      body div.page-wrap div.about section.st-bede div.img.st-bede {
+      body div.page-wrap div.st-bede section.st-bede div.img.st-bede {
         background-size: 127% auto; } }
-  body div.page-wrap div.about section.st-bede p.dropcaps {
+  body div.page-wrap div.st-bede section.st-bede p.dropcaps {
     white-space: pre-line;
     padding-bottom: 50px; }
-  body div.page-wrap div.about section.st-bede h3 {
+  body div.page-wrap div.st-bede section.st-bede h3 {
     margin: 20px 0px; }
-  body div.page-wrap div.about section.st-bede ul.top-level {
+  body div.page-wrap div.st-bede section.st-bede ul.top-level {
     margin: 0px auto 40px; }
     @media (min-width: 640px) {
-      body div.page-wrap div.about section.st-bede ul.top-level {
+      body div.page-wrap div.st-bede section.st-bede ul.top-level {
         width: 75%; } }
   body div.page-wrap div.accreditation section.accreditation div.list-wrapper {
     width: 90%;
@@ -1036,7 +1094,7 @@ body div.page-wrap {
       body div.page-wrap div.members section.members div.posts div.post {
         padding-bottom: 5px;
         padding-left: 20px;
-        min-height: 70px; }
+        min-height: 30px; }
         @media (min-width: 860px) {
           body div.page-wrap div.members section.members div.posts div.post {
             min-height: auto; } }

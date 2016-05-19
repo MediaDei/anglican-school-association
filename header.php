@@ -40,40 +40,40 @@
 				</div>
 			</a>
 
-			<a href="/apply" class="banner"><div class="banner"></div></a>
+			<a href="/apply/" class="banner"><div class="banner"></div></a>
 
 			<nav class="grid">
-				<a href="/about">
+				<a href="/about/">
 					<span>About</span>
 					<span>ASA methods
 					& principles</span>
 				</a>
 
-				<a href="/about#st-bede">
+				<a href="/stbede/">
 					<span>St. Bede</span>
 					<span>Society for
 					teachers</span>
 				</a>
 
-				<a href="/accreditation">
+				<a href="/accreditation/">
 					<span>Accreditation</span>
 					<span>Standards for mission
 					and acceptance</span>
 				</a>
 
-				<a href="/members#anchor-1">
+				<a href="/members/#anchor-1">
 					<span>Members</span>
 					<span>Schools in
 					the ASA</span>
 				</a>
 
-				<a href="/notices">
+				<a href="/notices/">
 					<span>Notices</span>
 					<span>Postings
 					& news</span>
 				</a>
 
-				<a href="/resources">
+				<a href="/resources/">
 					<span>Resources</span>
 					<span>Materials
 					for schools</span>

@@ -1,9 +1,13 @@
 			<?php get_header(); ?>
-			<div role="image" class="hero-img about"></div>
+			<div role="image" class="hero-img home"></div>
 		</header>
 		<!--closing header in page to allow custom hero img class for each page-->
 		
 		<div class="home">
+
+			<div class="notice">
+				<figure><img src="<?php bloginfo('template_url'); ?>/images/notice.jpg" /></figure>
+			</div>
 
 			<section class="welcome">
 				<h2>welcome</h2>
@@ -62,7 +66,7 @@
 				</div>
 			</section>
 			<div class="line-wrapper">
-				<a href="/apply"><div role="button" class="centered-button">Apply to Join</div></a>
+				<a href="/apply/"><div role="button" class="centered-button">Apply to Join</div></a>
 			</div>
 		</div>
 		<?php get_footer(); ?>

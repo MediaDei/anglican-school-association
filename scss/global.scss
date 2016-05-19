@@ -3,10 +3,11 @@
 @import "bits";
 
 html {
-	font-family: "SortsMillGoudy", serif;
+  font-family: "SortsMillGoudy", serif;
   font-size: 16px;
   color: $main-text;
   line-height: 1;
+  margin: 0;
   text-rendering: optimizeLegibility; // Chrome & Safari have bad kerning otherwise (fall '15)
   
   
@@ -132,7 +133,7 @@ body{
 				}
 				div.circle-h3{
 					border-bottom: 1px solid $lightest-border;
-					padding: 150px 0px 50px;
+					padding: 110px 0px 50px;
 					&:last-of-type{
 						border-bottom: none;
 					}
@@ -292,6 +293,7 @@ body{
 
 		@import "home";
 		@import "about";
+		@import "stbede";
 		@import "accreditation";
 		@import "members";
 		@import "notices";
