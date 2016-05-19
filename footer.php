@@ -9,7 +9,6 @@
 				<ul>
 					<li>ASA Board of Directors</li>
 					<li>Reformed Episcopal Church</li>
-					<li>Anglican Church in North America</li>
 				</ul>
 				<div role="image" class="logo2"></div>
 			</div>

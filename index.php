@@ -1,5 +1,5 @@
 			<?php get_header(); ?>
-			<div role="image" class="hero-img about"></div>
+			<div role="image" class="hero-img home"></div>
 		</header>
 		<!--closing header in page to allow custom hero img class for each page-->
 		

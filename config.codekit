@@ -80,7 +80,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 663627,
+		"initialSize": 76327,
 		"inputAbbreviatedPath": "\/images\/about-hero.jpg",
 		"outputAbbreviatedPath": "\/images\/about-hero.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -98,13 +98,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/about-st-bede.jpg": {
+	"\/images\/accreditation-hero.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 272470,
-		"inputAbbreviatedPath": "\/images\/about-st-bede.jpg",
-		"outputAbbreviatedPath": "\/images\/about-st-bede.jpg",
+		"initialSize": 128655,
+		"inputAbbreviatedPath": "\/images\/accreditation-hero.jpg",
+		"outputAbbreviatedPath": "\/images\/accreditation-hero.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -186,6 +186,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/home-hero.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 624488,
+		"inputAbbreviatedPath": "\/images\/home-hero.jpg",
+		"outputAbbreviatedPath": "\/images\/home-hero.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/logo-bw.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -241,6 +252,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/members-hero.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 724303,
+		"inputAbbreviatedPath": "\/images\/members-hero.jpg",
+		"outputAbbreviatedPath": "\/images\/members-hero.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/notice.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -248,6 +270,17 @@
 		"initialSize": 111642,
 		"inputAbbreviatedPath": "\/images\/notice.jpg",
 		"outputAbbreviatedPath": "\/images\/notice.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/notices-hero.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 244480,
+		"inputAbbreviatedPath": "\/images\/notices-hero.jpg",
+		"outputAbbreviatedPath": "\/images\/notices-hero.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -314,6 +347,28 @@
 		"initialSize": 751515,
 		"inputAbbreviatedPath": "\/images\/resources-hero.jpg",
 		"outputAbbreviatedPath": "\/images\/resources-hero.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/st-bede-hero.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 105015,
+		"inputAbbreviatedPath": "\/images\/st-bede-hero.jpg",
+		"outputAbbreviatedPath": "\/images\/st-bede-hero.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/st-bede-st-bede.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 272470,
+		"inputAbbreviatedPath": "\/images\/st-bede-st-bede.jpg",
+		"outputAbbreviatedPath": "\/images\/st-bede-st-bede.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -388,6 +443,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/page-resources.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/page-stbede.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/page-stbede.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -593,6 +657,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scss\/_resources.scss",
 		"outputAbbreviatedPath": "\/css\/_resources.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/scss\/_stbede.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/_stbede.scss",
+		"outputAbbreviatedPath": "\/css\/_stbede.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

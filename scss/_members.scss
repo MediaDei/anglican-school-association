@@ -60,7 +60,7 @@ div.members{//page specific
 			div.post{
 				padding-bottom: 5px;
 				padding-left: 20px;
-				min-height: 70px;
+				min-height: 30px;
 				@include breakpoint(large){
 					min-height: auto; 
 				} 
