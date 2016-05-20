@@ -1,13 +1,17 @@
-			<?php get_header(); ?>
-			<div role="image" class="hero-img home"></div>
-		</header>
-		<!--closing header in page to allow custom hero img class for each page-->
-		
+		<?php get_header(); ?>
+
 		<div class="home">
 
-			<div class="notice">
-				<figure><img src="<?php bloginfo('template_url'); ?>/images/notice.jpg" /></figure>
-			</div>
+			<?php 
+			$args = array(
+						'post_type' => 'announcement-image',
+						'posts_per_page' => '1',
+						'orderby' => 'date'
+					);
+			$announcement = new WP_Query($args);
+			while($announcement->have_posts()) : $announcement->the_post();
+				if ( has_post_thumbnail() ) {echo '<div class="announcement" role="image"><figure>';the_post_thumbnail(); echo '</figure></div>';} ?>
+			<?php endwhile; ?>
 
 			<section class="welcome">
 				<h2>welcome</h2>

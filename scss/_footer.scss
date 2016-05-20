@@ -18,7 +18,7 @@ footer{
 		top: 50%;
 		@include transform(translateY(-50%));
 		float: left;
-		text-shadow: 0px 3px 4px rgba(black,0.8);
+		text-shadow: 0px 2px 3px rgba(black,0.5);
 		h1{
 			text-align: center;
 			text-transform: uppercase;
@@ -42,7 +42,7 @@ footer{
 					display: inline-block;
 					width: 60px;
 					height: 60px;
-					background: url("../images/logo-bw.png") no-repeat center center / 100% auto;
+					background: url("../images/logo-bw.svg") no-repeat center center / 100% auto;
 					position: absolute;
 					left: -70px;
 					top: 90%;
@@ -76,7 +76,7 @@ footer{
 		text-align: right;
 		float: right;
 		padding-right: 80px; 
-		text-shadow: 0px 3px 4px rgba(black,0.8);
+		text-shadow: 0px 2px 3px rgba(black,0.5);
 		@include breakpoint(medium){
 			padding-right: 110px;
 		}
@@ -96,7 +96,7 @@ footer{
 					display: inline-block;
 					width: 60px;
 					height: 60px;
-					background: url("../images/logo2-bw.png") no-repeat center center / 100% auto;
+					background: url("../images/rec-logo.png") no-repeat center center / 100% auto;
 					position: absolute;
 					right: -70px;
 					@include breakpoint(medium){

@@ -1,7 +1,4 @@
-			<?php get_header(); ?>
-			<div role="image" class="hero-img members"></div>
-		</header>
-		<!--closing header in page to allow custom hero img class for each page-->
+		<?php get_header(); ?>
 		
 		<div class="members">
 			<section class="members">
@@ -68,9 +65,7 @@
 								<span><?php echo(types_render_field("asa-member-location", array("raw" => true))); ?></span>
 								 | <a target="_blank" href="http://<?php echo(types_render_field("asa-member-website", array("raw" => true)));?>"><?php echo(types_render_field("asa-member-website", array("raw" => true))); ?></a>
 							</address>
-							<div class="member-img" role="image">
-								<img src="<?php echo(types_render_field("asa-member-image", array("raw" => true))); ?>" alt="Featured image for selected member">
-							</div>
+							<?php if ( has_post_thumbnail() ) {echo '<div class="member-img" role="image">';the_post_thumbnail(); echo '</div>';} ?>
 							<div class="grid">
 								<div class="grid-2-3">
 									<h4>Description</h4>

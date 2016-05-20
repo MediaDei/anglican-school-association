@@ -79,7 +79,5 @@
 					for schools</span>
 				</a>
 			</nav>
-			<!--closing header in page to allow custom hero img class for each page--> 
-			
-
-	
+			<?php if ( has_post_thumbnail() ) {echo '<div class="hero-img" role="image">';the_post_thumbnail(); echo '</div>';} ?>
+		</header>

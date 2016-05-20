@@ -1,7 +1,4 @@
-			<?php get_header(); ?>
-			<div role="image" class="hero-img resources"></div>
-		</header>
-		<!--closing header in page to allow custom hero img class for each page-->
+		<?php get_header(); ?>		
 		
 		<div class="resources">
 

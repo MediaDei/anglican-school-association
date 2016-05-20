@@ -1,7 +1,4 @@
-			<?php get_header(); ?>
-			<div role="image" class="hero-img notices"></div>
-		</header>
-		<!--closing header in page to allow custom hero img class for each page-->
+		<?php get_header(); ?>
 		
 		<div class="notices">
 			<section class="notices grid">
@@ -9,13 +6,51 @@
 				<aside class="filter grid-1-3">
 					<p class="smallcaps">filter by</p>
 					<ul>
-						<li><input type="checkbox">ASA news</li>
-						<li><input type="checkbox">Job postings</li>
-						<li><input type="checkbox">Available teachers</li>
-						<li><input type="checkbox">Events</li>
-						<li><input type="checkbox">2016</li>
-						<li><input type="checkbox">2015</li>
-						<li><input type="checkbox">2014</li>
+						<?php 
+					    $args = array(
+					      'orderby' => 'title',
+					      'hide_empty'=> 1);
+					    $numberOfCategories = 0;
+					  	$categories = get_categories($args);
+
+
+					  	echo '<li><input type="checkbox" id="checkbox-0" checked>All Notices</li>';//show all posts
+					  	echo '
+								    <script type="text/javascript">
+								    	var $ = jQuery.noConflict();
+								      $(document).ready(function(){
+							          $("#checkbox-0").change(function(){
+						              if($(this).is(":checked")){
+						                $(".filter-checkbox").prop("checked", true);
+						                $(".post").show();
+						              }
+						              else if($(this).is(":not(:checked")){
+						              	$(".filter-checkbox").prop("checked", false);
+						              	$(".post").hide();
+						              }
+							          });
+								      });
+								    </script>';//show/hide all post with "All Notices" checkbox
+					  	foreach ($categories as $cat) {
+					  		$numberOfCategories++;
+					    	echo '<li><input type="checkbox" class="filter-checkbox" id="checkbox-'.$numberOfCategories.'">'.$cat->name.'</li>';
+					    	echo '
+									    <script type="text/javascript">
+									    	var $ = jQuery.noConflict();
+									      $(document).ready(function(){
+								          $("#checkbox-'.$numberOfCategories.':checkbox").change(function(){
+							              if($(this).is(":checked")){
+							              	$("#checkbox-0").prop("checked", false);
+							                $(".category-'.$cat->slug.'").show();
+							              }
+							              else if($(this).is(":not(:checked)")){
+							                $(".category-'.$cat->slug.'").hide();
+							              }
+								          });
+									      });
+									    </script>';
+					    }//end foreach
+						?>
 					</ul>
 				</aside>
 				<div class="posts grid-2-3 grid-pad">
@@ -28,7 +63,7 @@
 					$expanded = false;
 					while($notices->have_posts()) : $notices->the_post(); ?>
 						<?php $numberOfPosts++ ?>
-						<div class="post" id="post-<?php the_ID(); ?>">
+						<div <?php post_class('post'); ?>>
 							<div class="date">
 								<time><?php echo get_the_date("M j"); ?></time>
 							</div>

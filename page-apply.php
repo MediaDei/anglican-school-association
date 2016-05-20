@@ -1,7 +1,4 @@
-			<?php get_header(); ?>
-			<div role="image" class="hero-img apply"></div>
-		</header>
-		<!--closing header in page to allow custom hero img class for each page-->
+		<?php get_header(); ?>
 		
 		<div class="apply">
 
@@ -28,6 +25,9 @@
 					<a class="smallcaps grid-1-2" href="/about#member-info">our educational principles</a>
 					<a class="smallcaps grid-1-2" href="/about#st-bede">teachers society of st. bede</a>
 				</div>
+			</section>
+			<section class="join">
+				<?php echo do_shortcode('[contact-form-7 id="55" title="Join"]'); ?>
 			</section>
 			<section class="why-parish-schools bg-grey">
 				<h2>why<br><span>Parish Schools?</span></h2>

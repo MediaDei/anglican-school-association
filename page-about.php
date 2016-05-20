@@ -1,8 +1,5 @@
-			<?php get_header(); ?>
-			<div role="image" class="hero-img about"></div>
-		</header>
-		<!--closing header in page to allow custom hero img class for each page-->
-		
+		<?php get_header(); ?>
+
 		<div class="about">
 			<section class="about">
 				<h2>about</h2>

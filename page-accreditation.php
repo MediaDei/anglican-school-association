@@ -1,8 +1,5 @@
-			<?php get_header(); ?>
-			<div role="image" class="hero-img accreditation"></div>
-		</header>
-		<!--closing header in page to allow custom hero img class for each page-->
-		
+		<?php get_header(); ?>
+
 		<div class="accreditation">
 			<section class="accreditation">
 				<h2>Accreditation</h2>

@@ -1,17 +1,19 @@
 div.home{//page specific
 
-	.notice{
+	div.announcement{
 		max-width: 500px;
 		margin: 60px auto 0;
 		border: 1px solid rgba(black,0.2);
 		box-shadow: 0 4px 8px rgba(black,0.5);
+		overflow: hidden;
 
 		figure {
 			margin: 0;
 
 			img {
 				display: block;
-				width: 100%;
+				width: 100%; 
+				height: auto; 
 			}
 		}
 	}
