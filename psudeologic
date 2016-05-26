@@ -1,0 +1,107 @@
+To do Thursday:
+
+ - Custom Post Editing
+
+
+
+
+
+
+
+
+
+------------------
+- Global
+	- Set hero image to fixed height and auto width (Opposite of current layout)
+
+- Notices Page
+	- New Filter/Post Loop PHP logic
+
+- Apply Page
+	- Change Form button out for yellow .centered-button
+	- Form JS Validation?
+	- Change Text form JOIN to APPLY on form
+
+- Footer
+	- Overlapping PNGs for Logos
+
+
+
+
+
+
+
+
+
+To do "Friday":
+
+- Global
+	- Insert PDF links
+
+- Edit Page Content Feature
+	- Use Custom Posts Types
+		- What if we made our own custom post types and shortcodes that users could use in "Page" WYSIWYG Editor (with Types plugin for now, but can hardcode later as our own plugin if desired)
+		- Ex. 
+					[header]
+
+					[hero image($idDefinedInPostsPage)]
+
+					[dropcaps paragraph($idDefinedInPostsPage)]
+
+					[staff modal dropdown($idDefinedInPostsPage)]
+
+					[footer]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------
+
+
+Notices Logic
+
+start
+	page loads
+	no checkboxes checked - all categores assumed
+	loop pulls out all cats
+	provides correct pagination (posts per page = 10)
+end
+
+start
+	page loads
+	no checkboxes checked - all categores assumed
+	loop pulls out all cats
+	provides correct pagination (posts per page = 10)
+	category one checked
+	erase all posts (AJAX)
+	loop pulls out cat 1 posts
+	provides correct pagination (posts per page = 10)
+end
+
+start
+	page loads
+	no checkboxes checked - all categores assumed
+	loop pulls out all cats
+	provides correct pagination
+	cat 1 checked
+	jquery script submits to server php for checked box
+	page refreshes
+	loop pulls only cat 1 posts
+	provides correct pagination (posts per page = 10)
+end

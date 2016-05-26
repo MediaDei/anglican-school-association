@@ -1229,9 +1229,16 @@ body div.page-wrap {
               float: none;
               width: 100%; } }
           body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul li input {
-            margin-right: 10px; }
+            margin-right: 10px;
+            width: 20px;
+            height: 20px; }
+            @media (min-width: 640px) {
+              body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul li input {
+                width: 10px;
+                height: 10px; } }
     body div.page-wrap div.notices section.notices div.posts.grid-2-3 {
       width: 100%;
+      min-height: 200px;
       box-shadow: 8px 0px 6px -6px rgba(0, 0, 0, 0.2);
       padding: 20px 0px 20px 20px; }
       @media (min-width: 640px) {
@@ -1710,7 +1717,6 @@ body footer {
           display: inline-block;
           width: 60px;
           height: 60px;
-          background: url("../images/logo-bw.svg") no-repeat center center/100% auto;
           position: absolute;
           left: -70px;
           top: 90%;
@@ -1735,6 +1741,41 @@ body footer {
         @media (min-width: 860px) {
           body footer div.text-left h1:nth-of-type(2) {
             font-size: 1.2em; } }
+    body footer div.text-left div.logo {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      background: url("../images/footer-png-asa2.png") no-repeat center center/100% auto;
+      /*
+      @include breakpoint(medium){
+      	width: 80px;
+      	height: 80px;
+      	left: -90px;
+      }
+      @include breakpoint(large){
+      	width: 100px;
+      	height: 100px;
+      	left: -115px;
+      }
+      */ }
+      body footer div.text-left div.logo:after {
+        content: "";
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background: url("../images/footer-png-asa.png") no-repeat center center/100% auto;
+        /*
+        @include breakpoint(medium){
+        	width: 80px;
+        	height: 80px;
+        	left: -90px;
+        }
+        @include breakpoint(large){
+        	width: 100px;
+        	height: 100px;
+        	left: -115px;
+        }
+        */ }
   body footer div.text-right {
     position: relative;
     top: 50%;

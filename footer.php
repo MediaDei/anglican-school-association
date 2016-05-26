@@ -1,5 +1,6 @@
 		<footer>
 			<div class="text-left">
+				<div class="logo"></div>
 				<h1>anglican</h1>
 				<h1>school association</h1>
 			</div>

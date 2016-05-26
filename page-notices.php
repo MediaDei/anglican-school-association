@@ -14,23 +14,8 @@
 					  	$categories = get_categories($args);
 
 
-					  	echo '<li><input type="checkbox" id="checkbox-0" checked>All Notices</li>';//show all posts
-					  	echo '
-								    <script type="text/javascript">
-								    	var $ = jQuery.noConflict();
-								      $(document).ready(function(){
-							          $("#checkbox-0").change(function(){
-						              if($(this).is(":checked")){
-						                $(".filter-checkbox").prop("checked", true);
-						                $(".post").show();
-						              }
-						              else if($(this).is(":not(:checked")){
-						              	$(".filter-checkbox").prop("checked", false);
-						              	$(".post").hide();
-						              }
-							          });
-								      });
-								    </script>';//show/hide all post with "All Notices" checkbox
+					  	//echo '<li><input type="checkbox" id="checkbox-0" checked>All Notices</li>';//show all posts
+					  	
 					  	foreach ($categories as $cat) {
 					  		$numberOfCategories++;
 					    	echo '<li><input type="checkbox" class="filter-checkbox" id="checkbox-'.$numberOfCategories.'">'.$cat->name.'</li>';
@@ -40,8 +25,9 @@
 									      $(document).ready(function(){
 								          $("#checkbox-'.$numberOfCategories.':checkbox").change(function(){
 							              if($(this).is(":checked")){
-							              	$("#checkbox-0").prop("checked", false);
+							              	$(".post").hide();
 							                $(".category-'.$cat->slug.'").show();
+
 							              }
 							              else if($(this).is(":not(:checked)")){
 							                $(".category-'.$cat->slug.'").hide();

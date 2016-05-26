@@ -195,6 +195,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/footer-png-asa.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 67472,
+		"inputAbbreviatedPath": "\/images\/footer-png-asa.png",
+		"outputAbbreviatedPath": "\/images\/footer-png-asa.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/footer-png-asa2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17307,
+		"inputAbbreviatedPath": "\/images\/footer-png-asa2.png",
+		"outputAbbreviatedPath": "\/images\/footer-png-asa2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/gss.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
