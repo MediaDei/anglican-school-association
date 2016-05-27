@@ -1,41 +1,148 @@
 		<?php get_header(); ?>
 
 		<div class="about">
-			<section class="about">
-				<h2>about</h2>
-				<div role="image" class="img about"></div>
-				<p class="dropcaps"><span class="smallcaps o">O</span><span class="smallcaps">ur purpose: </span>to support member Anglican schools in fulfilling the spiritual, intellectual, and moral objectives of an Anglican educational program by certifying that established standards to that end have been met and will be sustained by a continuous process of self-evaluation and self-improvement. 
-				</p>
+			<?php 
+			//display home page for widgets
+			$pageArgs = array(
+				'post_type' => 'page-for-widgets', 
+				'name' => 'about'
+				);
+			$pageContent = new WP_Query($pageArgs);
+			if($pageContent->have_posts()) : $pageContent->the_post();?>
+				<section class="about">
+					
+					<?php
+					//Large Heading Widget
+					$args = array(
+						'name' => 'about page 1'
+						);
+					$childPosts = types_child_posts('large-heading', $args);
+					foreach ($childPosts as $childPost) {
+						echo '<h2>'. $childPost->fields['large-heading-content'] . '</h2>';
+					}
+					?>
 
-				<p class="dropcaps"><span class="smallcaps c">C</span><span class="smallcaps">hristian </span>schools in the Anglican tradition seek to educate and nurture children by focusing on the whole person, rooted in Christian formation. As part of their mission, the culture in such schools must incarnate a love of truth, beauty, and thereby nurture piety, virtue, and grace in its pupils, for the culture of a school educates as much as its curriculum.
-				</p>
+					<div role="image" class="img about"></div>
 
-				<p class="dropcaps"><span class="smallcaps a">A</span><span class="smallcaps">nglicans believe </span>that education is a fundamental way of fulfilling baptismal promises made by parents and godparents, participating directly in the foundational mission of the church.  As such, Anglican schools are ecclesial entities where faith, learning, culture, and life are brought into harmony &ndash; acting as ministries of pastoral care. 
-				</p>
-			</section>
-			<section class="about-members bg-grey">
-				<h2 class="bg-grey">members</h2>
-				<div role="image" class="img members"></div>
+					<?php
+					//Dropcaps Paragraph Widget
+					$childPosts = types_child_posts('dropcaps-paragraph');
+					foreach ($childPosts as $childPost) {
+						echo '<p class="dropcaps">'. $childPost->fields['dropcaps-paragraph-content'] . '</p>';
+					}
+					?>
+				</section>
 
-				<div class="wrapper" id="member-info">
-					<div class="member-info">
-						<h3>Member Schools</h3>
-						<ul class="top-level">
-							<li>are Anglican by jurisdiction and ethos,</li>
-							<li>keep Prayer Book Daily Office in school life (at least one Office per day)</li>
-							<li>maintain or seek ASA accreditation, and</li>
-							<li>are governed by ASA model bylaws, or similar approved bylaws</li>
-						</ul>
+				<section class="about-members bg-grey">
+
+					<?php
+					//Large Heading Widget
+					$args = array(
+						'name' => 'about page 2'
+						);
+					$childPosts = types_child_posts('large-heading', $args);
+					foreach ($childPosts as $childPost) {
+						echo '<h2 class="bg-grey">'. $childPost->fields['large-heading-content'] . '</h2>';
+					}
+					?>
+					<div role="image" class="img members"></div>
+
+					<div class="wrapper" id="member-info">
+						<div class="member-info">
+							<?php
+							//List Heading Widget
+							$args = array(
+								'name' => 'about page 1'
+								);
+							$childPosts = types_child_posts('list-heading', $args);
+							foreach ($childPosts as $childPost) {
+								echo '<h3>'. $childPost->fields['list-heading-content'] . '</h3>';
+							}
+							?>
+							<ul class="top-level">
+								<?php
+								//List Item Widget
+								$args = array(
+									'name' => 'about page 1'
+									);
+								$childPosts = types_child_posts('list-item', $args);
+								foreach ($childPosts as $childPost) {
+									echo '<li>'. $childPost->fields['list-item-content'] . '</li>';
+								}
+								?>
+
+								<?php
+								//List Item Widget
+								$args = array(
+									'name' => 'about page 2'
+									);
+								$childPosts = types_child_posts('list-item', $args);
+								foreach ($childPosts as $childPost) {
+									echo '<li>'. $childPost->fields['list-item-content'] . '</li>';
+								}
+								?>
+
+								<?php
+								//List Item Widget
+								$args = array(
+									'name' => 'about page 3'
+									);
+								$childPosts = types_child_posts('list-item', $args);
+								foreach ($childPosts as $childPost) {
+									echo '<li>'. $childPost->fields['list-item-content'] . '</li>';
+								}
+								?>
+
+								<?php
+								//List Item Widget
+								$args = array(
+									'name' => 'about page 4'
+									);
+								$childPosts = types_child_posts('list-item', $args);
+								foreach ($childPosts as $childPost) {
+									echo '<li>'. $childPost->fields['list-item-content'] . '</li>';
+								}
+								?>
+							</ul>
+						</div>
+						<div class="member-info">
+							<?php
+							//List Heading Widget
+							$args = array(
+								'name' => 'about page 2'
+								);
+							$childPosts = types_child_posts('list-heading', $args);
+							foreach ($childPosts as $childPost) {
+								echo '<h3>'. $childPost->fields['list-heading-content'] . '</h3>';
+							}
+							?>
+							<ul class="top-level">
+								<?php
+								//List Item Widget
+								$args = array(
+									'name' => 'about page 5'
+									);
+								$childPosts = types_child_posts('list-item', $args);
+								foreach ($childPosts as $childPost) {
+									echo '<li>'. $childPost->fields['list-item-content'] . '</li>';
+								}
+								?>
+
+								<?php
+								//List Item Widget
+								$args = array(
+									'name' => 'about page 6'
+									);
+								$childPosts = types_child_posts('list-item', $args);
+								foreach ($childPosts as $childPost) {
+									echo '<li>'. $childPost->fields['list-item-content'] . '</li>';
+								}
+								?>
+							</ul>
+						</div>
 					</div>
-					<div class="member-info">
-						<h3>Home Schools</h3>
-						<ul class="top-level">
-							<li>utilize a classical curriculum, and</li>
-							<li>keep Prayer Book Daily Office in school life (at least one Office per day)</li>
-						</ul>
-					</div>
-				</div>
-			</section>
+				</section>
+			<?php endif; ?>
 		</div>
 		<?php get_footer(); ?>
 	
