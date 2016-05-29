@@ -44,7 +44,7 @@ function media_dei_mce_before_init_insert_formats( $init_array ) {
     $style_formats = array(  
         // Each array child is a format with it's own settings
         array(  
-            'title' => 'Larger Heading Subtext',  
+            'title' => 'Large Heading Subtext',  
             'block' => 'span',
             'classes' => 'subtext',  
             'wrapper' => true,
@@ -56,7 +56,7 @@ function media_dei_mce_before_init_insert_formats( $init_array ) {
             'wrapper' => true,
         ),
         array(  
-            'title' => 'Larger Header: Narrow',  
+            'title' => 'Large Heading: Narrow',  
             'block' => 'h2',
             'classes' => 'narrow',  
             'wrapper' => true,
