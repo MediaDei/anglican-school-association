@@ -2,7 +2,7 @@
 
 		<div class="about">
 			<?php 
-			//display home page for widgets
+			//display page for widgets
 			$pageArgs = array(
 				'post_type' => 'page-for-widgets', 
 				'name' => 'about'
@@ -18,17 +18,51 @@
 						);
 					$childPosts = types_child_posts('large-heading', $args);
 					foreach ($childPosts as $childPost) {
-						echo '<h2>'. $childPost->fields['large-heading-content'] . '</h2>';
+						echo '<h2>' . get_post_field('post_content', $childPost->ID) . '</h2>';
 					}
 					?>
 
-					<div role="image" class="img about"></div>
+					<?php
+					//Framed Image Widget
+					$args = array(
+						'name' => 'about page 1'
+						);
+					$childPosts = types_child_posts('framed-image', $args);
+					foreach ($childPosts as $childPost) {
+						echo '<div class="img" role="image">' . get_the_post_thumbnail($childPost->ID, 'post-thumbnail') . '</div>';
+					}
+					?>
 
 					<?php
 					//Dropcaps Paragraph Widget
-					$childPosts = types_child_posts('dropcaps-paragraph');
+					$args = array(
+						'name' => 'about page 1'
+						);
+					$childPosts = types_child_posts('dropcaps-paragraph', $args);
 					foreach ($childPosts as $childPost) {
-						echo '<p class="dropcaps">'. $childPost->fields['dropcaps-paragraph-content'] . '</p>';
+						echo '<p class="dropcaps">'. get_post_field('post_content', $childPost->ID) . '</p>';
+					}
+					?>
+
+					<?php
+					//Dropcaps Paragraph Widget
+					$args = array(
+						'name' => 'about page 2'
+						);
+					$childPosts = types_child_posts('dropcaps-paragraph', $args);
+					foreach ($childPosts as $childPost) {
+						echo '<p class="dropcaps">'. get_post_field('post_content', $childPost->ID) . '</p>';
+					}
+					?>
+
+					<?php
+					//Dropcaps Paragraph Widget
+					$args = array(
+						'name' => 'about page 3'
+						);
+					$childPosts = types_child_posts('dropcaps-paragraph', $args);
+					foreach ($childPosts as $childPost) {
+						echo '<p class="dropcaps">'. get_post_field('post_content', $childPost->ID) . '</p>';
 					}
 					?>
 				</section>
@@ -42,10 +76,20 @@
 						);
 					$childPosts = types_child_posts('large-heading', $args);
 					foreach ($childPosts as $childPost) {
-						echo '<h2 class="bg-grey">'. $childPost->fields['large-heading-content'] . '</h2>';
+						echo '<h2>' . get_post_field('post_content', $childPost->ID) . '</h2>';
 					}
 					?>
-					<div role="image" class="img members"></div>
+
+					<?php
+					//Framed Image Widget
+					$args = array(
+						'name' => 'about page 2'
+						);
+					$childPosts = types_child_posts('framed-image', $args);
+					foreach ($childPosts as $childPost) {
+						echo '<div class="img" role="image">' . get_the_post_thumbnail($childPost->ID, 'post-thumbnail') . '</div>';
+					}
+					?>
 
 					<div class="wrapper" id="member-info">
 						<div class="member-info">
@@ -59,52 +103,19 @@
 								echo '<h3>'. $childPost->fields['list-heading-content'] . '</h3>';
 							}
 							?>
-							<ul class="top-level">
-								<?php
-								//List Item Widget
-								$args = array(
-									'name' => 'about page 1'
-									);
-								$childPosts = types_child_posts('list-item', $args);
-								foreach ($childPosts as $childPost) {
-									echo '<li>'. $childPost->fields['list-item-content'] . '</li>';
-								}
-								?>
 
-								<?php
-								//List Item Widget
-								$args = array(
-									'name' => 'about page 2'
-									);
-								$childPosts = types_child_posts('list-item', $args);
-								foreach ($childPosts as $childPost) {
-									echo '<li>'. $childPost->fields['list-item-content'] . '</li>';
-								}
-								?>
-
-								<?php
-								//List Item Widget
-								$args = array(
-									'name' => 'about page 3'
-									);
-								$childPosts = types_child_posts('list-item', $args);
-								foreach ($childPosts as $childPost) {
-									echo '<li>'. $childPost->fields['list-item-content'] . '</li>';
-								}
-								?>
-
-								<?php
-								//List Item Widget
-								$args = array(
-									'name' => 'about page 4'
-									);
-								$childPosts = types_child_posts('list-item', $args);
-								foreach ($childPosts as $childPost) {
-									echo '<li>'. $childPost->fields['list-item-content'] . '</li>';
-								}
-								?>
-							</ul>
+							<?php
+							//List Widget
+							$args = array(
+								'name' => 'about page 1'
+								);
+							$childPosts = types_child_posts('list', $args);
+							foreach ($childPosts as $childPost) {
+								echo get_post_field('post_content', $childPost->ID);
+							}
+							?>
 						</div>
+						
 						<div class="member-info">
 							<?php
 							//List Heading Widget
@@ -116,29 +127,17 @@
 								echo '<h3>'. $childPost->fields['list-heading-content'] . '</h3>';
 							}
 							?>
-							<ul class="top-level">
-								<?php
-								//List Item Widget
-								$args = array(
-									'name' => 'about page 5'
-									);
-								$childPosts = types_child_posts('list-item', $args);
-								foreach ($childPosts as $childPost) {
-									echo '<li>'. $childPost->fields['list-item-content'] . '</li>';
-								}
-								?>
-
-								<?php
-								//List Item Widget
-								$args = array(
-									'name' => 'about page 6'
-									);
-								$childPosts = types_child_posts('list-item', $args);
-								foreach ($childPosts as $childPost) {
-									echo '<li>'. $childPost->fields['list-item-content'] . '</li>';
-								}
-								?>
-							</ul>
+							
+							<?php
+							//List Widget
+							$args = array(
+								'name' => 'about page 2'
+								);
+							$childPosts = types_child_posts('list', $args);
+							foreach ($childPosts as $childPost) {
+								echo get_post_field('post_content', $childPost->ID);
+							}
+							?>
 						</div>
 					</div>
 				</section>

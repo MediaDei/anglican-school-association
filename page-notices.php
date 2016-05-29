@@ -13,9 +13,6 @@
 					    $numberOfCategories = 0;
 					  	$categories = get_categories($args);
 
-
-					  	//echo '<li><input type="checkbox" id="checkbox-0" checked>All Notices</li>';//show all posts
-					  	
 					  	foreach ($categories as $cat) {
 					  		$numberOfCategories++;
 					    	echo '<li><input type="checkbox" class="filter-checkbox" id="checkbox-'.$numberOfCategories.'">'.$cat->name.'</li>';
@@ -25,12 +22,10 @@
 									      $(document).ready(function(){
 								          $("#checkbox-'.$numberOfCategories.':checkbox").change(function(){
 							              if($(this).is(":checked")){
-							              	$(".post").hide();
-							                $(".category-'.$cat->slug.'").show();
 
 							              }
 							              else if($(this).is(":not(:checked)")){
-							                $(".category-'.$cat->slug.'").hide();
+
 							              }
 								          });
 									      });
@@ -41,9 +36,12 @@
 				</aside>
 				<div class="posts grid-2-3 grid-pad">
 					<?php 
+					// base loop
+					$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 					$args = array(
-						'post_type' => 'post'
-					);
+						'post_type' => 'post',
+						'posts_per_page' => 1, 
+						'paged' => $paged );
 					$notices = new WP_Query($args);
 					$numberOfPosts = 0;
 					$expanded = false;
@@ -71,6 +69,8 @@
 						</style>
 
 					<?php endwhile; ?>
+					<!-- pagination -->
+					<?php posts_nav_link(); ?>
 					<?php $numberOfPosts = 0; ?>
 					<?php wp_reset_postdata(); // reset the query ?>
 				</div>

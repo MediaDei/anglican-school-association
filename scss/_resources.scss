@@ -244,19 +244,19 @@ div.resources{//page specific
 
 
 	section.links{
+		h4{
+			width: 500px;
+			margin: 0px auto 5px;
+			font-style: italic;
+			font-size: 1.3em;
+			padding-left: 40px; 
+		}
 		ul{
 			width: 500px;
 			margin: 0 auto 40px;
 			li{
 				list-style-image: none;
 				list-style-type: none;
-			}
-			h4{
-				font-style: italic;
-				font-size: 1.3em;
-				margin-bottom: 5px;
-			}
-			li{
 				a{
 					color: $link;
 					&:hover{

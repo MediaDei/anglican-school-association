@@ -621,15 +621,19 @@ body div.page-wrap {
           padding: 5px 0px;
           white-space: pre-line; }
     body div.page-wrap header div.hero-img {
-      max-height: 500px;
+      width: 100%;
+      height: 500px;
       border-top: 1px solid #979797;
       border-bottom: 1px solid #979797;
       box-shadow: 0px 19px 8px -15px rgba(0, 0, 0, 0.5);
       overflow: hidden; }
       body div.page-wrap header div.hero-img img {
-        width: 100%;
-        height: auto;
-        display: block; }
+        width: auto;
+        height: 500px;
+        display: block;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%); }
   body div.page-wrap div section {
     padding: 100px 0px 50px 0px;
     border-bottom: 1px solid #979797; }
@@ -643,7 +647,8 @@ body div.page-wrap {
       position: relative;
       margin-bottom: 130px;
       box-shadow: 0px 11px 4px -5px rgba(0, 0, 0, 0.1);
-      letter-spacing: 12px; }
+      letter-spacing: 12px;
+      white-space: pre-line; }
       @media (min-width: 640px) {
         body div.page-wrap div section h2 {
           letter-spacing: 17px; } }
@@ -698,19 +703,12 @@ body div.page-wrap {
       @media (min-width: 640px) {
         body div.page-wrap div section p.dropcaps {
           width: 70%; } }
-      body div.page-wrap div section p.dropcaps span:first-of-type {
+      body div.page-wrap div section p.dropcaps span.first-letter {
         font-size: 3em;
         float: left;
         margin-left: -1em;
-        line-height: 1; }
-        body div.page-wrap div section p.dropcaps span:first-of-type.o {
-          padding-left: 11px; }
-        body div.page-wrap div section p.dropcaps span:first-of-type.c {
-          padding-left: 13px; }
-        body div.page-wrap div section p.dropcaps span:first-of-type.a {
-          padding-left: 11px; }
-        body div.page-wrap div section p.dropcaps span:first-of-type.s {
-          padding-left: 23px; }
+        line-height: 1;
+        padding-left: 0.2em; }
       @media (min-width: 640px) {
         body div.page-wrap div section p.dropcaps {
           width: 70%; } }
@@ -721,7 +719,8 @@ body div.page-wrap {
       height: 150px;
       margin: 0 auto 50px;
       border-top: 1px solid #979797;
-      box-shadow: 0px 9px 7px -5px rgba(0, 0, 0, 0.5); }
+      box-shadow: 0px 9px 7px -5px rgba(0, 0, 0, 0.5);
+      overflow: hidden; }
       @media (min-width: 640px) {
         body div.page-wrap div section div.img {
           width: 80%;
@@ -847,6 +846,7 @@ body div.page-wrap {
         width: 100%;
         height: 100%;
         border-radius: 4px;
+        pointer-events: none;
         background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI3MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI4NSUiIHN0b3AtY29sb3I9IiM3YjdiN2IiIHN0b3Atb3BhY2l0eT0iMC4xNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
         background-size: 100%;
         background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(70%, rgba(255, 255, 255, 0)), color-stop(85%, rgba(123, 123, 123, 0.15)), color-stop(100%, rgba(0, 0, 0, 0.2)));
@@ -1523,20 +1523,22 @@ body div.page-wrap {
           letter-spacing: 6.5px;
           line-height: 0.4;
           padding-left: 3px; }
+  body div.page-wrap div.resources section.links h4 {
+    width: 500px;
+    margin: 0px auto 5px;
+    font-style: italic;
+    font-size: 1.3em;
+    padding-left: 40px; }
   body div.page-wrap div.resources section.links ul {
     width: 500px;
     margin: 0 auto 40px; }
     body div.page-wrap div.resources section.links ul li {
       list-style-image: none;
       list-style-type: none; }
-    body div.page-wrap div.resources section.links ul h4 {
-      font-style: italic;
-      font-size: 1.3em;
-      margin-bottom: 5px; }
-    body div.page-wrap div.resources section.links ul li a {
-      color: #3C7BC4; }
-      body div.page-wrap div.resources section.links ul li a:hover {
-        text-decoration: underline; }
+      body div.page-wrap div.resources section.links ul li a {
+        color: #3C7BC4; }
+        body div.page-wrap div.resources section.links ul li a:hover {
+          text-decoration: underline; }
   body div.page-wrap div.apply section.apply ul.top-level, body div.page-wrap div.apply section.why-parish-schools ul.top-level {
     padding-bottom: 30px; }
     @media (min-width: 640px) {
@@ -1577,27 +1579,27 @@ body div.page-wrap {
     body div.page-wrap div.apply section.apply div.wrapper a.grid-1-2:after {
       content: "→";
       padding-left: 10px; }
-  body div.page-wrap div.apply section.join div.wpcf7 {
+  body div.page-wrap div.apply section.apply div.wpcf7 {
     padding: 40px 20px 20px; }
     @media (min-width: 640px) {
-      body div.page-wrap div.apply section.join div.wpcf7 {
+      body div.page-wrap div.apply section.apply div.wpcf7 {
         margin: 0 auto;
         width: 90%;
         border: 1px solid #C9D2DA;
         border-radius: 7px;
         box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.2); } }
     @media (min-width: 640px) {
-      body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form {
+      body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form {
         width: 80%;
         margin: 0 auto; } }
-    body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form h3.title {
+    body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form h3.title {
       font-size: 1.8em;
       text-align: center;
       padding-bottom: 5px;
       border-bottom: 1px solid #CBCBCB; }
-    body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper {
+    body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper {
       padding: 20px; }
-      body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p span input {
+      body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p span input {
         border: 1px solid #bbb;
         border-radius: 3px;
         box-shadow: 0 1px 2px #dedede inset;
@@ -1607,65 +1609,91 @@ body div.page-wrap {
         padding: 7px 0 4px 7px;
         transition: border 0.2s ease-in-out 0s;
         width: 100%; }
-        body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p span input:focus {
+        body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p span input:focus {
           border-color: #129fea;
           outline: 0;
           box-shadow: inset 0 1px 3px #aaa; }
-        body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p span input:-moz-placeholder {
+        body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p span input:-moz-placeholder {
           font-style: italic;
           color: #aaa;
           padding: 8px 0 3px 7px;
           line-height: 1; }
-        body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p span input::-moz-placeholder {
+        body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p span input::-moz-placeholder {
           font-style: italic;
           color: #aaa;
           padding: 8px 0 3px 7px;
           line-height: 1; }
-        body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p span input:-ms-input-placeholder {
+        body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p span input:-ms-input-placeholder {
           font-style: italic;
           color: #aaa;
           padding: 8px 0 3px 7px;
           line-height: 1; }
-        body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p span input::-webkit-input-placeholder {
+        body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p span input::-webkit-input-placeholder {
           font-style: italic;
           color: #aaa;
           padding: 8px 0 3px 7px;
           line-height: 1; }
-        body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p span input[aria-invalid="true"] {
+        body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p span input[aria-invalid="true"] {
           border: 1px solid red;
           transition: border 0.2s ease-in-out 0s; }
-        body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p span input + span {
+        body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p span input + span {
           font-size: 0.9em;
           margin-top: 4px; }
-      body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p.first-name, body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p.last-name {
+      body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p.first-name, body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p.last-name {
         width: 49%; }
-      body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p.first-name, body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p.city, body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p.state {
+      body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p.first-name, body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p.city, body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p.state {
         float: left; }
-      body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p.last-name, body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p.zip {
+      body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p.last-name, body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p.zip {
         float: right; }
-      body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p.city, body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p.state, body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p.zip {
+      body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p.city, body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p.state, body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p.zip {
         width: 30%;
         margin: 0px 0px 20px; }
-      body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p.city, body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p.state {
+      body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p.city, body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper p.state {
         margin-right: 15px; }
-      body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p.button {
-        width: 210px;
-        margin: 21px auto 0; }
-        body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p.button input {
-          width: 100%;
-          height: 30px;
-          font-size: 16px;
-          color: #3c2420;
-          line-height: 2; }
-        body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p.button img {
-          margin: 0 auto;
-          display: block; }
-        body div.page-wrap div.apply section.join div.wpcf7 form.wpcf7-form div.field-wrapper p.button + div {
-          margin: 0 auto;
+      body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper div.line-wrapper {
+        margin-bottom: 20px;
+        border: 0px; }
+        body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper div.line-wrapper div.button {
+          display: table;
+          margin: 0px auto;
           border-radius: 4px;
-          border-width: 1px;
-          font-size: 0.9em;
-          padding: 13px; }
+          text-shadow: 0px 2px 0px rgba(255, 255, 255, 0.5);
+          border: 1px solid #979797;
+          background-color: #FBEFC6;
+          font-size: 1.1em;
+          cursor: pointer;
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), 30px 0px 0px 0px white, -30px 0px 0px 0px white;
+          position: relative;
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+          body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper div.line-wrapper div.button:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+            pointer-events: none;
+            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI3MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI4NSUiIHN0b3AtY29sb3I9IiM3YjdiN2IiIHN0b3Atb3BhY2l0eT0iMC4xNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
+            background-size: 100%;
+            background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(70%, rgba(255, 255, 255, 0)), color-stop(85%, rgba(123, 123, 123, 0.15)), color-stop(100%, rgba(0, 0, 0, 0.2)));
+            background-image: -moz-linear-gradient(rgba(255, 255, 255, 0) 70%, rgba(123, 123, 123, 0.15), rgba(0, 0, 0, 0.2));
+            background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0) 70%, rgba(123, 123, 123, 0.15), rgba(0, 0, 0, 0.2));
+            background-image: linear-gradient(rgba(255, 255, 255, 0) 70%, rgba(123, 123, 123, 0.15), rgba(0, 0, 0, 0.2)); }
+          body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper div.line-wrapper div.button:hover {
+            background-color: #faecbc; }
+          body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper div.line-wrapper div.button:active {
+            position: relative;
+            top: 1px;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5), 30px 0px 0px 0px white, -30px 0px 0px 0px white;
+            background-color: #faeab3; }
+          body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper div.line-wrapper div.button input {
+            background-color: transparent;
+            border: 0px;
+            padding: 10px 30px; }
   body div.page-wrap div.apply section.why-parish-schools ul.top-level {
     border: none;
     padding-top: 0px;
@@ -1694,88 +1722,62 @@ body footer {
     transform: translateY(-50%);
     float: left;
     text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5); }
-    body footer div.text-left h1 {
-      text-align: center;
-      text-transform: uppercase;
-      margin: 0px 0px 0px 80px; }
-      @media (min-width: 640px) {
-        body footer div.text-left h1 {
-          margin: 0px 0px 0px 110px; } }
-      @media (min-width: 640px) {
-        body footer div.text-left h1 {
-          margin: 0px 0px 0px 140px; } }
-      body footer div.text-left h1:first-of-type {
-        position: relative;
-        border-bottom: 1px solid #979797;
-        letter-spacing: 6px;
-        font-size: 1.3em; }
-        @media (min-width: 860px) {
-          body footer div.text-left h1:first-of-type {
-            font-size: 2em; } }
-        body footer div.text-left h1:first-of-type:before {
-          content: "";
-          display: inline-block;
-          width: 60px;
-          height: 60px;
-          position: absolute;
-          left: -70px;
-          top: 90%;
-          -moz-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          -webkit-transform: translateY(-50%);
-          transform: translateY(-50%); }
-          @media (min-width: 640px) {
-            body footer div.text-left h1:first-of-type:before {
-              width: 80px;
-              height: 80px;
-              left: -90px; } }
-          @media (min-width: 860px) {
-            body footer div.text-left h1:first-of-type:before {
-              width: 100px;
-              height: 100px;
-              left: -115px; } }
-      body footer div.text-left h1:nth-of-type(2) {
-        font-size: 0.8em;
-        letter-spacing: 1px;
-        padding-top: 5px; }
-        @media (min-width: 860px) {
-          body footer div.text-left h1:nth-of-type(2) {
-            font-size: 1.2em; } }
     body footer div.text-left div.logo {
-      display: inline-block;
-      width: 60px;
-      height: 60px;
+      float: left;
+      width: 80px;
+      height: 80px;
       background: url("../images/footer-png-asa2.png") no-repeat center center/100% auto;
-      /*
-      @include breakpoint(medium){
-      	width: 80px;
-      	height: 80px;
-      	left: -90px;
-      }
-      @include breakpoint(large){
-      	width: 100px;
-      	height: 100px;
-      	left: -115px;
-      }
-      */ }
+      margin-left: 10px;
+      position: relative; }
+      @media (min-width: 640px) {
+        body footer div.text-left div.logo {
+          width: 80px;
+          height: 80px;
+          margin-left: 20px; } }
+      @media (min-width: 860px) {
+        body footer div.text-left div.logo {
+          width: 110px;
+          height: 110px; } }
       body footer div.text-left div.logo:after {
         content: "";
-        display: inline-block;
-        width: 60px;
-        height: 60px;
+        width: 100%;
+        height: 100%;
         background: url("../images/footer-png-asa.png") no-repeat center center/100% auto;
-        /*
-        @include breakpoint(medium){
-        	width: 80px;
-        	height: 80px;
-        	left: -90px;
-        }
-        @include breakpoint(large){
-        	width: 100px;
-        	height: 100px;
-        	left: -115px;
-        }
-        */ }
+        position: absolute;
+        top: -1px; }
+        @media (min-width: 640px) {
+          body footer div.text-left div.logo:after {
+            width: 80px;
+            height: 80px; } }
+        @media (min-width: 860px) {
+          body footer div.text-left div.logo:after {
+            width: 110px;
+            height: 110px; } }
+    body footer div.text-left div.text-wrapper {
+      float: left;
+      margin-top: 20px; }
+      @media (min-width: 860px) {
+        body footer div.text-left div.text-wrapper {
+          margin-top: 25px; } }
+      body footer div.text-left div.text-wrapper h1 {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0px 0px 0px 10px; }
+        body footer div.text-left div.text-wrapper h1:first-of-type {
+          position: relative;
+          border-bottom: 1px solid #979797;
+          letter-spacing: 6px;
+          font-size: 1.3em; }
+          @media (min-width: 860px) {
+            body footer div.text-left div.text-wrapper h1:first-of-type {
+              font-size: 2em; } }
+        body footer div.text-left div.text-wrapper h1:nth-of-type(2) {
+          font-size: 0.8em;
+          letter-spacing: 1px;
+          padding-top: 5px; }
+          @media (min-width: 860px) {
+            body footer div.text-left div.text-wrapper h1:nth-of-type(2) {
+              font-size: 1.2em; } }
   body footer div.text-right {
     position: relative;
     top: 50%;
@@ -1783,48 +1785,64 @@ body footer {
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    text-align: right;
     float: right;
-    padding-right: 80px;
+    margin-right: 10px;
     text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5); }
     @media (min-width: 640px) {
       body footer div.text-right {
-        padding-right: 110px; } }
-    @media (min-width: 860px) {
-      body footer div.text-right {
-        padding-right: 120px; } }
-    body footer div.text-right p {
-      font-style: italic;
-      margin: 0px 0px 5px;
-      position: relative;
-      font-size: 1em; }
+        margin-right: 20px; } }
+    body footer div.text-right div.text-wrapper {
+      float: right;
+      margin-top: 20px; }
       @media (min-width: 860px) {
-        body footer div.text-right p {
-          font-size: 1.5em; } }
-      body footer div.text-right p:after {
+        body footer div.text-right div.text-wrapper {
+          margin-top: 25px; } }
+      body footer div.text-right div.text-wrapper p {
+        font-style: italic;
+        margin: 0px 0px 5px;
+        position: relative;
+        font-size: 1em; }
+        @media (min-width: 860px) {
+          body footer div.text-right div.text-wrapper p {
+            font-size: 1.5em; } }
+      body footer div.text-right div.text-wrapper ul {
+        font-style: none; }
+        body footer div.text-right div.text-wrapper ul li {
+          font-size: 0.6em;
+          margin-bottom: 5px;
+          list-style-image: none;
+          list-style-type: none; }
+          @media (min-width: 860px) {
+            body footer div.text-right div.text-wrapper ul li {
+              font-size: 0.8em; } }
+    body footer div.text-right div.logo2 {
+      float: right;
+      width: 80px;
+      height: 80px;
+      background: url("../images/rec-logo-2.png") no-repeat center center/100% auto;
+      margin-left: 10px;
+      position: relative; }
+      @media (min-width: 640px) {
+        body footer div.text-right div.logo2 {
+          width: 80px;
+          height: 80px;
+          margin-left: 20px; } }
+      @media (min-width: 860px) {
+        body footer div.text-right div.logo2 {
+          width: 110px;
+          height: 110px; } }
+      body footer div.text-right div.logo2:after {
         content: "";
-        display: inline-block;
-        width: 60px;
-        height: 60px;
+        width: 100%;
+        height: 100%;
         background: url("../images/rec-logo.png") no-repeat center center/100% auto;
         position: absolute;
-        right: -70px; }
+        top: -1px; }
         @media (min-width: 640px) {
-          body footer div.text-right p:after {
-            right: -100px;
-            width: 70px;
-            height: 70px; } }
+          body footer div.text-right div.logo2:after {
+            width: 80px;
+            height: 80px; } }
         @media (min-width: 860px) {
-          body footer div.text-right p:after {
-            width: 90px;
-            height: 90px; } }
-    body footer div.text-right ul {
-      font-style: none; }
-      body footer div.text-right ul li {
-        font-size: 0.6em;
-        margin-bottom: 5px;
-        list-style-image: none;
-        list-style-type: none; }
-        @media (min-width: 860px) {
-          body footer div.text-right ul li {
-            font-size: 0.8em; } }
+          body footer div.text-right div.logo2:after {
+            width: 110px;
+            height: 110px; } }
