@@ -170,14 +170,16 @@ body{
 						width: 130px;
 						height: 130px;
 						position: absolute;
-						top: 85px;
-						left: 100px;
+						top: 25px;
+						left: 50%;
 						overflow: hidden;
 						@include transform(translateX(-50%));
 						border-radius: 100%;
 						border: 1px solid $border;
 						box-shadow: inset 0px 1px 2px 1px rgba(black,0.3);
 						@include breakpoint(large){
+							top: 85px;
+							left: 100px;
 						}
 						figure{
 							margin: 0;
