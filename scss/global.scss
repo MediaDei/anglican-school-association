@@ -106,7 +106,7 @@ body{
 					}
 				}
 				div.img{
-					height: 250px;
+					max-height: 250px;
 					margin: 0 auto 50px;
 					border-top: 1px solid $border;
 					box-shadow: 0px 9px 7px -5px rgba(black,0.5);
@@ -121,22 +121,19 @@ body{
 												0px 21px 10px -15px rgba(black,0.5);
 					}
 					img{
-						position: absolute;
-						top: 50%;
-						left: 50%;
-						@include transform(translate(-50%, -50%));
-						width: auto;
-						height: 100%; 
+						display: block;
+						width: 100%;
+						height: auto; 
 					}
 				}
 				div.circle-h3{
 					border-bottom: 1px solid $lightest-border;
 					padding: 110px 0px 50px;
+					position: relative;
 					&:last-of-type{
 						border-bottom: none;
 					}
 					h3{//heading with circle image
-						position: relative;
 						font-size: 1.6em;
 						text-align: center; 
 						width: 98%;
@@ -168,23 +165,29 @@ body{
 								background: url("../images/oval4.jpg") no-repeat center center / 100% auto;	
 							}
 						}
-						&:before{//cirle-image
-							content: "";
-							width: 130px;
-							height: 130px;
-							position: absolute;
-							top: -420%;
-							left: 50%;
-							@include transform(translateX(-50%));
-							border-radius: 100%;
-							border: 1px solid $border;
-							box-shadow: inset 0px 1px 2px 1px rgba(black,0.3);
-							@include breakpoint(large){
-								top: -24px;
-								left: 85px;
+					}
+					div.circle{//cirle-image
+						width: 130px;
+						height: 130px;
+						position: absolute;
+						top: 85px;
+						left: 100px;
+						overflow: hidden;
+						@include transform(translateX(-50%));
+						border-radius: 100%;
+						border: 1px solid $border;
+						box-shadow: inset 0px 1px 2px 1px rgba(black,0.3);
+						@include breakpoint(large){
+						}
+						figure{
+							margin: 0;
+							img{
+								width: 100%;
+								height: auto;  
 							}
 						}
 					}
+
 					div.grid{ 
 						width: 90%;
 						margin: 0 auto 40px;

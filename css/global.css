@@ -622,22 +622,16 @@ body div.page-wrap {
           white-space: pre-line; }
     body div.page-wrap header div.hero-img {
       width: 100%;
-      height: 500px;
+      max-height: 500px;
       border-top: 1px solid #979797;
       border-bottom: 1px solid #979797;
       box-shadow: 0px 19px 8px -15px rgba(0, 0, 0, 0.5);
       overflow: hidden;
       position: relative; }
       body div.page-wrap header div.hero-img img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        width: auto;
-        height: 100%; }
+        display: block;
+        width: 100%;
+        height: auto; }
   body div.page-wrap div section {
     padding: 100px 0px 50px 0px;
     border-bottom: 1px solid #979797; }
@@ -720,7 +714,7 @@ body div.page-wrap {
         body div.page-wrap div section p.dropcaps {
           width: 50%; } }
     body div.page-wrap div section div.img {
-      height: 250px;
+      max-height: 250px;
       margin: 0 auto 50px;
       border-top: 1px solid #979797;
       box-shadow: 0px 9px 7px -5px rgba(0, 0, 0, 0.5);
@@ -732,22 +726,16 @@ body div.page-wrap {
           border: 4px solid #F4DC97;
           box-shadow: inset 0px -1px 0px 0px white, inset 0px 1px 0px 0px rgba(0, 0, 0, 0.3), 0px 0px 0px 1px #CBBFA5, 0px 21px 10px -15px rgba(0, 0, 0, 0.5); } }
       body div.page-wrap div section div.img img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        width: auto;
-        height: 100%; }
+        display: block;
+        width: 100%;
+        height: auto; }
     body div.page-wrap div section div.circle-h3 {
       border-bottom: 1px solid #CBCBCB;
-      padding: 110px 0px 50px; }
+      padding: 110px 0px 50px;
+      position: relative; }
       body div.page-wrap div section div.circle-h3:last-of-type {
         border-bottom: none; }
       body div.page-wrap div section div.circle-h3 h3 {
-        position: relative;
         font-size: 1.6em;
         text-align: center;
         width: 98%;
@@ -767,24 +755,25 @@ body div.page-wrap {
           background: url("../images/oval3.jpg") no-repeat center center/100% auto; }
         body div.page-wrap div section div.circle-h3 h3:nth-of-type(4):before {
           background: url("../images/oval4.jpg") no-repeat center center/100% auto; }
-        body div.page-wrap div section div.circle-h3 h3:before {
-          content: "";
-          width: 130px;
-          height: 130px;
-          position: absolute;
-          top: -420%;
-          left: 50%;
-          -moz-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-          -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-          border-radius: 100%;
-          border: 1px solid #979797;
-          box-shadow: inset 0px 1px 2px 1px rgba(0, 0, 0, 0.3); }
-          @media (min-width: 860px) {
-            body div.page-wrap div section div.circle-h3 h3:before {
-              top: -24px;
-              left: 85px; } }
+      body div.page-wrap div section div.circle-h3 div.circle {
+        width: 130px;
+        height: 130px;
+        position: absolute;
+        top: 85px;
+        left: 100px;
+        overflow: hidden;
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        border-radius: 100%;
+        border: 1px solid #979797;
+        box-shadow: inset 0px 1px 2px 1px rgba(0, 0, 0, 0.3); }
+        body div.page-wrap div section div.circle-h3 div.circle figure {
+          margin: 0; }
+          body div.page-wrap div section div.circle-h3 div.circle figure img {
+            width: 100%;
+            height: auto; }
       body div.page-wrap div section div.circle-h3 div.grid {
         width: 90%;
         margin: 0 auto 40px; }
@@ -896,8 +885,6 @@ body div.page-wrap {
         background-size: 130% auto; } }
   body div.page-wrap div.home section.welcome p.dropcaps {
     margin-bottom: 60px; }
-  body div.page-wrap div.home section.welcome h3.img2:before {
-    background: url("../images/oval2.jpg") no-repeat center center/100% auto !important; }
   body div.page-wrap div.about section h3 {
     text-align: center;
     font-size: 1.8em; }
@@ -1227,21 +1214,31 @@ body div.page-wrap {
         padding: 0px 0px 0px 20px; }
         @media (min-width: 640px) {
           body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul {
-            padding: 0px 10px;
+            padding: 0px;
             display: block;
             margin: 0px; } }
-        @media (min-width: 860px) {
-          body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul {
-            padding: 0px 20px; } }
         body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul li {
           list-style-image: none;
           list-style-type: none;
           float: left;
-          width: 50%; }
+          width: 50%;
+          border-radius: 4px;
+          padding: 5px 10px; }
+          body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul li.current-cat {
+            background-color: #FAFDFF;
+            cursor: pointer;
+            box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3); }
+          body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul li:hover {
+            background-color: #FAFDFF;
+            cursor: pointer;
+            box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3); }
+          body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul li a {
+            color: #3C7BC4; }
           @media (min-width: 640px) {
             body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul li {
               float: none;
-              width: 100%; } }
+              display: table;
+              width: auto; } }
           body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul li input {
             margin-right: 10px;
             width: 20px;
@@ -1324,6 +1321,13 @@ body div.page-wrap {
         body div.page-wrap div.notices section.notices div.posts.grid-2-3 div.post a.expand {
           float: right;
           color: #006FCD; }
+    body div.page-wrap div.notices section.notices div.pagination {
+      display: table;
+      margin: 0 auto; }
+      body div.page-wrap div.notices section.notices div.pagination a, body div.page-wrap div.notices section.notices div.pagination span {
+        margin-right: 5px; }
+      body div.page-wrap div.notices section.notices div.pagination a:hover {
+        text-decoration: underline; }
   body div.page-wrap div.resources section.resources a {
     display: table;
     margin: 0px auto 20px; }

@@ -31,12 +31,5 @@ div.home{//page specific
 		p.dropcaps{
 			margin-bottom: 60px;
 		}
-		h3{
-			&.img2{
-				&:before{
-					background: url("../images/oval2.jpg") no-repeat center center / 100% auto !important;	
-				}
-			}
-		}
 	}
 }

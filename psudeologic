@@ -1,57 +1,26 @@
 Notes:
 
-The reason we switched to Static Home Page because of Hero Image
-	- Index.php could not have a thumbnail because it was not a page
-	- also, it made more since to use page-home.php since it is the default template for posts (we are using Notices page)
-
-We are using the WP draft/publish functionality in all of our post types.
-	- they are just not visible from the "page for widgets" screen
-		- accessablie through the individual post types themeselves
-
 ------------------
 Things left to do:
 
 - Global
-	- H3 circle images need to be coded to use thumbnail
-
 	- Solve IMG positioning for thumbnails (hero imgs and framed image widgets)
-
-	- H2 need narrow class to be applied by php strlen() or WYSIWYG Editor drop down. Which to use?
-
-- Notices Page
-	- New Filter/Post Loop PHP logic
+		- Using Absolute positioning, working but not ideal
+			- user can't upload images that are longer than they are wide or else they don't fill the width of the wrapper
+			- Should we go back to dynamic height, were width always fit?
 
 - Resources Page
-	- Allow user to upload files from dashboard and auto adjust date on button
-		- make sure have the latest version of resources from live server
+	- WP Document Revision looks best for us
+	- Start a Parish School Button does not link to anything
+		- What should it link to/do?
 
 - Apply Page
 	- Form JS Validation?
-
-	- Should the two blue link sections be custom post type?
-
-- Footer
-	- Overlapping PNGs for Logos
-
-	- Appearance cleanup
-
-- Fixes:
-	- check all labels for custom post types
-		- Add new text to have "widget" included or not?
-
 --------------------------
-
-start
-  default load: no checkboxes ever checked
-  load all posts in respective divs
-  hide/show divs based on input of checkboxes
-  	pagination in each div
-	when you click on a page link in pagination
-		open archive php with that cat and page
-end
-
-create archive template; can use page notices
-
-
-*priorty footer*
-
+div - parent
+	heigth 500px
+	overflow hid
+		images
+			width 100%
+			height auto
+			centered : top-center

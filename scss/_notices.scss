@@ -26,21 +26,34 @@ div.notices{//page specific
 			 	margin: 0 auto;
 			 	padding: 0px 0px 0px 20px;
 			 	@include breakpoint(medium){
-			 		padding: 0px 10px;
+			 		padding: 0px;
 			 		display: block;
 					margin: 0px;
 			 	} 
-			 	@include breakpoint(large){
-			 		padding: 0px 20px;
-			 	}
 			 	li{
 			 		list-style-image: none;
 					list-style-type: none;
 					float: left;
 					width: 50%; 
+					border-radius: 4px;
+					padding: 5px 10px;
+					&.current-cat{
+						background-color: $member-post-hover;
+						cursor: pointer;
+						box-shadow: 0px 2px 3px 0px rgba(black,0.3);
+					} 
+					&:hover{
+						background-color: $member-post-hover;
+						cursor: pointer;
+						box-shadow: 0px 2px 3px 0px rgba(black,0.3);
+					} 
+					a{
+						color: $link;
+					}
 			 		@include breakpoint(medium){
 			 			float: none;
-			 			width: 100%;
+			 			display: table; 
+			 			width: auto; 
 			 		}
 			 		input{
 			 			margin-right: 10px;
@@ -139,6 +152,21 @@ div.notices{//page specific
 					color: $post-link;
 				}
 			}
+		}
+		div.pagination{
+			display: table;
+			margin: 0 auto;
+			a,span{
+				margin-right: 5px; 
+			}
+			a{
+				&:hover{
+				text-decoration: underline;
+				} 
+			}
+			span{
+				//text-decoration: underline;
+			} 
 		}
 	}
 }

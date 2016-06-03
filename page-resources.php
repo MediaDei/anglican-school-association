@@ -23,7 +23,7 @@
 					<div class="wrapper grid">
 						<div class="grid-1-2">
 							<label>Model By-Laws</label>
-							<a href="<?php bloginfo('template_url'); ?>/files/ASA Model School Bylaws 5-21-2016.pdf">
+							<a href="<?php site_url(); ?>/documents/2016/06/by-laws.pdf">
 								<div class="button btn-1" role="button">
 									<div class="icon btn-1"></div>
 									<div class="text">
@@ -35,7 +35,7 @@
 						</div>
 						<div class="grid-1-2">
 							<label>Model Scope and Sequence</label>
-							<a href="#">
+							<a href="<?php site_url(); ?>/documents/2016/06/model-scope-sequence.pdf">
 								<div class="button btn-2" role="button">
 									<div class="icon btn-2"></div>
 									<div class="text">
@@ -57,7 +57,7 @@
 						</div>
 					</div>
 
-					<a href="#">
+					<a href="<?php site_url(); ?>/documents/2016/06/start-a-parish-school.pdf">
 						<div class="button btn-3" role="button">
 							<div class="icon btn-3"></div>
 							<div class="text">

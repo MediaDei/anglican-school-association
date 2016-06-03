@@ -55,6 +55,7 @@
 						$childPosts = types_child_posts('heading-with-circle', $args);
 						foreach ($childPosts as $childPost) {
 							echo '<h3 class="h3-1">'. $childPost->fields['heading-with-circle-content'] . '</h3>';
+							echo '<div class="circle" role="image"><figure>' . get_the_post_thumbnail($childPost->ID, 'post-thumbnail') . '</figure></div>';
 						}
 						?>
 
@@ -157,6 +158,7 @@
 						$childPosts = types_child_posts('heading-with-circle', $args);
 						foreach ($childPosts as $childPost) {
 							echo '<h3 class="h3-2">'. $childPost->fields['heading-with-circle-content'] . '</h3>';
+							echo '<div class="circle" role="image"><figure>' . get_the_post_thumbnail($childPost->ID, 'post-thumbnail') . '</figure></div>';
 						}
 						?>
 
@@ -237,6 +239,7 @@
 						$childPosts = types_child_posts('heading-with-circle', $args);
 						foreach ($childPosts as $childPost) {
 							echo '<h3 class="h3-3">'. $childPost->fields['heading-with-circle-content'] . '</h3>';
+							echo '<div class="circle" role="image"><figure>' . get_the_post_thumbnail($childPost->ID, 'post-thumbnail') . '</figure></div>';
 						}
 						?>
 
@@ -295,6 +298,7 @@
 						$childPosts = types_child_posts('heading-with-circle', $args);
 						foreach ($childPosts as $childPost) {
 							echo '<h3 class="h3-4">'. $childPost->fields['heading-with-circle-content'] . '</h3>';
+							echo '<div class="circle" role="image"><figure>' . get_the_post_thumbnail($childPost->ID, 'post-thumbnail') . '</figure></div>';
 						}
 						?>
 
