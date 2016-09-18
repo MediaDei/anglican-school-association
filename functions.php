@@ -27,13 +27,49 @@ function scripts_styles() {
 add_action( 'wp_enqueue_scripts', 'scripts_styles');
 add_action( 'wp_enqueue_scripts', 'scripts_styles');
 
-/*
-//Register Navigation Menu for header.php
-function register_my_menu() {
-  register_nav_menu( 'primary', __( 'Primary Menu' ) );
+
+
+//mce code to add custom styles to editor is from https://wponcall.com/add-styles-menu-visual-editor-wordpress-4-0/
+// Callback function to insert 'styleselect' into the $buttons array
+function media_dei_mce_buttons_2( $buttons ) {
+    array_unshift( $buttons, 'styleselect' );
+    return $buttons;
 }
-add_action( 'after_setup_theme', 'register_my_menu' );
-*/
+// Register our callback to the appropriate filter
+add_filter('mce_buttons_2', 'media_dei_mce_buttons_2');
+
+// Callback function to filter the MCE settings
+function media_dei_mce_before_init_insert_formats( $init_array ) {  
+    // Define the style_formats array
+    $style_formats = array(  
+        // Each array child is a format with it's own settings
+        array(  
+            'title' => 'Large Heading Subtext',  
+            'block' => 'span',
+            'classes' => 'subtext',  
+            'wrapper' => true,
+        ),
+        array(  
+            'title' => 'Dropcaps Paragraph: First Letter',  
+            'block' => 'span',
+            'classes' => 'first-letter',  
+            'wrapper' => true,
+        ),
+        array(  
+            'title' => 'Large Heading: Narrow',  
+            'block' => 'h2',
+            'classes' => 'narrow',  
+            'wrapper' => true,
+        ),  
+    );  
+    // Insert the array, JSON ENCODED, into 'style_formats'
+    $init_array['style_formats'] = json_encode( $style_formats );  
+    
+    return $init_array;  
+  
+} 
+// Attach callback to 'tiny_mce_before_init' 
+add_filter( 'tiny_mce_before_init', 'media_dei_mce_before_init_insert_formats' );
 
 
 ?>

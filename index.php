@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 			<?php get_header(); ?>
 			<div role="image" class="hero-img home"></div>
 		</header>
@@ -70,3 +71,6 @@
 			</div>
 		</div>
 		<?php get_footer(); ?>
+=======
+ <?php include (TEMPLATEPATH . '/archive.php'); ?> 
+>>>>>>> origin/master

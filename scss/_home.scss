@@ -1,17 +1,30 @@
 div.home{//page specific
 
+<<<<<<< HEAD
 	.notice{
+=======
+	div.announcement{
+>>>>>>> origin/master
 		max-width: 500px;
 		margin: 60px auto 0;
 		border: 1px solid rgba(black,0.2);
 		box-shadow: 0 4px 8px rgba(black,0.5);
+<<<<<<< HEAD
+=======
+		overflow: hidden;
+>>>>>>> origin/master
 
 		figure {
 			margin: 0;
 
 			img {
 				display: block;
+<<<<<<< HEAD
 				width: 100%;
+=======
+				width: 100%; 
+				height: auto; 
+>>>>>>> origin/master
 			}
 		}
 	}
@@ -28,6 +41,7 @@ div.home{//page specific
 		}
 		p.dropcaps{
 			margin-bottom: 60px;
+<<<<<<< HEAD
 		}
 		h3{
 			&.img2{
@@ -35,6 +49,8 @@ div.home{//page specific
 					background: url("../images/oval2.jpg") no-repeat center center / 100% auto !important;	
 				}
 			}
+=======
+>>>>>>> origin/master
 		}
 	}
 }

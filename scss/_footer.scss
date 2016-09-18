@@ -18,107 +18,138 @@ footer{
 		top: 50%;
 		@include transform(translateY(-50%));
 		float: left;
-		text-shadow: 0px 3px 4px rgba(black,0.8);
-		h1{
-			text-align: center;
-			text-transform: uppercase;
-			margin: 0px 0px 0px 80px;
+		text-shadow: 0px 2px 3px rgba(black,0.5);
+		div.logo{
+			float: left;
+			width: 80px;
+			height: 80px;
+			background: url("../images/footer-png-asa2.png") no-repeat center center / 100% auto;
+			margin-left: 10px; 
+			position: relative;
 			@include breakpoint(medium){
-				margin: 0px 0px 0px 110px;
+				width: 80px;
+				height: 80px;
+				margin-left: 20px; 
 			}
-			@include breakpoint(medium){
-				margin: 0px 0px 0px 140px;
-			} 
-			&:first-of-type{
-				position: relative;
-				border-bottom: 1px solid $border;
-				letter-spacing: 6px;
-				font-size: 1.3em;
-				@include breakpoint(large){
-					font-size: 2em;
-				}
-				&:before{//bw logo
-					content: "";
-					display: inline-block;
-					width: 60px;
-					height: 60px;
-					background: url("../images/logo-bw.png") no-repeat center center / 100% auto;
-					position: absolute;
-					left: -70px;
-					top: 90%;
-					@include transform(translateY(-50%));
-					@include breakpoint(medium){
-						width: 80px;
-						height: 80px;
-						left: -90px;
-					}
-					@include breakpoint(large){
-						width: 100px;
-						height: 100px;
-						left: -115px;
-					}
-				}
+			@include breakpoint(large){
+				width: 110px;
+				height: 110px;
 			}
-			&:nth-of-type(2){
-				font-size: 0.8em;
-				letter-spacing: 1px;
-				padding-top: 5px;
+			&:after{
+				content: "";
+				width: 100%;
+				height: 100%; 
+				background: url("../images/footer-png-asa.png") no-repeat center center / 100% auto;
+				position: absolute;
+				top: -1px;
+				@include breakpoint(medium){
+					width: 80px;
+					height: 80px;
+				}
 				@include breakpoint(large){
-					font-size: 1.2em;
-				} 
+					width: 110px;
+					height: 110px;
+				}
 			}
 		}
+		div.text-wrapper{
+			float: left;
+			margin-top: 20px;
+			@include breakpoint(large){
+				margin-top: 25px;
+			}
+			h1{
+				text-align: center;
+				text-transform: uppercase;
+				margin: 0px 0px 0px 10px;
+				&:first-of-type{
+					position: relative;
+					border-bottom: 1px solid $border;
+					letter-spacing: 6px;
+					font-size: 1.3em;
+					@include breakpoint(large){
+						font-size: 2em;
+					}
+				}
+				&:nth-of-type(2){
+					font-size: 0.8em;
+					letter-spacing: 1px;
+					padding-top: 5px;
+					@include breakpoint(large){
+						font-size: 1.2em;
+					} 
+				}
+			}
+		}	
 	}
 	div.text-right{
 		position: relative;
 		top: 50%;
 		@include transform(translateY(-50%));
-		text-align: right;
 		float: right;
-		padding-right: 80px; 
-		text-shadow: 0px 3px 4px rgba(black,0.8);
+		margin-right: 10px; 
+		text-shadow: 0px 2px 3px rgba(black,0.5);
 		@include breakpoint(medium){
-			padding-right: 110px;
+			margin-right: 20px;
 		}
-		@include breakpoint(large){
-			padding-right: 120px;
-		}
-		p{
-			font-style: italic;
-			margin: 0px 0px 5px;
-			position: relative;
-			font-size: 1em;
+		div.text-wrapper{
+			float: right;
+			margin-top: 20px;
 			@include breakpoint(large){
-				font-size: 1.5em;
+				margin-top: 25px;
 			}
-			&:after{
-					content: "";
-					display: inline-block;
-					width: 60px;
-					height: 60px;
-					background: url("../images/logo2-bw.png") no-repeat center center / 100% auto;
-					position: absolute;
-					right: -70px;
-					@include breakpoint(medium){
-						right: -100px;
-						width: 70px;
-						height: 70px;  
-					}
+			p{
+				font-style: italic;
+				margin: 0px 0px 5px;
+				position: relative;
+				font-size: 1em;
+				@include breakpoint(large){
+					font-size: 1.5em;
+				}
+			}
+			ul{
+				font-style: none;
+				li{
+					font-size: 0.6em;
+					margin-bottom: 5px;
+					list-style-image: none;
+					list-style-type: none;
 					@include breakpoint(large){
-						width: 90px;
-						height: 90px;  
+						font-size: 0.8em;
 					}
 				}
+			}
 		}
-		ul{
-			font-style: none;
-			li{
-				font-size: 0.6em;
-				margin-bottom: 5px;
-				list-style-image: none;
-				list-style-type: none;
+		div.logo2{
+			float: right;
+			width: 80px;
+			height: 80px;
+			background: url("../images/rec-logo-2.png") no-repeat center center / 100% auto;
+			margin-left: 10px; 
+			position: relative;
+			@include breakpoint(medium){
+				width: 80px;
+				height: 80px;
+				margin-left: 20px; 
+			}
+			@include breakpoint(large){
+				width: 110px;
+				height: 110px;
+			}
+			&:after{
+				content: "";
+				width: 100%;
+				height: 100%; 
+				background: url("../images/rec-logo.png") no-repeat center center / 100% auto;
+				position: absolute;
+				top: -1px;
+				@include breakpoint(medium){
+					width: 80px;
+					height: 80px;
+				}
 				@include breakpoint(large){
-					font-size: 0.8em;
+					width: 110px;
+					height: 110px;
 				}
 			}
 		}

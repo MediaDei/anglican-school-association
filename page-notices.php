@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 			<?php get_header(); ?>
 			<div role="image" class="hero-img notices"></div>
 		</header>
@@ -56,3 +57,5 @@
 			</section>
 			</div>
 		<?php get_footer(); ?>
+=======
+>>>>>>> origin/master

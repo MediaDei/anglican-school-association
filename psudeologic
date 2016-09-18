@@ -1,0 +1,26 @@
+Notes:
+
+------------------
+Things left to do:
+
+- Global
+	- Solve IMG positioning for thumbnails (hero imgs and framed image widgets)
+		- Using Absolute positioning, working but not ideal
+			- user can't upload images that are longer than they are wide or else they don't fill the width of the wrapper
+			- Should we go back to dynamic height, were width always fit?
+
+- Resources Page
+	- WP Document Revision looks best for us
+	- Start a Parish School Button does not link to anything
+		- What should it link to/do?
+
+- Apply Page
+	- Form JS Validation?
+--------------------------
+div - parent
+	heigth 500px
+	overflow hid
+		images
+			width 100%
+			height auto
+			centered : top-center

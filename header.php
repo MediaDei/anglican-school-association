@@ -14,7 +14,7 @@
 		
 		<?php 
 			if(is_home()) { 
-				echo " Home | ";
+				echo " Notices | ";//this names the "index.php" or "blog" page
 				echo bloginfo("name");
 			} 
 			else { 
@@ -79,7 +79,15 @@
 					for schools</span>
 				</a>
 			</nav>
-			<!--closing header in page to allow custom hero img class for each page--> 
+			<?php if(is_home() || is_archive()) { //get hero for index.php "Notices" and also apply it to archive.php?>
+		    <?php
+	        $page_for_posts = get_option( 'page_for_posts' );
+	        echo '<div class="hero-img" role="image">'.get_the_post_thumbnail($page_for_posts, 'large').'</div>';
+	    	?>
+			<?php } ?>
 			
+			<?php //get hero for all pages except index.php "Notices"
+			if ( has_post_thumbnail() ) {echo '<div class="hero-img" role="image">';the_post_thumbnail(); echo '</div>';} 
+			?>
 
-	
+		</header>

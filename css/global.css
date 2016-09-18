@@ -459,7 +459,7 @@ body div.page-wrap {
           padding-top: 80px; }
           body div.page-wrap header a div.top h1:first-of-type:before {
             content: "";
-            background: url("../images/logo.png") no-repeat center center/100% auto;
+            background: url("../images/logo.svg") no-repeat center center/100% auto;
             width: 100px;
             height: 100px;
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
@@ -621,9 +621,11 @@ body div.page-wrap {
           padding: 5px 0px;
           white-space: pre-line; }
     body div.page-wrap header div.hero-img {
-      height: 500px;
+      width: 100%;
+      max-height: 500px;
       border-top: 1px solid #979797;
       border-bottom: 1px solid #979797;
+<<<<<<< HEAD
       box-shadow: 0px 19px 8px -15px rgba(0, 0, 0, 0.5); }
       body div.page-wrap header div.hero-img.home {
         background: black url("../images/home-hero.jpg") no-repeat center center/220% auto; }
@@ -689,6 +691,15 @@ body div.page-wrap {
         @media (min-width: 860px) {
           body div.page-wrap header div.hero-img.apply {
             background-size: 124% auto; } }
+=======
+      box-shadow: 0px 19px 8px -15px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      position: relative; }
+      body div.page-wrap header div.hero-img img {
+        display: block;
+        width: 100%;
+        height: auto; }
+>>>>>>> origin/master
   body div.page-wrap div section {
     padding: 100px 0px 50px 0px;
     border-bottom: 1px solid #979797; }
@@ -702,7 +713,8 @@ body div.page-wrap {
       position: relative;
       margin-bottom: 130px;
       box-shadow: 0px 11px 4px -5px rgba(0, 0, 0, 0.1);
-      letter-spacing: 12px; }
+      letter-spacing: 12px;
+      white-space: pre-line; }
       @media (min-width: 640px) {
         body div.page-wrap div section h2 {
           letter-spacing: 17px; } }
@@ -757,19 +769,12 @@ body div.page-wrap {
       @media (min-width: 640px) {
         body div.page-wrap div section p.dropcaps {
           width: 70%; } }
-      body div.page-wrap div section p.dropcaps span:first-of-type {
+      body div.page-wrap div section p.dropcaps span.first-letter {
         font-size: 3em;
         float: left;
         margin-left: -1em;
-        line-height: 1; }
-        body div.page-wrap div section p.dropcaps span:first-of-type.o {
-          padding-left: 11px; }
-        body div.page-wrap div section p.dropcaps span:first-of-type.c {
-          padding-left: 13px; }
-        body div.page-wrap div section p.dropcaps span:first-of-type.a {
-          padding-left: 11px; }
-        body div.page-wrap div section p.dropcaps span:first-of-type.s {
-          padding-left: 23px; }
+        line-height: 1;
+        padding-left: 0.2em; }
       @media (min-width: 640px) {
         body div.page-wrap div section p.dropcaps {
           width: 70%; } }
@@ -777,23 +782,32 @@ body div.page-wrap {
         body div.page-wrap div section p.dropcaps {
           width: 50%; } }
     body div.page-wrap div section div.img {
-      height: 150px;
+      max-height: 250px;
       margin: 0 auto 50px;
       border-top: 1px solid #979797;
-      box-shadow: 0px 9px 7px -5px rgba(0, 0, 0, 0.5); }
+      box-shadow: 0px 9px 7px -5px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      position: relative; }
       @media (min-width: 640px) {
         body div.page-wrap div section div.img {
-          width: 80%;
-          height: 300px;
+          width: 75%;
           border: 4px solid #F4DC97;
           box-shadow: inset 0px -1px 0px 0px white, inset 0px 1px 0px 0px rgba(0, 0, 0, 0.3), 0px 0px 0px 1px #CBBFA5, 0px 21px 10px -15px rgba(0, 0, 0, 0.5); } }
+      body div.page-wrap div section div.img img {
+        display: block;
+        width: 100%;
+        height: auto; }
     body div.page-wrap div section div.circle-h3 {
       border-bottom: 1px solid #CBCBCB;
+<<<<<<< HEAD
       padding: 110px 0px 50px; }
+=======
+      padding: 110px 0px 50px;
+      position: relative; }
+>>>>>>> origin/master
       body div.page-wrap div section div.circle-h3:last-of-type {
         border-bottom: none; }
       body div.page-wrap div section div.circle-h3 h3 {
-        position: relative;
         font-size: 1.6em;
         text-align: center;
         width: 98%;
@@ -813,24 +827,29 @@ body div.page-wrap {
           background: url("../images/oval3.jpg") no-repeat center center/100% auto; }
         body div.page-wrap div section div.circle-h3 h3:nth-of-type(4):before {
           background: url("../images/oval4.jpg") no-repeat center center/100% auto; }
-        body div.page-wrap div section div.circle-h3 h3:before {
-          content: "";
-          width: 130px;
-          height: 130px;
-          position: absolute;
-          top: -420%;
-          left: 50%;
-          -moz-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-          -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-          border-radius: 100%;
-          border: 1px solid #979797;
-          box-shadow: inset 0px 1px 2px 1px rgba(0, 0, 0, 0.3); }
-          @media (min-width: 860px) {
-            body div.page-wrap div section div.circle-h3 h3:before {
-              top: -24px;
-              left: 85px; } }
+      body div.page-wrap div section div.circle-h3 div.circle {
+        width: 130px;
+        height: 130px;
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        overflow: hidden;
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        border-radius: 100%;
+        border: 1px solid #979797;
+        box-shadow: inset 0px 1px 2px 1px rgba(0, 0, 0, 0.3); }
+        @media (min-width: 860px) {
+          body div.page-wrap div section div.circle-h3 div.circle {
+            top: 85px;
+            left: 100px; } }
+        body div.page-wrap div section div.circle-h3 div.circle figure {
+          margin: 0; }
+          body div.page-wrap div section div.circle-h3 div.circle figure img {
+            width: 100%;
+            height: auto; }
       body div.page-wrap div section div.circle-h3 div.grid {
         width: 90%;
         margin: 0 auto 40px; }
@@ -906,6 +925,7 @@ body div.page-wrap {
         width: 100%;
         height: 100%;
         border-radius: 4px;
+        pointer-events: none;
         background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI3MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI4NSUiIHN0b3AtY29sb3I9IiM3YjdiN2IiIHN0b3Atb3BhY2l0eT0iMC4xNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
         background-size: 100%;
         background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(70%, rgba(255, 255, 255, 0)), color-stop(85%, rgba(123, 123, 123, 0.15)), color-stop(100%, rgba(0, 0, 0, 0.2)));
@@ -919,6 +939,7 @@ body div.page-wrap {
         top: 1px;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5), 30px 0px 0px 0px white, -30px 0px 0px 0px white;
         background-color: #faeab3; }
+<<<<<<< HEAD
   body div.page-wrap div.home .notice {
     max-width: 500px;
     margin: 60px auto 0;
@@ -929,6 +950,20 @@ body div.page-wrap {
       body div.page-wrap div.home .notice figure img {
         display: block;
         width: 100%; }
+=======
+  body div.page-wrap div.home div.announcement {
+    max-width: 500px;
+    margin: 60px auto 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden; }
+    body div.page-wrap div.home div.announcement figure {
+      margin: 0; }
+      body div.page-wrap div.home div.announcement figure img {
+        display: block;
+        width: 100%;
+        height: auto; }
+>>>>>>> origin/master
   body div.page-wrap div.home section.welcome div.img.welcome {
     background: url("../images/about-members.jpg") no-repeat center center/100% auto; }
     @media (min-width: 640px) {
@@ -939,8 +974,11 @@ body div.page-wrap {
         background-size: 130% auto; } }
   body div.page-wrap div.home section.welcome p.dropcaps {
     margin-bottom: 60px; }
+<<<<<<< HEAD
   body div.page-wrap div.home section.welcome h3.img2:before {
     background: url("../images/oval2.jpg") no-repeat center center/100% auto !important; }
+=======
+>>>>>>> origin/master
   body div.page-wrap div.about section h3 {
     text-align: center;
     font-size: 1.8em; }
@@ -1163,7 +1201,7 @@ body div.page-wrap {
           height: 3px;
           border-top: 1px solid #979797; }
       body div.page-wrap div.members section.members div.full-posts div.featured-member div.member-img {
-        height: 360px;
+        max-height: 360px;
         margin: 0 auto 30px;
         overflow: hidden;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.4); }
@@ -1172,8 +1210,9 @@ body div.page-wrap {
             width: 90%;
             border: 7px solid white; } }
         body div.page-wrap div.members section.members div.full-posts div.featured-member div.member-img img {
-          width: 122%;
-          height: auto; }
+          width: 100%;
+          height: auto;
+          display: block; }
       body div.page-wrap div.members section.members div.full-posts div.featured-member div.grid {
         width: 90%;
         margin: 0 auto; }
@@ -1249,9 +1288,13 @@ body div.page-wrap {
       padding-bottom: 60px; }
       @media (min-width: 640px) {
         body div.page-wrap div.notices section.notices aside.filter.grid-1-3 {
-          padding-left: 20px;
-          width: 33%;
+          width: 30%;
+          padding-left: 15px;
           float: right; } }
+      @media (min-width: 860px) {
+        body div.page-wrap div.notices section.notices aside.filter.grid-1-3 {
+          padding-left: 20px;
+          width: 33%; } }
       body div.page-wrap div.notices section.notices aside.filter.grid-1-3 p.smallcaps {
         text-align: center;
         letter-spacing: 3px;
@@ -1265,27 +1308,52 @@ body div.page-wrap {
         padding: 0px 0px 0px 20px; }
         @media (min-width: 640px) {
           body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul {
-            padding: 0px 20px;
+            padding: 0px;
             display: block;
             margin: 0px; } }
         body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul li {
           list-style-image: none;
           list-style-type: none;
           float: left;
-          width: 50%; }
+          width: 50%;
+          border-radius: 4px;
+          padding: 5px 10px; }
+          body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul li.current-cat {
+            background-color: #FAFDFF;
+            cursor: pointer;
+            box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3); }
+          body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul li:hover {
+            background-color: #FAFDFF;
+            cursor: pointer;
+            box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3); }
+          body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul li a {
+            color: #3C7BC4; }
           @media (min-width: 640px) {
             body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul li {
               float: none;
-              width: 100%; } }
+              display: table;
+              width: auto; } }
           body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul li input {
-            margin-right: 10px; }
+            margin-right: 10px;
+            width: 20px;
+            height: 20px; }
+            @media (min-width: 640px) {
+              body div.page-wrap div.notices section.notices aside.filter.grid-1-3 ul li input {
+                width: 10px;
+                height: 10px; } }
     body div.page-wrap div.notices section.notices div.posts.grid-2-3 {
       width: 100%;
-      box-shadow: 8px 0px 6px -6px rgba(0, 0, 0, 0.2); }
+      min-height: 200px;
+      box-shadow: 8px 0px 6px -6px rgba(0, 0, 0, 0.2);
+      padding: 20px 0px 20px 20px; }
       @media (min-width: 640px) {
         body div.page-wrap div.notices section.notices div.posts.grid-2-3 {
-          width: 66%;
-          border-right: 1px solid #979797; } }
+          width: 70%;
+          border-right: 1px solid #979797;
+          padding: 20px 0px 20px 80px; } }
+      @media (min-width: 860px) {
+        body div.page-wrap div.notices section.notices div.posts.grid-2-3 {
+          width: 66%; } }
       body div.page-wrap div.notices section.notices div.posts.grid-2-3 div.post {
         position: relative;
         width: 96%;
@@ -1303,7 +1371,7 @@ body div.page-wrap {
           width: 75px;
           box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
           z-index: -1; }
-          @media (min-width: 1110px) {
+          @media (min-width: 640px) {
             body div.page-wrap div.notices section.notices div.posts.grid-2-3 div.post:before {
               top: 19px;
               left: 2px;
@@ -1322,7 +1390,7 @@ body div.page-wrap {
           border-radius: 4px;
           box-shadow: inset 0px 0px 8px 4px white, 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
           z-index: -2; }
-          @media (min-width: 1110px) {
+          @media (min-width: 640px) {
             body div.page-wrap div.notices section.notices div.posts.grid-2-3 div.post div.date {
               top: 22px;
               left: -70px; } }
@@ -1347,6 +1415,13 @@ body div.page-wrap {
         body div.page-wrap div.notices section.notices div.posts.grid-2-3 div.post a.expand {
           float: right;
           color: #006FCD; }
+    body div.page-wrap div.notices section.notices div.pagination {
+      display: table;
+      margin: 0 auto; }
+      body div.page-wrap div.notices section.notices div.pagination a, body div.page-wrap div.notices section.notices div.pagination span {
+        margin-right: 5px; }
+      body div.page-wrap div.notices section.notices div.pagination a:hover {
+        text-decoration: underline; }
   body div.page-wrap div.resources section.resources a {
     display: table;
     margin: 0px auto 20px; }
@@ -1560,20 +1635,22 @@ body div.page-wrap {
           letter-spacing: 6.5px;
           line-height: 0.4;
           padding-left: 3px; }
+  body div.page-wrap div.resources section.links h4 {
+    width: 500px;
+    margin: 0px auto 5px;
+    font-style: italic;
+    font-size: 1.3em;
+    padding-left: 40px; }
   body div.page-wrap div.resources section.links ul {
     width: 500px;
     margin: 0 auto 40px; }
     body div.page-wrap div.resources section.links ul li {
       list-style-image: none;
       list-style-type: none; }
-    body div.page-wrap div.resources section.links ul h4 {
-      font-style: italic;
-      font-size: 1.3em;
-      margin-bottom: 5px; }
-    body div.page-wrap div.resources section.links ul li a {
-      color: #3C7BC4; }
-      body div.page-wrap div.resources section.links ul li a:hover {
-        text-decoration: underline; }
+      body div.page-wrap div.resources section.links ul li a {
+        color: #3C7BC4; }
+        body div.page-wrap div.resources section.links ul li a:hover {
+          text-decoration: underline; }
   body div.page-wrap div.apply section.apply ul.top-level, body div.page-wrap div.apply section.why-parish-schools ul.top-level {
     padding-bottom: 30px; }
     @media (min-width: 640px) {
@@ -1692,7 +1769,10 @@ body div.page-wrap {
           display: table;
           margin: 0px auto;
           border-radius: 4px;
+<<<<<<< HEAD
           padding: 10px 30px;
+=======
+>>>>>>> origin/master
           text-shadow: 0px 2px 0px rgba(255, 255, 255, 0.5);
           border: 1px solid #979797;
           background-color: #FBEFC6;
@@ -1712,6 +1792,10 @@ body div.page-wrap {
             width: 100%;
             height: 100%;
             border-radius: 4px;
+<<<<<<< HEAD
+=======
+            pointer-events: none;
+>>>>>>> origin/master
             background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI3MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI4NSUiIHN0b3AtY29sb3I9IiM3YjdiN2IiIHN0b3Atb3BhY2l0eT0iMC4xNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
             background-size: 100%;
             background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(70%, rgba(255, 255, 255, 0)), color-stop(85%, rgba(123, 123, 123, 0.15)), color-stop(100%, rgba(0, 0, 0, 0.2)));
@@ -1727,7 +1811,12 @@ body div.page-wrap {
             background-color: #faeab3; }
           body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper div.line-wrapper div.button input {
             background-color: transparent;
+<<<<<<< HEAD
             border: 0px; }
+=======
+            border: 0px;
+            padding: 10px 30px; }
+>>>>>>> origin/master
   body div.page-wrap div.apply section.why-parish-schools ul.top-level {
     border: none;
     padding-top: 0px;
@@ -1755,55 +1844,63 @@ body footer {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     float: left;
-    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.8); }
-    body footer div.text-left h1 {
-      text-align: center;
-      text-transform: uppercase;
-      margin: 0px 0px 0px 80px; }
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5); }
+    body footer div.text-left div.logo {
+      float: left;
+      width: 80px;
+      height: 80px;
+      background: url("../images/footer-png-asa2.png") no-repeat center center/100% auto;
+      margin-left: 10px;
+      position: relative; }
       @media (min-width: 640px) {
-        body footer div.text-left h1 {
-          margin: 0px 0px 0px 110px; } }
-      @media (min-width: 640px) {
-        body footer div.text-left h1 {
-          margin: 0px 0px 0px 140px; } }
-      body footer div.text-left h1:first-of-type {
-        position: relative;
-        border-bottom: 1px solid #979797;
-        letter-spacing: 6px;
-        font-size: 1.3em; }
+        body footer div.text-left div.logo {
+          width: 80px;
+          height: 80px;
+          margin-left: 20px; } }
+      @media (min-width: 860px) {
+        body footer div.text-left div.logo {
+          width: 110px;
+          height: 110px; } }
+      body footer div.text-left div.logo:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: url("../images/footer-png-asa.png") no-repeat center center/100% auto;
+        position: absolute;
+        top: -1px; }
+        @media (min-width: 640px) {
+          body footer div.text-left div.logo:after {
+            width: 80px;
+            height: 80px; } }
         @media (min-width: 860px) {
-          body footer div.text-left h1:first-of-type {
-            font-size: 2em; } }
-        body footer div.text-left h1:first-of-type:before {
-          content: "";
-          display: inline-block;
-          width: 60px;
-          height: 60px;
-          background: url("../images/logo-bw.png") no-repeat center center/100% auto;
-          position: absolute;
-          left: -70px;
-          top: 90%;
-          -moz-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          -webkit-transform: translateY(-50%);
-          transform: translateY(-50%); }
-          @media (min-width: 640px) {
-            body footer div.text-left h1:first-of-type:before {
-              width: 80px;
-              height: 80px;
-              left: -90px; } }
+          body footer div.text-left div.logo:after {
+            width: 110px;
+            height: 110px; } }
+    body footer div.text-left div.text-wrapper {
+      float: left;
+      margin-top: 20px; }
+      @media (min-width: 860px) {
+        body footer div.text-left div.text-wrapper {
+          margin-top: 25px; } }
+      body footer div.text-left div.text-wrapper h1 {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0px 0px 0px 10px; }
+        body footer div.text-left div.text-wrapper h1:first-of-type {
+          position: relative;
+          border-bottom: 1px solid #979797;
+          letter-spacing: 6px;
+          font-size: 1.3em; }
           @media (min-width: 860px) {
-            body footer div.text-left h1:first-of-type:before {
-              width: 100px;
-              height: 100px;
-              left: -115px; } }
-      body footer div.text-left h1:nth-of-type(2) {
-        font-size: 0.8em;
-        letter-spacing: 1px;
-        padding-top: 5px; }
-        @media (min-width: 860px) {
-          body footer div.text-left h1:nth-of-type(2) {
-            font-size: 1.2em; } }
+            body footer div.text-left div.text-wrapper h1:first-of-type {
+              font-size: 2em; } }
+        body footer div.text-left div.text-wrapper h1:nth-of-type(2) {
+          font-size: 0.8em;
+          letter-spacing: 1px;
+          padding-top: 5px; }
+          @media (min-width: 860px) {
+            body footer div.text-left div.text-wrapper h1:nth-of-type(2) {
+              font-size: 1.2em; } }
   body footer div.text-right {
     position: relative;
     top: 50%;
@@ -1811,48 +1908,64 @@ body footer {
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    text-align: right;
     float: right;
-    padding-right: 80px;
-    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.8); }
+    margin-right: 10px;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5); }
     @media (min-width: 640px) {
       body footer div.text-right {
-        padding-right: 110px; } }
-    @media (min-width: 860px) {
-      body footer div.text-right {
-        padding-right: 120px; } }
-    body footer div.text-right p {
-      font-style: italic;
-      margin: 0px 0px 5px;
-      position: relative;
-      font-size: 1em; }
+        margin-right: 20px; } }
+    body footer div.text-right div.text-wrapper {
+      float: right;
+      margin-top: 20px; }
       @media (min-width: 860px) {
-        body footer div.text-right p {
-          font-size: 1.5em; } }
-      body footer div.text-right p:after {
+        body footer div.text-right div.text-wrapper {
+          margin-top: 25px; } }
+      body footer div.text-right div.text-wrapper p {
+        font-style: italic;
+        margin: 0px 0px 5px;
+        position: relative;
+        font-size: 1em; }
+        @media (min-width: 860px) {
+          body footer div.text-right div.text-wrapper p {
+            font-size: 1.5em; } }
+      body footer div.text-right div.text-wrapper ul {
+        font-style: none; }
+        body footer div.text-right div.text-wrapper ul li {
+          font-size: 0.6em;
+          margin-bottom: 5px;
+          list-style-image: none;
+          list-style-type: none; }
+          @media (min-width: 860px) {
+            body footer div.text-right div.text-wrapper ul li {
+              font-size: 0.8em; } }
+    body footer div.text-right div.logo2 {
+      float: right;
+      width: 80px;
+      height: 80px;
+      background: url("../images/rec-logo-2.png") no-repeat center center/100% auto;
+      margin-left: 10px;
+      position: relative; }
+      @media (min-width: 640px) {
+        body footer div.text-right div.logo2 {
+          width: 80px;
+          height: 80px;
+          margin-left: 20px; } }
+      @media (min-width: 860px) {
+        body footer div.text-right div.logo2 {
+          width: 110px;
+          height: 110px; } }
+      body footer div.text-right div.logo2:after {
         content: "";
-        display: inline-block;
-        width: 60px;
-        height: 60px;
-        background: url("../images/logo2-bw.png") no-repeat center center/100% auto;
+        width: 100%;
+        height: 100%;
+        background: url("../images/rec-logo.png") no-repeat center center/100% auto;
         position: absolute;
-        right: -70px; }
+        top: -1px; }
         @media (min-width: 640px) {
-          body footer div.text-right p:after {
-            right: -100px;
-            width: 70px;
-            height: 70px; } }
+          body footer div.text-right div.logo2:after {
+            width: 80px;
+            height: 80px; } }
         @media (min-width: 860px) {
-          body footer div.text-right p:after {
-            width: 90px;
-            height: 90px; } }
-    body footer div.text-right ul {
-      font-style: none; }
-      body footer div.text-right ul li {
-        font-size: 0.6em;
-        margin-bottom: 5px;
-        list-style-image: none;
-        list-style-type: none; }
-        @media (min-width: 860px) {
-          body footer div.text-right ul li {
-            font-size: 0.8em; } }
+          body footer div.text-right div.logo2:after {
+            width: 110px;
+            height: 110px; } }

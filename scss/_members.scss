@@ -89,7 +89,6 @@ div.members{//page specific
 						}
 						&:hover{
 							background-color: $member-post-hover;
-							//border: 1px solid $member-post-hover-border;
 							cursor: pointer;
 							box-shadow: 0px 2px 3px 0px rgba(black,0.3);
 						}
@@ -149,9 +148,8 @@ div.members{//page specific
 						border-top: 1px solid $border;
 					}
 				}
-				
 				div.member-img{
-					height: 360px;
+					max-height: 360px;
 					margin: 0 auto 30px;
 					overflow: hidden;
 					box-shadow: 0px 4px 10px 0px rgba(black,0.4);
@@ -161,10 +159,10 @@ div.members{//page specific
 						
 					}
 					img{
-						width: 122%;
+						width: 100%;
 						height: auto;
+						display: block;
 					}
-											
 				}
 				div.grid{
 					width: 90%;

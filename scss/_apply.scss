@@ -137,7 +137,10 @@ div.apply{//page specific
 							display: table;
 							margin: 0px auto;
 							border-radius: 4px;
+<<<<<<< HEAD
 							padding: 10px 30px;
+=======
+>>>>>>> origin/master
 							text-shadow: 0px 2px 0px rgba(white,0.5);
 							border: 1px solid $border;
 							background-color: $button;
@@ -156,7 +159,11 @@ div.apply{//page specific
 								width: 100%;
 								height: 100%; 
 								border-radius: 4px; 
+<<<<<<< HEAD
 								   
+=======
+								pointer-events: none;
+>>>>>>> origin/master
 								@include background-image(linear-gradient(rgba(white,0) 70%,rgba(123,123,123,0.15),rgba(black,0.2))); 
 							}
 							&:hover{
@@ -173,6 +180,10 @@ div.apply{//page specific
 							input{
 								background-color: transparent;
 								border: 0px; 
+<<<<<<< HEAD
+=======
+								padding: 10px 30px;  
+>>>>>>> origin/master
 							}
 						}
 					}
