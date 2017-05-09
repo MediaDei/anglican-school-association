@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-			<?php get_header(); ?>
-			<div role="image" class="hero-img members"></div>
-		</header>
-		<!--closing header in page to allow custom hero img class for each page-->
-=======
 		<?php get_header(); ?>
->>>>>>> origin/master
 		
 		<div class="members">
 			<section class="members">

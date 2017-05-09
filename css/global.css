@@ -1403,7 +1403,7 @@ body div.page-wrap {
     margin: 0px auto 20px; }
     @media (min-width: 860px) {
       body div.page-wrap div.resources section.resources a {
-        margin-bottom: 60px; } }
+        margin-bottom: 40px; } }
     body div.page-wrap div.resources section.resources a div.button {
       cursor: pointer;
       margin: 0 auto;
@@ -1519,7 +1519,7 @@ body div.page-wrap {
             font-size: 1.1em; }
   body div.page-wrap div.resources section.resources div.bcp {
     width: 95%;
-    margin: 0px auto 60px;
+    margin: 0px auto 40px;
     background-color: #FCF9FA;
     border: 1px solid #C5B9BF;
     border-radius: 4px;
