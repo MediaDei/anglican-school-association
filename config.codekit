@@ -136,17 +136,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/accreditation-hero.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 128655,
-		"inputAbbreviatedPath": "\/images\/accreditation-hero.jpg",
-		"outputAbbreviatedPath": "\/images\/accreditation-hero.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/apply-banner.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -217,7 +206,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 67472,
+		"initialSize": 17349,
 		"inputAbbreviatedPath": "\/images\/footer-png-asa.png",
 		"outputAbbreviatedPath": "\/images\/footer-png-asa.png",
 		"outputPathIsOutsideProject": 0,
@@ -448,11 +437,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-<<<<<<< HEAD
 		"initialSize": 272470,
-=======
-		"initialSize": 241150,
->>>>>>> origin/master
 		"inputAbbreviatedPath": "\/images\/st-bede-st-bede.jpg",
 		"outputAbbreviatedPath": "\/images\/st-bede-st-bede.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -835,12 +820,12 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "asa-theme",
+	"displayValue": "Anglican School Association",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "pencil_blue"
 	},
 "projectSettings": {
-	"alwaysUseExternalServer": 1,
+	"alwaysUseExternalServer": 0,
 	"animateCSSInjections": 1,
 	"autoApplyPSLanguageSettingsStyle": 0,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -994,7 +979,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "asa.phasstw",
+	"externalServerAddress": "http:\/\/localhost:8888",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,

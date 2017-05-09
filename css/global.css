@@ -625,8 +625,9 @@ body div.page-wrap {
       max-height: 500px;
       border-top: 1px solid #979797;
       border-bottom: 1px solid #979797;
-<<<<<<< HEAD
-      box-shadow: 0px 19px 8px -15px rgba(0, 0, 0, 0.5); }
+      box-shadow: 0px 19px 8px -15px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      position: relative; }
       body div.page-wrap header div.hero-img.home {
         background: black url("../images/home-hero.jpg") no-repeat center center/220% auto; }
         @media (min-width: 640px) {
@@ -691,15 +692,10 @@ body div.page-wrap {
         @media (min-width: 860px) {
           body div.page-wrap header div.hero-img.apply {
             background-size: 124% auto; } }
-=======
-      box-shadow: 0px 19px 8px -15px rgba(0, 0, 0, 0.5);
-      overflow: hidden;
-      position: relative; }
       body div.page-wrap header div.hero-img img {
         display: block;
         width: 100%;
         height: auto; }
->>>>>>> origin/master
   body div.page-wrap div section {
     padding: 100px 0px 50px 0px;
     border-bottom: 1px solid #979797; }
@@ -799,12 +795,8 @@ body div.page-wrap {
         height: auto; }
     body div.page-wrap div section div.circle-h3 {
       border-bottom: 1px solid #CBCBCB;
-<<<<<<< HEAD
-      padding: 110px 0px 50px; }
-=======
       padding: 110px 0px 50px;
       position: relative; }
->>>>>>> origin/master
       body div.page-wrap div section div.circle-h3:last-of-type {
         border-bottom: none; }
       body div.page-wrap div section div.circle-h3 h3 {
@@ -939,18 +931,6 @@ body div.page-wrap {
         top: 1px;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5), 30px 0px 0px 0px white, -30px 0px 0px 0px white;
         background-color: #faeab3; }
-<<<<<<< HEAD
-  body div.page-wrap div.home .notice {
-    max-width: 500px;
-    margin: 60px auto 0;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); }
-    body div.page-wrap div.home .notice figure {
-      margin: 0; }
-      body div.page-wrap div.home .notice figure img {
-        display: block;
-        width: 100%; }
-=======
   body div.page-wrap div.home div.announcement {
     max-width: 500px;
     margin: 60px auto 0;
@@ -963,7 +943,6 @@ body div.page-wrap {
         display: block;
         width: 100%;
         height: auto; }
->>>>>>> origin/master
   body div.page-wrap div.home section.welcome div.img.welcome {
     background: url("../images/about-members.jpg") no-repeat center center/100% auto; }
     @media (min-width: 640px) {
@@ -974,11 +953,8 @@ body div.page-wrap {
         background-size: 130% auto; } }
   body div.page-wrap div.home section.welcome p.dropcaps {
     margin-bottom: 60px; }
-<<<<<<< HEAD
   body div.page-wrap div.home section.welcome h3.img2:before {
     background: url("../images/oval2.jpg") no-repeat center center/100% auto !important; }
-=======
->>>>>>> origin/master
   body div.page-wrap div.about section h3 {
     text-align: center;
     font-size: 1.8em; }
@@ -1543,15 +1519,14 @@ body div.page-wrap {
             font-size: 1.1em; }
   body div.page-wrap div.resources section.resources div.bcp {
     width: 95%;
-    margin: 20px auto 40px;
+    margin: 0px auto 60px;
     background-color: #FCF9FA;
     border: 1px solid #C5B9BF;
     border-radius: 4px;
     height: 140px; }
     @media (min-width: 860px) {
       body div.page-wrap div.resources section.resources div.bcp {
-        width: 90%;
-        margin-bottom: 80px; } }
+        width: 90%; } }
     body div.page-wrap div.resources section.resources div.bcp div.content-wrap {
       display: table;
       margin: 0 auto;
@@ -1769,10 +1744,7 @@ body div.page-wrap {
           display: table;
           margin: 0px auto;
           border-radius: 4px;
-<<<<<<< HEAD
           padding: 10px 30px;
-=======
->>>>>>> origin/master
           text-shadow: 0px 2px 0px rgba(255, 255, 255, 0.5);
           border: 1px solid #979797;
           background-color: #FBEFC6;
@@ -1792,10 +1764,7 @@ body div.page-wrap {
             width: 100%;
             height: 100%;
             border-radius: 4px;
-<<<<<<< HEAD
-=======
             pointer-events: none;
->>>>>>> origin/master
             background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSI3MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PHN0b3Agb2Zmc2V0PSI4NSUiIHN0b3AtY29sb3I9IiM3YjdiN2IiIHN0b3Atb3BhY2l0eT0iMC4xNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjIiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyYWQpIiAvPjwvc3ZnPiA=');
             background-size: 100%;
             background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(70%, rgba(255, 255, 255, 0)), color-stop(85%, rgba(123, 123, 123, 0.15)), color-stop(100%, rgba(0, 0, 0, 0.2)));
@@ -1811,12 +1780,8 @@ body div.page-wrap {
             background-color: #faeab3; }
           body div.page-wrap div.apply section.apply div.wpcf7 form.wpcf7-form div.field-wrapper div.line-wrapper div.button input {
             background-color: transparent;
-<<<<<<< HEAD
-            border: 0px; }
-=======
             border: 0px;
             padding: 10px 30px; }
->>>>>>> origin/master
   body div.page-wrap div.apply section.why-parish-schools ul.top-level {
     border: none;
     padding-top: 0px;

@@ -133,14 +133,14 @@ div.resources{//page specific
 		}
 		div.bcp{
 			width: 95%;
-			margin: 20px auto 40px;
+			margin: 0px auto 60px;
 			background-color: $bcp-fill;
 			border: 1px solid $bcp-border;
 			border-radius: 4px;
 			height: 140px;
 			@include breakpoint(large){
 				width: 90%;
-				margin-bottom: 80px; 
+				//margin-bottom: 80px; 
 			}
 			div.content-wrap{
 				display: table;

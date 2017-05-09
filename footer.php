@@ -8,14 +8,6 @@
 			</div>
 				
 			<div class="text-right">
-<<<<<<< HEAD
-				<p>Governance:</p>
-				<ul>
-					<li>ASA Board of Directors</li>
-					<li>Reformed Episcopal Church</li>
-				</ul>
-=======
->>>>>>> origin/master
 				<div role="image" class="logo2"></div>
 				<div class="text-wrapper">
 					<p>Governance:</p>
@@ -26,6 +18,9 @@
 				</div>
 			</div>
 		</footer>
+		<div style='text-align:right; padding: 5px; font-size: 13px; background-color: #777; color: white;'>
+			<a href='//medidei.org' style='color:white; text-shadow:none'>Designed and built by Media Dei</a> | &copy; 2016
+		</div>
 	</div><!--close page-wrap-->
 </body>
 </html>
